@@ -6,15 +6,17 @@
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0' name='viewport'>
     <title>Journal: A Dance With Sinatra</title>
     <link href='https://plus.google.com/111628796954215170971‎' rel='author'>
-    <link href='../favicon.ico' rel='icon' type='image/favicon'>
-    <link href='../css/fonts.css' rel='stylesheet' type='text/css'>
-    <link href='../css/styles.css' rel='stylesheet' type='text/css'>
+    <link href='/favicon.ico' rel='icon' type='image/favicon'>
+    <link href='/css/fonts.css' rel='stylesheet' type='text/css'>
+    <link href='/css/styles.css' rel='stylesheet' type='text/css'>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
   </head>
   <body>
     <header class='dark thin'>
       <div class='container'>
         <div class='title'>
-          <a class='home inherit' href='../index.html'>
+          <a class='home inherit' href='/'>
             Brad Cerasani
             <i class='icon-house'></i>
           </a>
@@ -26,7 +28,7 @@
         <h1>A Dance With Sinatra</h1>
         <p>I&rsquo;ve never been great at keeping a blog. Any space I&rsquo;ve made for writing in the past has been as Shedbot, the moniker I&rsquo;ve used for my photo/design work the past few years. I would always tread lightly posting on behalf a business, even my own. When speaking on behalf of a business you&rsquo;re always conscious of offending that exec who perhaps would&rsquo;ve given you that big contract if he didn&rsquo;t see you talking about <a href="http://www.youtube.com/watch?v=xf69EEL3WBk">ManBearPig</a> that one time.</p>
 
-        <p>I&rsquo;ve been wanting to write my own blogging app since seeing <a href="http://sam.roon.io/new-blog">this post</a> by <a href="http://twitter.com/soffes">Sam Soffes&#39;</a> about one of his 6000 blog iterations earlier this year. He wrote a Sinatra app that uses a GitHub repo of markdown files as posts and caches them in Redis. I really liked the idea of using static markdown files as a post archive; no messy databases or clunky web interface to get in the way of actually writing. I built something similar.</p>
+        <p>I&rsquo;ve been wanting to write my own blogging app since seeing <a href="http://sam.roon.io/new-blog">this post</a> by <a href="http://twitter.com/soffes">Sam Soffes&#39;</a> about one of his many blog iterations earlier this year. He wrote a Sinatra app that uses a GitHub repo of markdown files as posts and caches them in Redis. I really liked the idea of using static markdown files as a post archive; no messy databases or clunky web interface to get in the way of actually writing. I built something similar.</p>
 
         <h2>The Build</h2>
 
@@ -72,18 +74,10 @@
         </div>
       </div>
     </footer>
-    <script src='../js/vendor/jquery.min.js' type='text/javascript'></script>
-    <script src='../js/plugins.js' type='text/javascript'></script>
-    <script src='../js/scripts.js' type='text/javascript'></script>
+    <script src='/js/vendor/jquery.min.js' type='text/javascript'></script>
+    <script src='/js/plugins.js' type='text/javascript'></script>
+    <script src='/js/scripts.js' type='text/javascript'></script>
     <script>
-      (function() {
-      	var config = {
-      	kitId: 'yvv4fdo',
-      	scriptTimeout: 3000
-      };
-      var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
-      })();
-
       var _gaq = _gaq || [];
       	_gaq.push(['_setAccount', 'UA-5977667-28']);
       	_gaq.push(['_trackPageview']);
