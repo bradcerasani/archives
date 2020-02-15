@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background-color: #ffffff;
+	background: url(../images/social/fb/fb_background.jpg) no-repeat ;
+	background-attachment: fixed;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	line-height: 32px;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+	letter-spacing: normal;
+	text-shadow: 0px 1px 0px #FFFFFF;
+	width: 520px;
+}
+
+.fadelogo {
+	display:block;
+	height: 181px;
+	width: 520px;
+	background:url(../images/social/fb/logo.jpg) no-repeat;
+	margin:0 0 0 0;
+}
+
+.fadelogo:hover, .fadelogo.hover {
+	background:url(../images/social/fb/logo_hover.jpg) no-repeat;
+}
+
+div#logo {
+	margin: 0 0 0 0 ;
+}
+
+#container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 448px;
+	color: #484848;
+}
+
+p {
+	margin: 0 0 20px 0;
+}
+
+

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>SHEDBOT | WORK</title>
+<meta name="description" content="Shedbot is a full service creative studio based in Winnipeg, Canada.  We specialize in clean, accessible web design and commercial photography.	" />
+<meta name="keywords" content="web design, websites, custom, creative, winnipeg, advertising, graphic design, photography, commercial, design, brad cerasani" />
+<meta name="abstract" content="Shedbot is a full service creative studio based in Winnipeg, Canada.  We specialize in clean, accessible web design and commercial photography.	" />
+<meta name="author" content="Brad Cerasani, brad@shedbot.com" />
+<meta name="copyright" content="2011 Shedbot - Brad Cerasani" />
+
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link href="css/mainstyles.css" rel="stylesheet" type="text/css" />
+<link href="css/motion.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/fancybox/jquery.fancybox-1.3.3.css" media="screen" />
+
+<script type="text/javascript" src="js/jquery.qs.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/jquery.lazyload.js"></script>
+<script type="text/javascript" src="js/jquery.blend-min.js"></script>
+<script type="text/javascript" src="js/nomoreie/jquery.ie6blocker.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){$(".fadelogo, .fadebelieve, #tweet, #friend, #tumblr, .fadelinkedin").blend(300);
+		$('img').each(function() {
+            $(this).hover(function() {
+                 $(this).stop().animate({ opacity: 0.9 }, 200);
+            },
+           	function() {
+			  $(this).stop().animate({ opacity: 1 }, 300);
+           });
+        });
+	});
+	
+	$(function() {          
+          $("img").lazyload({
+             placeholder : "images/work/placeholder.png",
+             effect      : "fadeIn"
+          });
+      });
+	
+</script>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5977667-11']);
+  _gaq.push(['_setDomainName', '.shedbot.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+<div id="line"></div>
+<div id="container">
+
+<!-- begin/header -->
+<div id="header">
+
+<!-- navigation -->    
+	<div id = "menu">
+    	<ul id = "nav_menu">
+   			<li><a href = "web/index.html">web</a></li>
+            <li class="spacer">//</li>
+            <li><a href = "photo/index.html">photo</a></li>
+            <li class="spacer">//</li>
+            <li><a href = "print/index.html">print</a></li>
+            <li class="spacer">//</li>
+            <li><a href = "about.html">about</a></li>
+            <li class="spacer">//</li>
+            <li><a href = "raves.html">raves</a></li>
+      		<li class="spacer">//</li>
+      		<li><a href = "wallpaper/index.html">wallpaper</a></li>
+            <li class="spacer">//</li>
+            <li><a href = "http://blog.shedbot.com">blog</a></li>
+            <li class="spacer">//</li>
+            <li><a href = "contact.html">contact</a></li>
+  		</ul>
+    </div>
+<!-- end/navigation -->
+
+<!--begin/logo-->
+	<div id="logo">
+		<div class="fadelogo" onClick="location.href='index.html';" style="cursor:pointer;"></div>
+	</div>
+<!--end/logo-->
+
+</div>
+<!--end/header-->
+
+<!--start/work spread-->
+
+<div class="sub_menu">
+	<ul class="splitter">
+		<li>
+        <ul id="work_filter">
+    		<li class="segment-1 selected-1"><a href="#" data-value="all"><span>All</span></a></li>
+			<li class="segment-0"><a href="#" data-value="featured"><span>Featured</span></a></li>
+            <li class="segment-0"><a href="#" data-value="web"><span>Web</span></a></li>
+			<li class="segment-0"><a href="#" data-value="print"><span>Print</span></a></li>
+			<li class="segment-0"><a href="#" data-value="photo"><span>Photo</span></a></li>
+            
+		</ul>
+        </li>    
+	</ul>
+</div>
+         
+<div id="work">   
+	<ul id="list" class="image-grid">  
+        
+        <li data-id="id-00" class="print featured">
+            <a href="work/amplitude.html"><img class="portrait" src="images/work/thumbs/amplitude.jpg" /></a>
+			<span style="display:none">10</span>
+        </li>
+        <li data-id="id-0a" class="photo">
+            <a href="work/heroshockey.html"><img class="portrait" src="images/work/thumbs/heroshockey.jpg" /></a>
+			<span style="display:none">10</span>
+        </li>
+        <li data-id="id-0a" class="web featured">
+            <a href="work/phxframing.html"><img class="portrait" src="images/work/thumbs/phxframing.jpg" /></a>
+			<span style="display:none">10</span>
+        </li>
+        <li data-id="id-0b" class="photo featured">
+            <a href="work/venator.html"><img class="portrait" src="images/work/thumbs/venator.jpg" /></a>
+			<span style="display:none">10</span>
+        </li>
+        <li data-id="id-0b" class="photo featured">
+            <a href="work/hallmark-ext.html"><img class="portrait" src="images/work/thumbs/hallmark-ext.jpg" /></a>
+			<span style="display:none">10</span>
+        </li>
+        <li data-id="id-0b" class="photo print featured">
+            <a href="work/touristep.html"><img class="portrait" src="images/work/thumbs/touristep.jpg" /></a>
+			<span style="display:none">10</span>
+        </li>
+        <li data-id="id-0X" class="photo featured">
+            <a href="work/jackstraight.html"><img class="portrait" src="images/work/thumbs/jackstraight.jpg" /></a>
+			<span style="display:none">10</span>
+        </li> 
+        <li data-id="id-01" class="print">
+            <a href="work/dtposter.html"><img class="portrait" src="images/work/thumbs/dtposter.jpg" /></a>
+			<span style="display:none">10</span>
+        </li> 
+        <li data-id="id-04" class="web featured">
+            <a href="work/r4d.html"><img class="portrait" src="images/work/thumbs/r4d.jpg" /></a>
+			<span style="display:none">10</span>
+        </li> 
+        <li data-id="id-06" class="web">
+            <a href="work/hospitaltour.html"><img class="portrait" src="images/work/thumbs/hospitaltour.jpg" /></a>
+			<span style="display:none">10</span>
+        </li> 
+       	<li data-id="id-08b" class="photo featured">
+            <a href="work/brentfitz.html"><img class="portrait" src="images/work/thumbs/fitz.jpg" /></a>
+			<span style="display:none">10</span>
+        </li>
+        <li data-id="id-09" class="photo featured">
+            <a href="work/tjsgift.html"><img class="portrait" src="images/work/thumbs/tjsgift.jpg" /></a>
+			<span style="display:none">10</span>
+        </li>    
+        <li data-id="id-11" class="print photo featured">
+            <a href="work/lidworks.html"><img class="portrait" src="images/work/thumbs/togo.jpg" /></a>
+            <span style="display:none">3</span>
+        </li>     
+        <li data-id="id-12" class="photo">
+            <a href="work/forevergold.html"><img class="portrait" src="images/work/thumbs/forever_gold.jpg" /></a>
+			<span style="display:none">10</span>
+        </li>
+        <li data-id="id-14" class="print">
+            <a href="work/qmbusinesscards.html"><img class="portrait" src="images/work/thumbs/qmbcard.jpg" /></a>
+            <span style="display:none">4</span>
+        </li>   
+        <li data-id="id-16" class="web">
+            <a href="work/aprilmachiniste.html"><img class="portrait" src="images/work/thumbs/april_machiniste.jpg" /></a>
+            <span style="display:none">5</span>
+        </li>
+        <li data-id="id-18" class="web featured">
+            <a href="work/hoist.html"><img class="portrait" src="images/work/thumbs/hoist.jpg" /></a>
+			<span style="display:none">10</span>
+        </li>
+        <li data-id="id-19" class="print featured">
+            <a href="work/plc.html"><img class="portrait" src="images/work/thumbs/plc.jpg" /></a>
+			<span style="display:none">10</span>
+        </li>
+        <li data-id="id-21" class="web print photo">
+            <a href="work/drumtalk.html"><img class="portrait" src="images/work/thumbs/wdtf.jpg" /></a>
+			<span style="display:none">10</span>
+        </li> 
+        <li data-id="id-24" class="web photo featured">
+            <a href="work/hallmarkhomes.html"><img class="portrait" src="images/work/thumbs/hallmark_homes.jpg" /></a>
+        	<span style="display:none">6</span>
+        </li>    
+        <li data-id="id-25" class="photo">
+            <a href="work/maximumsixty.html"><img class="portrait" src="images/work/thumbs/maximum_60.jpg" /></a>
+            <span style="display:none">4</span>
+        </li>          
+       	<li data-id="id-28" class="web print">
+            <a href="work/ticketquest.html"><img class="portrait" src="images/work/thumbs/ticketquest.jpg" /></a>
+            <span style="display:none">5</span>
+       	</li>                 
+		<li data-id="id-30" class="print">
+        	<a href="work/rentalbrochure.html"><img class="portrait" src="images/work/thumbs/rentalbrochure.jpg" /></a>
+            <span style="display:none">4</span>
+        </li>
+            
+   	</ul>          
+</div>
+<!--end/work spread-->
+
+<!--start/footer-->
+<div id="footer">
+	<div class="fadebelieve" onClick="location.href='contact.html';" style="cursor:pointer;"></div>
+		<div id="footer_text">Built with HTML, CSS, jQuery and care in Winnipeg, Manitoba, Canada. © Shedbot 2011</div>
+	<div id="social">
+    	<div id="fblike"> 
+        	<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fshedbot&amp;layout=button_count&amp;show_faces=false&amp;width=450&amp;action=like&amp;font=lucida+grande&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:85px; height:21px; float: left; margin: 5px 0 0 7px;" allowtransparency="true"  >
+            </iframe>
+        </div>  
+		<div id="tweet" onClick="window.open('http://twitter.com/shedbot')" style="cursor:pointer;"></div>
+		<div id="friend" onClick="window.open('http://www.facebook.com/shedbot')" style="cursor:pointer;"></div>
+	</div>
+</div>
+<!--end/footer-->
+
+</div>
+<!--end/container-->
+
+</body>
+</html>

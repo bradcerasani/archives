@@ -1,0 +1,580 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	height: 100%;
+	background-color: #ffffff;
+	background: url(http://shedbot.com/images/assets/bg.jpg) repeat ;
+	background-attachment: fixed;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	color: #444444;
+	letter-spacing: normal;
+	/*text-shadow: 0px 1px 0px #FFFFFF;*/
+	-webkit-text-stroke: 1px transparent;
+}  
+  
+
+
+  a {
+    color: {color:Links};
+    text-decoration: none;
+  }
+
+  *:active,*:focus { outline: 0px; }
+  a img { border-width: 0px; }
+
+  p {
+    margin: 0 0 18px 0;
+	text-shadow: 0px 1px 0px #FFFFFF;
+	
+  }
+  
+  em { font-style: italic; }
+  strong { font-weight: bold; }
+
+  blockquote {
+    border-left: 4px solid #EFEFEF;
+    margin: 0 0 14px 0;
+    padding: 0 0 0 15px;
+  }
+  
+  div#container {
+	width: 978px;
+	padding: 0 5px 20px 5px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-bottom: 30px;
+}
+
+    #container .header {
+      overflow: hidden;
+    }
+
+      #container .header h1 {
+        font-size: 72px;
+        letter-spacing: -1px;
+        float: left;
+      }
+
+        #container .header a h1 {
+          color: {color:Title};
+          text-decoration: none;
+        }
+
+      #container .header td.description {
+        width: 240px;
+        font-size: 10px;
+        line-height: 14px;
+        text-align: right;
+        margin: 33px 0 0 0;
+        float: right;
+      }
+
+    #container .separate {
+      width: 966px;
+      height: 8px;
+      background: #EFEFEF;
+      margin: 50px 0 50px 0px;
+    }
+
+    #container ul.posts {
+		width: 887px;
+		margin: 0 0 0 76px;
+
+    }
+
+      #container li.post {
+        min-height: 57px;
+        list-style-type: none;
+        margin: 0 0 80px 0;
+        position: relative;
+      }
+
+        #container li.post a.post_type {
+          width: 57px;
+          height: 57px;
+          background: {color:PostTypeCircle};
+          border-radius: 28px;
+            -moz-border-radius: 28px;
+            -webkit-border-radius: 28px;
+          filter:alpha(opacity=84);
+            -moz-opacity:0.84;
+            -khtml-opacity: 0.84;
+            opacity: 0.84;
+          display: block;
+          position: absolute;
+          left: -79px;
+          top: 0px;
+        }
+
+        #container li.post a.note_count,
+        #container a.heart {
+          width: 57px;
+          height: 57px;
+          background: {color:NoteCountCircle};
+          border-radius: 28px;
+            -moz-border-radius: 28px;
+            -webkit-border-radius: 28px;
+          filter:alpha(opacity=84);
+            -moz-opacity:0.84;
+            -khtml-opacity: 0.84;
+            opacity: 0.84;
+          display: block;
+          position: absolute;
+          left: -79px;
+          top: 47px;
+        }
+        
+          #container .heart {
+            top: 0px !important;
+          }
+          
+            #container a.heart_icon {
+              width: 17px;
+              height: 15px;
+              background: url(http://static.tumblr.com/thpaaos/k6Eks51ol/heart.png) no-repeat;
+              position: absolute;
+              top: 21px;
+              left: -59px;
+              display: block;
+            }
+
+        #container li.post a.comments {
+          width: 103px;
+          color: {color:CommentsText};
+          font-size: 12px;
+          font-weight: bold;
+          text-transform: uppercase;
+          line-height: 0px;
+          background: {color:CommentsCount};
+          border-top-right-radius: 6px;
+          border-bottom-left-radius: 6px;
+          -webkit-border-bottom-right-radius: 6px;
+          -webkit-border-top-right-radius: 6px;
+          -moz-border-radius-bottomright: 6px;
+          -moz-border-radius-topright: 6px;
+          filter:alpha(opacity=54);
+            -moz-opacity:0.54;
+            -khtml-opacity: 0.54;
+            opacity: 0.54;
+          padding: 12px 7px 8px 35px;
+          display: block;
+          position: absolute;
+          top: 0px;
+          right: -167px;
+        }
+
+        li.post .label {
+          width: 57px;
+          font-size: 12px;
+          font-weight: bold;
+          line-height: 0px;
+          text-align: center;
+          text-transform: uppercase;
+          text-decoration: none;
+          position: absolute;
+          display: block;
+          position: absolute;
+          left: -79px;
+          display: block;
+        }
+
+          li.post a.label {
+            text-decoration: none;
+          }
+
+          li.post a.label.type {
+            color: {color:PostTypeText};
+            top: 27px;
+          }
+
+          li.post a.label.noteNumber {
+            color: {color:NoteCountText};
+            top: 70px;
+            font-size: 18px;
+          }
+
+            li.post a.label.noteNumber span {
+              font-size: 10px;
+              display: block;
+              margin: 15px 0 0 0;
+            }
+
+          li.post .label.notes {
+            color: {color:NoteCountText};
+            font-size: 10px;
+            top: 85px;
+          }
+
+        #container li.post img {
+          max-width: 100%;
+		  margin: 0 10px 10px 0;
+		  display: inline;
+        }
+
+        #container li.post .caption {
+		text-transform:lowercase;	
+
+        }
+
+          #container li.post .caption a {
+            padding: 1px;
+			text-transform:lowercase;
+          }
+
+            #container li.post .caption a:hover,
+            #container .header .description a:hover,
+            .footer .credit a:hover,
+            ul#likes a:hover {
+            }
+
+          #container li.post .caption ol,
+          #container li.post .caption ul {
+            margin: 0 0 14px 20px;
+          }
+
+        #container li.post a.title {
+		  	margin: 0 0 14px 0;
+	font-size: 20px;
+	font-weight: bold;
+	color: #404040;
+	font-style: normal;
+	display: block;
+		  text-shadow: 0px 1px 0px #FFFFFF;
+		  
+		  
+        }
+        
+          #container li.post a.title:hover {
+		color: #333333;
+          }
+
+          #container li.post a.title.link {
+            color: {color:LinkPost};
+            padding: 0 45px 0 0;
+            position: relative;
+          }
+
+            #container li.post a.title.link:hover span {
+			color: #333333;
+            }
+
+        table.chat {
+          width: 100%;
+          margin: 0 0 3px 0;
+          border-collapse: collapse;
+        }
+
+          h2 + table.chat {
+            margin: 0 0 14px 0 !important;
+          }
+
+           table.chat tr td {
+             padding: 3px 10px;
+           }
+
+             table.chat tr td.name {
+              font-weight: bold;
+              text-align: right;
+              vertical-align: top;
+            }
+
+             table.chat tr td.line1 {
+              background: #F2F2F2;
+             }
+
+        #container li.post .media {
+          margin: 0 0 14px 0;
+        }
+        
+        
+
+        #container li.post .quote {
+          font-size: 20px;
+          line-height: 26px;
+          margin: 0 0 14px 0;
+		  font-weight: bold;
+		  letter-spacing: -1;
+		  text-shadow: 0px 1px 0px #FFFFFF;
+		  
+        }
+
+        #container li.post .audio {
+          background: #fff;
+          margin: 0 0 14px 0;
+          padding: 1px;
+          overflow: hidden;
+        }
+
+          #container li.post .audio .player {
+            width: 207px;
+            height: 27px;
+            border: 1px solid #f2f2f2;
+            margin: 0 10px 0 0;
+            padding: 1px;
+            float: left;
+          }
+
+          #container li.post .audio span.count {
+            height: 22px;
+            color: #fff;
+            font-size: 10px;
+            font-weight: bold;
+            background: url(http://static.tumblr.com/thpaaos/TQFkqnqt1/play-count.png) top left;
+            padding: 4px 0 6px 12px;
+            position: relative;
+          }
+
+            #container li.post .audio span.count .right {
+              width: 10px;
+              height: 22px;
+              background: url(http://static.tumblr.com/thpaaos/TQFkqnqt1/play-count.png) top right;
+              position: absolute;
+              right: -10px;
+              top: 0px;
+            }
+
+        li.post .tags {
+
+        }
+
+          li.post .tags a.tag {
+            color: {color:TagText};
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            background: {color:TagBackground};
+            border-radius: 3px;
+              -moz-border-radius: 3px;
+              -webkit-border-radius: 3px;
+            padding: 1px 5px;
+          }
+
+            li.post .tags .tag:hover {
+              color: {color:TagTextHover};
+              background: {color:TagBackgroundHover};
+            }
+
+    .footer {
+      overflow: hidden;
+    }
+
+      .pagination {
+        width: 148px;
+        height: 67px;
+        background: url(http://static.tumblr.com/thpaaos/xNskqnqtx/sprite-pagination.png) top left;
+        float: right;
+        overflow: hidden;
+      }
+
+        a.button {
+          width: 67px;
+          height: 67px;
+          background: url(http://static.tumblr.com/thpaaos/xNskqnqtx/sprite-pagination.png);
+          display: block;
+        }
+
+          a.button.left {
+            background-position: 0px -67px;
+            float: left;
+          }
+            a.button.left:active { background-position: -0px -134px; }
+
+          a.button.right {
+            background-position: -81px -67px;
+            float: right;
+          }
+            a.button.right:active { background-position: -81px -134px; }
+
+      .footer .credit {
+        height: 50px;
+        font-size: 11px;
+        line-height: 17px;
+        border-radius: 10px;
+          -moz-border-radius: 10px;
+          -webkit-border-radius: 10px;
+        border: 3px solid #efefef;
+        float: left;
+        padding: 7px 17px;
+      }
+      
+  {block:IndexPage}
+  ul#likes {
+    width: 966px;
+    list-style-type: none;
+    overflow: hidden;
+  }
+
+  li.like_post {
+    width: 150px;
+    font-size: 11px;
+    padding: 0 25px 0 0;
+    list-style-type: none;
+    float: left;
+  }
+        
+    li.like_post img {
+      max-width: 140px;
+      background: #fff;
+      border: 4px solid {color:PhotoAndVideoBorders};
+      margin: 0 0 14px 0;
+      padding: 1px;
+    }
+    
+    li.like_post .like_link a {
+      color: {color:LinkPost};
+      text-decoration: underline;
+      font-size: 14px;
+    }
+    
+      li.like_post .like_link a:hover {
+        background: {color:LinkPostBackground} !important;
+      }
+      
+    li.like_post .like_title {
+		text-shadow: 0px 1px 0px #FFFFFF;
+      font-size: 14px;
+    }
+      
+    li.like_post  blockquote {
+      border-left: 2px solid #EFEFEF;
+      margin: 0 0 14px 0;
+      padding: 0 0 0 7px;
+    }
+    
+    .post_info_bottom {
+      background: #F2F2F2;
+      border-radius: 3px;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+      padding: 0 6px;
+      display: block !important;
+    }
+    
+      #post_info_bottom a:hover {
+        background: transparent !important;
+        text-decoration: underline;
+      }
+    
+    li.like_post ul,
+    li.like_post ol {
+      margin: 0 0 0 15px;
+    }
+    
+  a.arrow.back,
+  a.arrow.forward {
+    display: none !important;
+  }
+  {/block:IndexPage}
+
+  {block:IfShowNotesOnPermalinkPages}
+  {block:PermalinkPage}
+  {block:PostNotes}li.post { border-bottom: 2px dashed #efefef; margin: 0 0 52px 0 !important; padding: 0 0 40px 0;}{/block:PostNotes}
+
+  ol.notes { margin: 0px; font-size: 13px; list-style-type: none; }
+    ol.notes a { color: {color:NotesLink}; }
+      ol.notes a:hover { background-color: {color:NotesLinkBackground}; }
+    ol.notes img.avatar { display: none; }
+    ol.notes blockquote { margin: 0; }
+  {/block:PermalinkPage}
+  {/block:IfShowNotesOnPermalinkPages}
+  
+  /* ************************************** */
+  
+div#header {
+	margin-top: 15px;
+	height: 76px;
+	border-bottom: 2px solid #555555;
+}
+
+div#logo {
+			margin: 0 0 0 4px;
+}
+	
+#menu {
+	margin: 46px 4px 0 0;
+	float: right;
+}
+	
+ul#nav_menu {
+	list-style-type: none;
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+	
+ul#nav_menu li, ul#nav_menu li a {
+	list-style-type: none;
+	display: inline;
+	margin: 0 0 0 0;
+	padding: 0 0 3px 0;
+	float: left;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-decoration: none;
+	color: #444444;
+}
+	
+ul#nav_menu li.spacer {
+	color: #49B749;
+	margin: 0 12px 0 12px;
+}
+	
+ul#nav_menu li a:hover {
+	color: #333333;
+	border-bottom: 2px solid #49B749;
+}
+	
+ul#nav_menu li#selected a {
+	color: #333333;
+	border-bottom: 2px solid #49B749;
+}
+  
+div#shedtainer {
+	width: 978px;
+	padding: 0 5px 20px 5px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-bottom: 30px;
+}
+  
+div.main_copy {
+	margin: 17px 0 0 6px;
+	line-height: 22px;
+	width: 966px;
+}
+  
+ div#line {
+	background: url(http://www.shedbot.com/images/assets/stripe.png) top left repeat-x ;
+	height: 5px;
+	position: relative;
+	display: block;
+	width: 100%;
+	padding: 0 0 10px 0;
+}
+  
+  div#footer {
+	padding: 30px 0 0 0;
+	border-top: 2px solid #555555;
+	margin: 20px 0 0 6px;
+	line-height: 22px;
+	width: 966px;
+}
+
+div#footer_text {
+	margin: 5px 0 0 0;
+	float: left;
+	font-size: 13px;
+	color: #707070;
+}
+
+div#social {
+	float: right;
+	margin: 0 0 0 0;
+}

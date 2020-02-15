@@ -1,0 +1,43 @@
+
+#logo a {display: none}
+* html #logo a {display:none}
+	
+#container, html.embed {
+	background: none !important;
+}
+
+.wufoo li.focused {
+background-color: #fff;
+padding-right: 20px;
+}
+
+.noI form li, .altInstruct form li {
+width: 547px !important;
+}
+
+.wufoo input.text, .wufoo textarea.textarea{background-color: #fff;	border: 1px solid #f4f4f4;	padding: 4px;}
+	
+.wufoo .focused{
+	
+	background-color:#fff;}
+.wufoo .instruct{background-color:#F5F5F5}
+
+/* Borders */
+#container{ background-color:#f4f4f4;}
+.wufoo .info{display: none;}
+.wufoo .instruct{display: none;}
+
+/* Typography */
+.wufoo .info h2{font-size:160%; display: none; }
+.wufoo .info div{font-size:95%; display: none; }
+.wufoo .section h3{font-size:110%;background:#FFFFFF;color:#000000}
+.wufoo .section div{font-size:85%;color:#444444}
+.wufoo label.desc, .wufoo legend.desc{font-size:95%; font-family:Helvetica Neue, Helvetica, Arial, sans-serif;color:#444444}
+.wufoo li div, .wufoo li div label, .wufoo li span label{color:#444444}
+.wufoo input.text, .wufoo textarea.textarea, .wufoo select.select, .wufoo label.choice{font-size:100%;color:#333333}
+.wufoo label.choice{color:#444444}
+.wufoo .instruct{font-size:80%;color:#444444}
+form span.req	{color:#49b749 !important}
+
+/* Drop Shadows */
+#bottom{visibility: visible;}
