@@ -1,0 +1,101 @@
+    div.sell {
+      font-family: $menu;
+      div.info {
+        margin: 0 0 0 24px;
+        border-left: 1px solid $lighter-gray;
+        height: ($margin * 2.5);
+
+        // @include rgba-background(rgba(green, 0.2));
+      }
+      span.link {
+        margin-top: - ($margin / 2);
+        margin-left: - (50px + ($margin / 2));
+        font-weight: bold;
+        width: 50px;
+        display: block;
+        height: 50px;
+        color: white;
+        padding: 5%;
+        @include border-radius(50%);
+        float: left;
+        text-align: center;
+        @include rgba-background(rgba($gray, 1));
+        i {
+          display: block;
+          line-height: 50px;
+          margin-left: 2px;
+          font-size: 20px;
+        }
+      }
+      div.intro {
+        // @include rgba-background(rgba(orange, 0.8));
+        margin-bottom: $margin * 4;
+        padding-top: $margin;
+        padding-left: 50px + ($margin / 2);
+        p {
+          margin: ($margin / 2) 0;
+          padding: 0;
+          // @include rgba-background(rgba(yellow, 0.2));
+        }
+      }
+      p {
+        @include font-size(2.2);
+        // @include font-size(4);
+        font-family: $alternate-2;
+        padding: ($margin + 6px);
+        text-align: justify;
+        // border: 10px solid darken($green, 5%);
+        // margin-left: - ($margin + 10px);
+        // margin-right: - ($margin + 10px);
+        // @include border-radius(12px);
+        // background-color: $green;
+        // @include background-image-retina('noise-texture.png');
+      }
+      div.start {
+        @include font-size(2.4);
+        // font-family: $menu;
+      }
+      div.statement {
+        display: none;
+      }
+      blockquote {
+        @include font-size(2.8);
+        font-family: $alternate-2;
+        margin: $margin 0;
+        padding: $margin;
+        color: $lighter-gray;
+        border: 6px solid darken($gray, 5%);
+        background-color: $gray;
+        display: block;
+        font-weight: 300;
+        // margin-left: - ($margin + 6px);
+        // margin-right: - ($margin + 6px);
+        @include border-radius(12px);
+        @include background-image-retina('noise-texture.png');
+        b {
+          color: white;
+        }
+        &.green {
+          border-color: $gray;
+          background-color: white;
+          color: $gray;
+          b {
+            color: $gray;
+          }
+          cite {
+            color: white;
+            color: $gray;
+          }
+        }
+        cite {
+          display: block;
+          font-size: 60%;
+          color: $light-gray;
+        }
+        i.icon-attention-circle {
+          color: #e8c611;
+          font-size: 500%;
+          float: left;
+        }
+      }
+    }

@@ -1,0 +1,1055 @@
+/* ---------------------------- */
+/* variables */
+
+$primary: "proxima-nova", helvetica, arial, sans-serif;
+$alternate:  "ff-tisa-web-pro", "chaparral-pro", sans-serif;
+$green: lighten(#49B749, 0%);
+$gray: #333;
+$med-gray: #595959;
+$light-gray: #999;
+$lighter-gray: #CCC;
+
+$phone: 94%;
+$tablet: 92%;
+$desktop: 88%;
+$widescreen: 80%;
+
+$golden-ratio: 61.803398875%;
+
+@import "base";
+@import "body-border";
+@import "navigation";
+@import "footer";
+@import "animate";
+
+/* ------------------------------------------ */
+/* ------------------------------------------ */
+/* structure */
+
+  html {
+    font-size: 62.5%;
+  }
+
+  ::selection {
+    background: $green;
+    color: white;
+  }
+  ::-moz-selection {
+    background: $green;
+    color: white;
+  }
+
+  body {
+    @include font-size(2);
+    @include background-image-retina('background-noise.png');
+    overflow: auto;
+    background-color: #eeeeee;
+    color: $gray;
+    font-family: $primary;
+    -webkit-font-smoothing: subpixel-antialiased;
+    @include breakpoint(7up) {
+      &.blog {
+        header {
+          display: none;
+        }
+      }
+    }
+    @include breakpoint(phone) {
+      @include font-size(1.8);
+    }
+    @include breakpoint(tablet) {
+      @include font-size(2);
+    }
+    @include breakpoint(desktop) {
+      @include font-size(2);
+    }
+    @include breakpoint(widescreen) {
+      @include font-size(2.2);
+    }
+
+    .wrap {
+      overflow: visible;
+      @include breakpoint(phone) {
+        width: $phone;
+        @include margin-left($phone);
+        @include margin-right($phone);
+      }
+      @include breakpoint(tablet) {
+        width: $tablet;
+        @include margin-left($tablet);
+        @include margin-right($tablet);
+      }
+      @include breakpoint(desktop) {
+        width: $desktop;
+        @include margin-left($desktop);
+        @include margin-right($desktop);
+      }
+      @include breakpoint(widescreen) {
+        width: $widescreen;
+        @include margin-left($widescreen);
+        @include margin-right($widescreen);
+      }
+      @include breakpoint(maxwidth) {
+        max-width: 1600px;
+        margin: 0 auto;
+      }
+    }
+
+  /* ------------------------------------------ */
+  /* ------------------------------------------ */
+  /* typography */
+
+    h1 {
+      @extend.wrap;
+      display: block;
+      overflow: visible;
+      margin-top: 3%;
+      margin-bottom: 0;
+      color: $green;
+      text-align: center;
+      font-weight: 300 !important;
+      white-space: nowrap;
+      font-size: 28px;
+      line-height: 120%;
+      &#ft2 {
+        margin-top: 0;
+      }
+      @include breakpoint(tablet) {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+      }
+      @include breakpoint(10up) {
+        text-align: left;
+        text-indent: 10%;
+        @include font-size(6.2);
+        line-height: 120%;
+      }
+    }
+
+    h2 {
+        margin: 0 0 0.6em 0;
+        color: $green;
+        font-weight: 300;
+        font-size: 160%;
+        line-height: 120%;
+        text-align: center;
+        @include breakpoint(10up) {
+          text-align: left;
+        }
+      }
+
+    h3 {
+      position: relative;
+      z-index: 0;
+      font-size: 110%;
+      margin: 1em 0;
+      color: $med-gray;
+      text-transform: uppercase;
+      font-weight: 400;
+      padding: 0;
+      text-align: center;
+      line-height: 44px;
+      @include rgba-background(rgba(white, 1));
+      span {
+        display: none;
+        @include breakpoint(7up) {
+          display: inline;
+        }
+      }
+      a {
+        position: absolute;
+        display: block;
+        width: 44px;
+        color: inherit;
+        text-align: center;
+        opacity: 0.4;
+        padding: 0 2%;
+        i {
+          display: block;
+          width: 44px;
+        }
+      }
+      @include breakpoint(7up) {
+        font-size: 110%;
+        padding: 0.2em 2%;
+        text-align: left;
+        @include rgba-background(rgba(white, 0.6));
+        a {
+          display: none;
+        }
+      }
+    }
+
+    p {
+      margin: 0;
+      padding: 0 0 1em 0;
+      font-family: $alternate;
+      font-style: normal;
+    }
+
+    a {
+      color: $green;
+      text-decoration: none;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    span.flag {
+      display: inline-block;
+      width: 28px;
+      height: 14px;
+      background: url('../images/canadian-flag.svg');
+      background-size: 28px, 14px;
+      background-repeat: no-repeat;
+      &.png {
+        background: url('../images/assets/canadian-flag.png') !important;
+      }
+    }
+
+    .left {
+      left: 0;
+      top: 0;
+    }
+
+    .right {
+      right: 0;
+      top: 0;
+    }
+
+    .transparent {
+      opacity: 0.0;
+    }
+
+    .fade {
+      opacity: 0.4;
+    }
+
+    .opaque {
+      opacity: 1 !important;
+    }
+
+    .hide {
+      display: none;
+    }
+
+  /* ------------------------------------------ */
+  /* ------------------------------------------ */
+  /* circle header */
+
+    div.circle-start {
+      @extend.wrap;
+      display: none;
+      @include breakpoint(desktop) {
+        display: block;
+      }
+      @include breakpoint(widescreen) {
+        display: block;
+      }
+      span.line {
+        display: block;
+        margin: 0 0 1em 25px;
+        height: 1em;
+        border-left: 1px solid $light-gray;
+      }
+      div.circle {
+        @include border-radius(50%);
+        position: absolute;
+        margin-left: -3%;
+        padding: 3%;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        @include rgba-background(rgba(white, 0.6));
+        span {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+        i {
+          @include font-size(5.6, 5.6);
+          display: block;
+          margin-top: -28px;
+          padding-top: 50%;
+        }
+        b {
+          @include font-size(2.4, 2.4);
+          display: block;
+          margin-top: -12px;
+          padding-top: 50%;
+        }
+      }
+    }
+
+  /* ------------------------------------------ */
+  /* ------------------------------------------ */
+  /* home page lists */
+
+    p.intro {
+      @extend.wrap;
+      display: block;
+      padding: 1em 0 0 0;
+      color: $med-gray;
+      text-align: center;
+      @include breakpoint(desktop) {
+        padding: 1em 0 0.4em 0;
+        text-align: left;
+        text-indent: 10%;
+        font-size: 110%;
+      }
+      @include breakpoint(widescreen) {
+        padding: 1em 0 0.4em 0;
+        text-align: left;
+        text-indent: 10%;
+        font-size: 110%;
+      }
+    }
+
+  /* ------------------------------------------ */
+  /* ------------------------------------------ */
+  /* FEATURED WORK */
+
+    div.dark-wrap {
+      overflow: auto;
+      width: 100%;
+      background-color: #191919;
+      @include background-image-retina('grid.jpg');
+    }
+
+    div.study-box {
+      position: relative;
+      overflow: hidden;
+      margin: 1em 0;
+      padding: 1em 0;
+      @include border-radius(5px);
+      @include background-image-retina('noise-texture.png');
+      @include box-shadow(0 2px 3px rgba(black, 0.6));
+      @include breakpoint(7up) {
+        @include border-radius(12px);
+        @include border-bottom-right-radius(0);
+        @include box-shadow(0 2px 12px rgba(black, 0.6));
+      }
+      i {
+        padding-right: 0.4em;
+      }
+      div.image {
+        display: none;
+        @include breakpoint(7up) {
+          display: block;
+          position: absolute;
+          z-index: 100;
+          right: 0;
+          min-height: 100%;
+          width: 98 - $golden-ratio;
+          background-repeat: no-repeat;
+          @include transition-duration(0.3s);
+          a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-indent: 9999px;
+          }
+          &:hover {
+            @include transition-duration(0.1s);
+            margin-top: -0.6em;
+          }
+          &.tablet-white {
+            @include background-image-retina('tablet-white.png');
+          }
+          &.tablet-black {
+            @include background-image-retina('tablet-black.png');
+          }
+          &.browser-window {
+            @include background-image-retina('browser-window.png');
+            div.screen {
+              position: absolute;
+              margin: 0px;
+              width: 580px;
+              height: 620px;
+              @include border-top-left-radius(4px);
+              img {
+                @include border-top-left-radius(4px);
+              }
+              a {
+                margin-top: 72px;
+                height: 620 - 72px;
+                width: 580px;
+              }
+            }
+          }
+          div.screen {
+            position: absolute;
+            margin: 131px 0 0 48px;
+            width: 532px;
+            height: 489px;
+          }
+        }
+      }
+      h3 {
+        font-weight: bold;
+        margin: 0 0 1em 0;
+        font-size: 100%;
+        @include background-image-retina('noise-texture.png');
+        @include breakpoint(7up) {
+           margin: 1em 0;
+        }
+      }
+       p {
+        font-size: 90%;
+        line-height: 140%;
+        font-family: $primary;
+        margin: 1em 3% 0 3%;
+        width: 94%;
+        @include breakpoint(7up) {
+          margin: 1em 2% 0 2%;
+          padding-right: 98 - $golden-ratio;
+          width: $golden-ratio - 4;
+        }
+      }
+      ul {
+        position: relative;
+        z-index: 1000;
+        margin: 0 3%;
+        width: 94%;
+        padding: 1em 0 0 0;
+        border-top: 1px solid $lighter-gray;
+        list-style: none;
+        @include breakpoint(7up) {
+          float: left;
+          margin: 0 0 0 2%;
+          width: $golden-ratio - 4;
+          white-space: nowrap;
+        }
+        li {
+          padding: 0 0 0.4em 0;
+          font-size: 80%;
+          line-height: 22px;
+          a {
+            color: inherit;
+            &:hover {
+              border-bottom: 2px solid white;
+              border-color: inherit !important;
+            }
+          }
+        }
+      }
+    }
+
+    #chaos {
+      background-color: #69D2E7;
+      color: white;
+      ::selection {
+        background: white;
+        color: $gray;
+      }
+      ::-moz-selection {
+        background: white;
+        color: $gray;
+      }
+      h3 {
+        background-color: white;
+        color: #FFB26C;
+      }
+      ul {
+        border-top: 1px solid white;
+      }
+      @include breakpoint(7up) {
+        div.image {
+          div.screen {
+            @include background-image-retina('work/chaos.jpg');
+          }
+        }
+      }
+    }
+
+    #claywork {
+      background-color: #eaeaea;
+      ::selection {
+        background: #c3d648;
+        color: white;
+      }
+      ::-moz-selection {
+        background: #c3d648;
+        color: white;
+      }
+      h3 {
+        background-color: #c3d648;
+        color: white;
+      }
+      @include breakpoint(7up) {
+        div.image {
+          div.screen {
+            @include background-image-retina('work/claywork.jpg');
+          }
+        }
+      }
+    }
+
+    #amplitude {
+      background-color: #512e2c;
+      color: #fff4d4;
+      ::selection {
+        background: #fff4d4;
+        color: #512e2c;
+      }
+      ::-moz-selection {
+        background: #fff4d4;
+        color: #512e2c;
+      }
+      h3 {
+        background-color: #d44300;
+        color: #fff4d4;
+      }
+      @include breakpoint(7up) {
+        div.image {
+          div.screen {
+            @include border-top-left-radius(4px);
+            @include background-image-retina('work/amplitude.jpg');
+          }
+        }
+      }
+    }
+
+    #r4d {
+      background-color: #8a9878;
+      color: white;
+      ::selection {
+        background: white;
+        color: $gray;
+      }
+      ::-moz-selection {
+        background: white;
+        color: $gray;
+      }
+      h3 {
+        background-color: #fff;
+        color: darken($gray, 5%);
+      }
+      @include breakpoint(7up) {
+        div.image {
+          div.screen {
+            @include background-image-retina('work/r4d.jpg');
+          }
+        }
+      }
+    }
+
+    #moore {
+      background-color: #fff;
+      ::selection {
+        background: #59c4c9;
+        color: white;
+      }
+      ::-moz-selection {
+        background: #59c4c9;
+        color: white;
+      }
+      h3 {
+        background-color: #59c4c9;
+        color: white;
+      }
+      @include breakpoint(7up) {
+        div.image {
+          div.screen {
+            @include border-top-left-radius(4px);
+            @include background-image-retina('work/moore.jpg');
+          }
+        }
+      }
+    }
+
+    #phx {
+      background-color: #a66044;
+      color: #f5f0e4;
+      ::selection {
+        background: #f5f0e4;
+        color: $gray;
+      }
+      ::-moz-selection {
+        background: #f5f0e4;
+        color: $gray;
+      }
+      h3 {
+        background-color: #f5f0e4;
+        color: #633622;
+      }
+      @include breakpoint(7up) {
+        div.image {
+          div.screen {
+            @include background-image-retina('work/phx.jpg');
+          }
+        }
+      }
+    }
+
+    #hoist {
+      background-color: #191919;
+      color: white;
+      ::selection {
+        background: #6261ae;
+        color: white;
+      }
+      ::-moz-selection {
+        background: #6261ae;
+        color: white;
+      }
+      h3 {
+        background-color: #6261ae;
+        color: white;
+      }
+      @include breakpoint(7up) {
+        div.image {
+          div.screen {
+            @include background-image-retina('work/hoist.jpg');
+          }
+        }
+      }
+    }
+
+  /* ------------------------------------------ */
+  /* ------------------------------------------ */
+  /* RECENT WRITING */
+
+    ul#recent-writing {
+      overflow: auto;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li {
+        float: left;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        border-top: 1px solid $lighter-gray;
+        &:first-child {
+          border-top: 1px solid $lighter-gray;
+        }
+        &:last-child {
+          border-bottom: 1px solid $lighter-gray;
+        }
+
+        a {
+          @include transition-duration(0.14s);
+          display: block;
+          overflow: auto;
+          margin: 0;
+          padding: 1em 0;
+          color: inherit;
+          text-align: center;
+          &:hover {
+            @include rgba-background(rgba(white, 0.4));
+            span.summary {
+              color: $gray;
+            }
+          }
+          span.date {
+            font-size: 90%;
+            line-height: 22px;
+            display: block;
+            padding: 0.2em 2%;
+            width: 96%;
+            color: $med-gray;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            @include breakpoint(10up) {
+              float: left;
+              text-align: left;
+              width: 20%;
+              padding: 0 0 0 2%;
+              margin: 0;
+            }
+          }
+
+          h2 {
+            width: 96%;
+            line-height: 22px;
+            padding: 0;
+            margin: 0.4em auto;
+            font-size: 140%;
+            @include breakpoint(10up) {
+              width: 30%;
+              float: left;
+              padding: 0 0 0 2%;
+              margin: 0;
+            }
+          }
+
+          span.summary {
+            font-size: 90%;
+            line-height: 22px;
+            display: block;
+            padding: 0.4em 2% 0 2%;
+            width: 96%;
+            color: $med-gray;
+            font-family: $alternate;
+            @include breakpoint(10up) {
+              text-align: left;
+              float: right;
+              width: 96 - $golden-ratio;
+              padding: 0 2%;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+
+  /* ------------------------------------------ */
+  /* ------------------------------------------ */
+  /* INFO */
+
+    div.about {
+      overflow: auto;
+      margin: 0 2%;
+      h2 {
+        white-space: nowrap;
+          @include breakpoint(tablet) {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+          }
+          @include breakpoint(10up) {
+            text-align: left;
+          }
+        }
+      aside {
+        overflow: auto;
+        @include breakpoint(10up) {
+          float: right;
+          margin: 0 0 1em 0;
+          width: 98 - $golden-ratio;
+        }
+        img.portrait {
+          display: block;
+          margin: 0 auto 1em auto;
+          width: $golden-ratio;
+          max-width: 280px;
+          @include border-radius(50%);
+        }
+        ul.contact {
+          margin: 0 auto 2em auto;
+          padding: 0;
+          @include breakpoint(tablet) {
+            width: $golden-ratio;
+          }
+          li {
+            list-style-type: none;
+            a {
+              font-size: 90%;
+              position: relative;
+              color: $med-gray;
+              display: block;
+              margin: 0.6em auto;
+              padding: 0.6em 1em;
+              @include rgba-background(rgba(white, 0.4));
+              @include transition-duration(0.3s);
+              &:hover {
+                @include transition-duration(0.1s);
+                @include rgba-background(rgba(white, 0.8));
+                color: $gray;
+                i {
+                  @include transition-duration(0.1s);
+                  color: white !important;
+                  &.linkedin {
+                    background-color:#3487b0;
+                  }
+                  &.twitter {
+                    background-color:#00acf0;
+                  }
+                  &.email {
+                    background-color:#de5a40;
+                  }
+                }
+              }
+              &.linkedin {
+                border-left: 0.2em solid #3487b0;
+                }
+              &.twitter {
+                border-left: 0.2em solid #00acf0;
+                }
+              &.email {
+                border-left: 0.2em solid #de5a40;
+              }
+              i {
+                position: absolute;
+                top: 0;
+                right: 0;
+                padding: 0.6em 0.8em 0.6em 1em;
+                @include rgba-background(rgba(white, 1));
+                @include transition-duration(0.3s);
+                &.linkedin {
+                  color:#3487b0;
+                }
+                &.twitter {
+                  color:#00acf0;
+                }
+                &.email {
+                  color:#de5a40;
+                }
+              }
+            }
+          }
+        }
+      }
+      p {
+        padding-bottom: 1em;
+        color: $med-gray;
+        @include breakpoint(tablet) {
+          margin-left: auto;
+          margin-right: auto;
+          width: 80%;
+        }
+        @include breakpoint(10up) {
+          float: left;
+          width: $golden-ratio - 2;
+        }
+      }
+    }
+
+  /* ------------------------------------------ */
+  /* ------------------------------------------ */
+  /* blog article */
+
+  .blog-logo {
+    display: none;
+    @include breakpoint(7up) {
+      z-index: -100;
+      width: 44px;
+      height: 44px;
+      display: block;
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      @include background-image-retina('shedbot-squared.png');
+      &.link {
+        opacity: 0.6;
+        @include background-image-retina('shedbot-silhouette.png');
+        z-index: 100;
+      }
+    }
+  }
+
+  article {
+    overflow: auto;
+    margin: 0 auto 1em auto;
+    max-width: 1920px;
+    @include breakpoint(7up) {
+      margin-top: 64px;
+      margin-bottom: 3em;
+    }
+
+    p, h1, h2, blockquote, .date, .credits, .condense {
+      margin-left: auto;
+      margin-right: auto;
+      width: $phone * 0.88;
+      @include breakpoint(tablet) {
+        width: $tablet * 0.8;
+      }
+      @include breakpoint(10up) {
+        float: right;
+      }
+      @include breakpoint(desktop) {
+        width: ($desktop * ($golden-ratio - 2)) / 100%;
+        @include margin-right($desktop);
+      }
+      @include breakpoint(widescreen) {
+        width: ($widescreen * ($golden-ratio - 2)) / 100%;
+        @include margin-right($widescreen);
+      }
+    }
+
+    h1 {
+      margin-top: 0;
+      margin-bottom: 0.2em;
+      text-indent: 0;
+      font-size: 180%;
+      @include breakpoint(7up) {
+        text-align: left;
+        font-size: 280%;
+        margin-bottom: 0;
+      }
+      @include breakpoint(10up) {
+        padding-left: 20%;
+        margin-bottom: 0.2em;
+      }
+    }
+
+    h2 {
+      font-size: 160%;
+      @include breakpoint(7up) {
+        text-align: left;
+      }
+    }
+
+    p {
+      // text-align: justify;
+      // justify: inter-word;
+      @include breakpoint(7up) {
+        // text-align: left;
+      }
+    }
+
+    aside {
+      display: block;
+      color: $light-gray;
+      line-height: inherit;
+      width: $phone * 0.88;
+      margin: 0 auto 1em auto;
+      text-align: center;
+      font-size: 90%;
+      i {
+        margin-right: 0.2em;
+      }
+      @include breakpoint(7up) {
+        width: $tablet * 0.8;
+        text-align: left;
+        margin-bottom: 0.6em;
+      }
+      @include breakpoint(10up) {
+        float: left;
+      }
+      @include breakpoint(desktop) {
+        width: ($desktop * (98 - $golden-ratio)) / 100%;
+        @include margin-left($desktop);
+      }
+      @include breakpoint(widescreen) {
+        width: ($widescreen * (98 - $golden-ratio)) / 100%;
+        @include margin-left($widescreen);
+      }
+    }
+
+    blockquote {
+      display: block;
+      margin-top: 0.6em;
+      margin-bottom: 1.6em;
+      p {
+        color: $med-gray;
+        margin: 0;
+        padding: 0.4em 0 0.4em 1em;
+        text-align: left;
+        border-left: 0.2em solid $green;
+        font-size: 120%;
+        font-style: italic;
+        display: block;
+        width: auto;
+        @include breakpoint(10up) {
+          width: 100%;
+        }
+      }
+    }
+
+    span.end {
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      background: url('../images/assets/shedbot.svg');
+      background-repeat: no-repeat;
+      margin: 0 0.4em;
+    }
+
+    img {
+      position: relative;
+      z-index: 80;
+      display: block;
+      margin: 0 auto 1em auto;
+      padding: 0;
+      max-width: 100%;
+    }
+
+    .credits {
+      padding: 0;
+      margin-top: 1em;
+      overflow: auto;
+
+      span {
+        // font-size: 90%;
+        color: $med-gray;
+      }
+      div.bio {
+        border-top: 4px solid $gray;
+        border-bottom: 4px solid $gray;
+        overflow: auto;
+        padding: 1em 0;
+        margin: 2em 0 0.6em 0;
+        @include breakpoint(7up) {
+          padding: 0.6em 0;
+        }
+        img {
+        @include border-radius(50%);
+          width: $golden-ratio;
+          max-width: 200px;
+          display: block;
+          margin: 0 auto 0.4em auto;
+          padding: 0;
+          @include breakpoint(7up) {
+            width: 22%;
+            float: left;
+            margin: 0;
+          }
+        }
+        h4 {
+          display: block;
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          font-size: 110%;
+          text-align: center;
+          @include breakpoint(7up) {
+            margin-top: 1em;
+            float: right;
+            text-align: left;
+            width: 74%;
+          }
+        }
+        p {
+          @extend h4;
+          margin-top: 0;
+          font-family: $primary;
+          font-size: 90%;
+          color: $med-gray;
+          line-height: 140%;
+          margin-bottom: 1em;
+        }
+      }
+      span.flag {
+        float: right;
+      }
+    }
+  }
+} /* end body */
+
+.oops {
+  width: 300px;
+  height: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -250px 0 0 -150px;
+  overflow: auto;
+  @include breakpoint(7up) {
+    width: 500px;
+    height: 500px;
+    margin: -250px 0 0 -250px;
+  }
+  strong {
+    font-weight: 400;
+    display: block;
+    font-size: 140%;
+    color: $green;
+    white-space: wrap;
+    text-align: center;
+    margin: 0 0 0.4em 0;
+    padding: 0;
+    text-transform: uppercase;
+  }
+
+  img {
+    max-width: 100%;
+    margin: 0 auto 1em auto;
+    display: block;
+  }
+}

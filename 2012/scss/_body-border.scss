@@ -1,0 +1,27 @@
+.body-border {
+  width: 0.6em;
+  height: 100%;
+  position: fixed;
+  background-color: $green;
+  @include background-image-retina('noise-texture.png');
+  // @include background-image-retina('tiles.png');
+  @include breakpoint(phone) {
+    // display: none;
+  }
+  @include breakpoint(tablet) {
+    // display: none;
+  }
+  &.green {
+    background-color: $green;
+    z-index: 100;
+  }
+  &.white {
+    background-color: white;
+  }
+  &.left {
+    left: 0;
+  }
+  &.right {
+    right: 0;
+  }
+}

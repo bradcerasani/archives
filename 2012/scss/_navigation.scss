@@ -1,0 +1,171 @@
+header {
+  width: 100%;
+  overflow: auto;
+  margin-bottom: 1em;
+  border-bottom: 1px solid $lighter-gray;
+  @include rgba-background(rgba(white, 1));
+  @include breakpoint(7up) {
+    border-top: 6px solid $gray;
+  }
+  a.logo {
+    margin: 6px 0;
+    display: block;
+    padding-right: 20px;
+    width: 24px;
+    height: 32px;
+    float: left;
+    background: url('../images/assets/shedbot.svg') center;
+    background-repeat: no-repeat;
+    &.png {
+      background: url('../images/assets/shedbot.png') center!important;
+    }
+    &.blog {
+      width: 44px;
+      padding: 0;
+      float: none;
+      margin: 6px auto;
+    }
+    @include breakpoint(7up) {
+      padding-right: 0;
+      margin: 1em 0;
+      width: 33px;
+      height: 44px;
+      background-size: 33px 44px;
+    }
+    @include breakpoint(10up) {
+      width: 50px;
+      height: 66px;
+      background-size: 50px 66px;
+    }
+  }
+  a.menu {
+    color: inherit;
+    line-height: 32px;
+    float: right;
+    margin: 7px 0 5px 0;
+    text-align: right;
+    width: 44px;
+    height: 32px;
+    @include font-size(2, 3.2);
+    @include breakpoint(7up) {
+      display: none;
+    }
+  }
+  ul.wide-nav {
+    display: none;
+    @include breakpoint(7up) {
+      display: block;
+      height: 44px;
+      float: right;
+      margin: 1em 0;
+      padding: 0;
+    }
+    @include breakpoint(10up) {
+      height: 66px;
+    }
+    li {
+      float: left;
+      list-style: none;
+      line-height: 66px;
+      text-transform: uppercase;
+      color: $green;
+      line-height: 22px !important;
+      margin: 11px 0;
+      padding: 11px 0;
+      @include breakpoint(tablet) {
+        margin: 0;
+        padding: 0.6em 0;
+        line-height: 44px
+      }
+
+      a {
+        display: block;
+        padding: 0;
+        margin: 0 0.8em;
+        color: lighten($gray, 15%);
+        text-decoration: none;
+        @include transition-duration(0.1s);
+        &:hover {
+          color: $gray;
+        }
+        &.button {
+          margin-right: 0;
+          margin-left: 1em;
+          margin-top: -10px;
+          padding: 11px 24px 9px 24px;
+          font-weight: bold;
+          background-color: $green;
+          color: white;
+          @include background-image-retina('light-noise.png');
+          @include border-radius(3px);
+          @include font-size(1.8, 2.2);
+          @include breakpoint(tablet) {
+            @include font-size(1.6, 2.2);
+            margin-left: 0.6em;
+            margin-top: -7px;
+            padding: 7px 18px 5px 18px;
+
+          }
+          &:hover {
+            border: none;
+            background-color: lighten($green, 5%);
+          }
+          &:active {
+            border: none;
+            background-color: darken($green, 2%);
+          }
+        }
+      }
+    }
+  }
+}
+
+ul.ios-nav {
+  @extend.wrap;
+  display: none;
+  margin: -0.6em 0 1em 0;
+  padding: 0 0 0.4em 0;
+  list-style: none;
+  border-bottom: 1px solid $lighter-gray;
+  li {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    a {
+      position: relative;
+      @include border-radius(5px);
+      color: lighten($gray, 15%);
+      text-transform: uppercase;
+      display: block;
+      margin: 0.4em 0;
+      padding: 0.4em 2%;
+      @include rgba-background(rgba(white, 0.6));
+      &.button {
+        font-weight: bold;
+        color: white;
+        background-color: $green;
+        @include background-image-retina('noise-texture.png');
+        @include transition-duration(0.2s);
+        &:hover {
+            background-color: lighten($green, 5%);
+          }
+          &:active {
+            background-color: darken($green, 2%);
+          }
+        i {
+          position: absolute;
+          right: 0.4em;
+          width: 44px;
+          text-align: center;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+
+
+

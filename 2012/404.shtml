@@ -1,0 +1,36 @@
+ <!DOCTYPE HTML>
+<html>
+<head>
+	<title>Shedbot | 404 </title>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,maximum-scale=1.0">
+  <link rel="shortcut icon" href="/favicon.ico">
+	<link rel="stylesheet" type="text/css" media="all" href="/css/screen.css" />
+  <!--[if IE 7]><link rel="stylesheet" href="/css/icons-ie7.css"><![endif]-->
+  <!--[if IE]><link rel="stylesheet" href="/css/ie.css" /><![endif]-->
+  <!--[if IE]><script type="text/javascript" src="/js/respond.min.js"></script><![endif]-->
+
+  <script type="text/javascript" src="//use.typekit.net/dze2yzg.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+</head>
+
+<body>
+
+
+  <div class="oops">
+    <img src="/images/indiana-oops.gif" />
+    <strong>404 - file not found</strong>
+    I just moved a bunch of stuff, and may not have put it all back. Send me an <a href="mailto:brad@shedbot.com?subject=Error">email</a> if something is really messed up, or go <a href="http://shedbot.com">home</a> and try again.
+  </div>
+
+  <script src="/js/scripts-ck.js"></script>
+  <script>
+    $(document).ready(function () {
+      if (Modernizr.svg) { } else { $('.svg').addClass('png'); }
+    });
+  </script>
+
+</body>
+</html>

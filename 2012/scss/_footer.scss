@@ -1,0 +1,88 @@
+footer {
+  position: relative;
+  padding: 1em 0;
+  margin: 1em auto 0 auto;
+  overflow: auto;
+  text-transform: uppercase;
+  @include font-size(1.6, 4.8);
+  letter-spacing: 2px;
+  color: white;
+  border-top: 6px solid #191919;
+  background-color: #262626;
+  bottom: 0;
+  @include background-image-retina('light-noise.png');
+  @include breakpoint(7up) {
+   margin-top: 2em;
+   padding: 1.2em 0;
+  }
+
+  span {
+    position: relative;
+    font-size: 80%;
+    line-height: 36px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    @include breakpoint(10up) {
+      font-size: 100%;
+      width: auto;
+      &.left {
+        float: left;
+      }
+      &.right {
+        float: right;
+      }
+    }
+  }
+
+  span.flag {
+    margin: 0px 8px -2px 0;
+  }
+}
+
+a.up2 {
+  height: 48px;
+  text-align: center;
+  width: 98%;
+  display: block;
+  margin: 1em auto 0 auto;
+  @include rgba-background(rgba(black, 0.2));
+  @include transition-duration(0.2s);
+  @include border-radius(3px);
+  @include breakpoint(10up) {
+    width: 48px;
+    height: 48px;
+    @include border-radius(50%);
+    margin: -6px -54px 0 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: none;
+  }
+  i {
+    display: inline-block;
+    margin-left: 7px;
+    margin-top: 4px;
+    color: $light-gray;
+    @include rotate(-45deg);
+    @include font-size(2.8, 4.8);
+    @include transition-duration(0.2s);
+    @include breakpoint(10up) {
+      margin-top: 3px;
+      margin-left: 6px;
+    }
+  }
+  &:hover {
+    @include rgba-background(rgba(black, 0.2));
+  }
+  &:active {
+    i {
+      color: #b21100;
+    }
+  }
+}
+  a.gplus {
+    position: absolute;
+    margin-left: -9999px;
+  }
+

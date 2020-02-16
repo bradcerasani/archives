@@ -1,0 +1,45 @@
+@import "normalize";
+@import "compass/css3";
+@import "icons";
+@import "retina";
+@import "rgbapng";
+
+@mixin font-size($size:1.6, $line: $size * 1.6){
+    font-size:   ($size * 10) + px;
+    line-height: ($line * 10) + px;
+    font-size:   $size + rem;
+    line-height: $line + rem;
+}
+
+@mixin breakpoint($point) {
+  @if $point == maxwidth {
+    @media (min-width: 2000px) { @content; }
+  }
+  @if $point == widescreen {
+    @media (min-width: 1401px) { @content; }
+  }
+  @if $point == 10up {
+    @media (min-width: 961px) { @content; }
+  }
+  @if $point == desktop {
+    @media (min-width: 961px) and (max-width: 1400px) { @content; }
+  }
+  @if $point == tablet {
+    @media (min-width: 569px) and (max-width: 960px) { @content; }
+  }
+  @if $point == 7up {
+    @media (min-width: 569px) { @content; }
+  }
+  @else if $point == phone {
+    @media (max-width: 568px)  { @content; }
+  }
+}
+
+@mixin margin-left($width) {
+  margin-left: ((100% - $width)/2);
+}
+
+@mixin margin-right($width) {
+  margin-right: ((100% - $width)/2);
+}
+

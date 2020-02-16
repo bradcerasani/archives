@@ -1,0 +1,116 @@
+header {
+  width: 100%;
+  overflow: auto;
+  margin-bottom: 1em;
+  border-top: 6px solid $gray;
+  border-bottom: 1px solid $lighter-gray;
+  @include rgba-background(rgba(white, 1));
+  @include breakpoint(phone) {
+    border-top: none;
+    height: 44px !important;
+  }
+  a.logo {
+    margin: 0.6em 0;
+    display: block;
+    width: 50px;
+    height: 66px;
+    float: left;
+    @include background-image-retina('shed-squared.png');
+    @include breakpoint(phone) {
+      // @include rgba-background(rgba(lime, 1));
+      @include background-image-retina('assets/shedbot-32.png');
+      margin: 6px 0;
+      padding: 0;
+      width: 32px;
+      height: 32px;
+      background-repeat: no-repeat;
+    }
+    @include breakpoint(tablet) {
+      float: left;
+      background-size: 33px 44px;
+      width: 33px;
+      height: 44px;
+      background-repeat: no-repeat;
+    }
+    @include breakpoint(desktop) {
+      float: left;
+    }
+    @include breakpoint(widescreen) {
+      float: left;
+    }
+  }
+  a.menu {
+    color: inherit;
+    line-height: 32px;
+    float: right;
+    margin: 6px 0;
+    height: 32px;
+    @include font-size(2, 3.2);
+  }
+  ul {
+    float: right;
+    height: 66px;
+    margin: 0.6em 0;
+    padding: 0;
+    @include breakpoint(phone) {
+      display: none;
+    }
+    @include breakpoint(tablet) {
+      height: 44px;
+    }
+    li {
+      float: left;
+      list-style: none;
+      line-height: 66px;
+      text-transform: uppercase;
+      color: $green;
+      line-height: 22px !important;
+      margin: 11px 0;
+      padding: 11px 0;
+      @include breakpoint(phone) {
+        float: none;
+        margin: 0;
+        padding: 0.6em 0;
+        line-height: 44px
+      }
+      @include breakpoint(tablet) {
+        margin: 0;
+        padding: 0.6em 0;
+        line-height: 44px
+      }
+
+      a {
+        display: block;
+        padding: 0;
+        margin: 0 0.8em;
+        color: lighten($gray, 15%);
+        text-decoration: none;
+        @include transition-duration(0.1s);
+        &:hover {
+          color: $gray;
+        }
+        &.button {
+          margin-right: 0;
+          margin-left: 1em;
+          margin-top: -10px;
+          padding: 11px 24px 9px 24px;
+          font-weight: bold;
+          background-color: $green;
+          color: white;
+          white-space: nowrap;
+          @include background-image-retina('light-noise.png');
+          @include border-radius(3px);
+          @include font-size(1.8, 2.2);
+          &:hover {
+            border: none;
+            background-color: lighten($green, 5%);
+          }
+          &:active {
+            border: none;
+            background-color: darken($green, 2%);
+          }
+        }
+      }
+    }
+  }
+}

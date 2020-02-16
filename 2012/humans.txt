@@ -1,0 +1,21 @@
+# TEAM
+  Designer:     Brad Cerasani
+  Developer:    Brad Cerasani
+  Twitter:      @bradcerasani
+  Contact:      brad@shedbot.com
+  Website:      www.bradcerasani.me
+
+# SITE
+  Last update:  12/01/12
+  Language:     English
+  Doctype:      HTML5
+  Tools:        HTML, SCSS, jQuery
+
+  Made in Canada
+
+#
+  funny, when you're small
+  the moon follows the car
+  there's no one but you see
+  hey, the moon is chasing me
+
