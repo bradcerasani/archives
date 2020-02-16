@@ -43,7 +43,7 @@ div#header {
 div#logo {
 			margin: 0 0 0 4px;
 }
-	
+
 #menu {
 	margin: 43px 0 0 0 ;
 	z-index: 2;
@@ -56,7 +56,7 @@ ul#nav_menu {
 	margin: 0;
 	padding: 0;
 }
-	
+
 ul#nav_menu li, ul#nav_menu li a {
 	list-style-type: none;
 	display: inline;
@@ -74,12 +74,12 @@ ul#nav_menu li.spacer {
 	color: #49B749;
 	margin: 0 15px 0 15px;
 }
-	
+
 ul#nav_menu li a:hover {
 	color: #333333;
 	border-bottom: 2px solid #49B749;
 }
-	
+
 ul#nav_menu li#selected a {
 	color: #333333;
 	border-bottom: 2px solid #49B749;
@@ -94,7 +94,7 @@ div#feature {
 
 p {
 	margin: 0 0 18px 0;
-	
+
 }
 
 span.highlight {
@@ -150,7 +150,7 @@ h5 {
 h5:hover {
 border:none;
 }
-	
+
 div.main_copy {
 	margin: 17px 0 10px 6px;
 	line-height: 22px;
@@ -218,7 +218,7 @@ div.two_thirds {
 	margin: 0 0 0 0;
 	padding: 0 22px 10px 0;
 }
-	
+
 div.columns {
 	padding: 20px 0 10px 0;
 	overflow:auto;
@@ -231,7 +231,7 @@ div.stretch {
 
 span.skills {
 	color: #5e5e5e;
-	font-size: 13px;	
+	font-size: 13px;
 }
 
 span.green {
@@ -310,7 +310,7 @@ div#tag {
 	margin: 8px 0 8px 0;
 	background: url(../images/assets/tag.png) no-repeat;
 	width:292px;
-	height: 156px;	
+	height: 156px;
 	display: block;
 }
 
@@ -344,7 +344,7 @@ div.testimonial {
 	}
 
 ul.services {
-		
+
 }
 
 ul.services li {
@@ -412,7 +412,7 @@ div.gallery_frame {
 
 div.profile {
 	margin: 0 0 50px 0;
-	overflow: hidden;	
+	overflow: hidden;
 }
 
 div.service {
@@ -447,7 +447,7 @@ div#contact_column {
 	margin: -8px 0 40px 0;
 	line-height: 22px;
 	}
-	
+
 div#contact_column a{
 	display: block;
 	margin: 0 0 14px 0;
@@ -515,7 +515,7 @@ div.cd_frame {
 	background: url(../images/assets/cd_frame-nb2.png) no-repeat;
 	margin: 8px 0 0 0;
 	width: 703px;
-	height: 635px;	
+	height: 635px;
 }
 
 ul.image-grid {
@@ -570,13 +570,13 @@ ul#work_filter li.selected-1, ul#work_filter li.selected-0, ul#work_filter li.se
 div.sub_menu {
 	margin: 12px 0 0 6px;
 	height: 45px;
-	
+
 }
 
 .wufoo .info {
 	display:none
 }
-	
+
 
 div.info {
 	display:none;
@@ -764,12 +764,12 @@ div.testimonial_copy {
 	float: right;
 	line-height: 22px;
 	}
-	
+
 div.testimonial_copy p {
 	margin: 0 0 0 0;
 	padding: 0 0 10px 0;
 	}
-	
+
 div.testimonial_copy span, div.testimonial_copy span.skills {
 	font-family: rooney-web,sans-serif;
 	font-weight: 300;
@@ -852,14 +852,14 @@ img.quote {
 }
 
 img.texture {
-	position: absolute; 
-	z-index: -10; 
-	padding: 2px 0 0 6px;	
+	position: absolute;
+	z-index: -10;
+	padding: 2px 0 0 6px;
 }
 
 img.confirmation-texture {
-	position: absolute; 
-	z-index: -10; 
+	position: absolute;
+	z-index: -10;
 	margin: 0 0 0 4px;
 	border: 2px solid #f4f4f4;
 }
@@ -872,13 +872,13 @@ div#confirmation-screen {
 	margin: 40px 0 270px 32px;
 	padding: 29px 32px 0 32px;
 	line-height: 22px;
-	
+
 }
 
 img.phone-icon {
 	float: left;
 }
-	
+
 span.message {
 		font-family: rooney-web,sans-serif;
 	font-style: italic;
@@ -888,7 +888,7 @@ span.message {
 	line-height: 18px;
 	color: #666;
 	}
-	
+
 .bio-texture {
 	margin: -260px 0 0 6px;
 	position: absolute;
@@ -954,7 +954,7 @@ div.blog_body a:hover {
 }
 
 ol#posts {
-	
+
 }
 
 ol#posts li {
@@ -990,4 +990,8 @@ img.center {
 	margin-left: auto;
 	margin-right: auto;
 	overflow: auto;
-	}
+  }
+
+#fblike {
+  display: none !important;
+}
