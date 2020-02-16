@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Shedbot | Project Summary | LidWorks TO-GO Cradle</title>
+<meta name="description" content="Shedbot is a full service creative studio based in Winnipeg, Canada.  We specialize in clean, accessible web design and commercial photography.	" />
+<meta name="keywords" content="web design, websites, custom, creative, winnipeg, advertising, graphic design, photography, commercial, design, brad cerasani" />
+<meta name="abstract" content="Shedbot is a full service creative studio based in Winnipeg, Canada.  We specialize in clean, accessible web design and commercial photography.	" />
+<meta name="author" content="Brad Cerasani, brad@shedbot.com" />
+<meta name="copyright" content="2010 Shedbot - Brad Cerasani" />
+
+<link href="../css/reset.css" rel="stylesheet" type="text/css" />
+<link href="../css/mainstyles.css" rel="stylesheet" type="text/css" />
+<link href="../css/motion.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/jquery.blend-min.js"></script>
+<script type="text/javascript" src="../js/nomoreie/jquery.ie6blocker.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){$(".fadelogo, .fadebelieve, #tweet, #friend, #tumblr, .fadelinkedin").blend(300);});
+	$(function() {$('#slideshow').hide();
+	 	window.onload = function() {
+			$('#slideshow').delay(200).fadeIn(400);
+			$('.cd_loading').hide();
+			setInterval( "slideSwitch()", 4000 );
+		};
+	});
+	function slideSwitch() {
+    var $active = $('#slideshow IMG.active');
+    if ( $active.length == 0 ) $active = $('#slideshow IMG:last');
+    var $next =  $active.next().length ? $active.next()
+        : $('#slideshow IMG:first');
+    $active.addClass('last-active');
+    $next.css({opacity: 0.0})
+        .addClass('active')
+        .animate({opacity: 1.0}, 1000, function() {
+            $active.removeClass('active last-active');
+        });
+}
+</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5977667-11']);
+  _gaq.push(['_setDomainName', '.shedbot.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+<div id="line"></div>
+<div id="container">
+
+<!-- begin/header -->
+<div id="header">
+
+<div id="menu">
+    <ul id="nav_menu">
+      <li id="selected"><a href="/work.html">work</a></li>
+            <li class="spacer">//</li>
+            <li><a href="/raves.html">raves</a></li>
+      		<li class="spacer">//</li>
+      		<li><a href="/about.html">about</a></li>
+            <li class="spacer">//</li>
+            <li><a href="/contact.html">contact</a></li>
+  	</ul>
+</div>
+
+<!--begin/logo-->
+	<div id="logo">
+		<div class="fadelogo" onclick="location.href='/';" style="cursor:pointer;"></div>
+	</div>
+<!--end/logo-->
+
+</div>
+<!--end/header-->
+
+<div class="summary_column">
+	<h1>Project Summary</h1>
+    <h5>Client</h5>
+	<span class="skills">LidWorks</span>
+	<h5>Objective</h5>
+	<span class="skills">Design sell sheet and trade show banner with photography showcasing the convenience of the TO-GO Cradle.</span>
+    <h5>Work</h5>
+    <span class="skills">
+    	Graphic Design<br />
+		Photography
+    </span>
+</div>
+
+<div class="cd_frame">
+    <div class="cd_loading"><img src="../images/assets/loading.gif" alt="loading..." class="loading" /></div>
+   	<div id="slideshow">
+		<img src="../images/cd_content/lidworks/00.jpg" alt="LidWorks TO-GO Cradle" class="active" />
+   		<img src="../images/cd_content/lidworks/01.jpg" alt="LidWorks TO-GO Cradle"/>
+        <img src="../images/cd_content/lidworks/02.jpg" alt="LidWorks TO-GO Cradle"/>
+        <img src="../images/cd_content/lidworks/03.jpg" alt="LidWorks TO-GO Cradle"/>
+        <img src="../images/cd_content/lidworks/04.jpg" alt="LidWorks TO-GO Cradle"/>
+	</div>
+</div>
+
+<div class="summary_column_bottom">
+     <p class="button right"><a href="forevergold.html" class="back_link">next</a></p>
+     <p class="button left"><a href="bisons.html" class="back_link">prev.</a></p>
+     <!--<p class="back_link"><a href="../work.html" class="back_link">back to work page</a></p>-->
+</div>
+
+<!--start/footer-->
+<div id="footer">
+	<div class="fadebelieve" onclick="location.href='../contact.html';" style="cursor:pointer;"></div>
+		<div id="footer_text">Built with HTML, CSS, jQuery and care in Winnipeg, Manitoba, Canada. © Shedbot 2010</div>
+	<div id="social">
+    	<div id="fblike">
+        	<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fshedbot&amp;layout=button_count&amp;show_faces=false&amp;width=450&amp;action=like&amp;font=lucida+grande&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:85px; height:21px; float: left; margin: 5px 0 0 7px;" allowtransparency="true"  >
+            </iframe>
+        </div>
+		<div id="tweet" onclick="window.open('http://twitter.com/bradcerasani')" style="cursor:pointer;"></div>
+		<div id="friend" onclick="window.open('http://www.facebook.com/shedbot')" style="cursor:pointer;"></div>
+
+	</div>
+</div>
+<!--end/footer-->
+
+</div>
+<!--end/container-->
+
+</body>
+</html>
