@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,maximum-scale=1.0">
+
+  <title>bradcerasani.me</title>
+  <meta name="description" content="Brad Cerasani is a designer &amp; developer in Winnipeg, Manitoba, Canada."/>
+  <link rel="author" href="http://plus.google.com/111628796954215170971/"/>
+
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/brad-cerasani.jpg" />
+  <meta property="og:url" content="http://bradcerasani.me" />
+
+  <meta property="og:title" content="Brad Cerasani | Design &amp; Development" />
+  <meta property="og:site_name" content="Brad Cerasani | Design &amp; Development" />
+  <meta property="og:description" content="Brad Cerasani is a designer &amp; developer in Winnipeg, Manitoba, Canada." />
+
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon-precomposed" href="/icons/apple-touch-iphone.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/icons/apple-touch-ipad.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/icons/apple-touch-iphone-retina.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/icons/apple-touch-ipad-retina.png" />
+
+  <link rel="stylesheet" type="text/css" media="all" href="/css/screen.css" />
+
+  <script type="text/javascript" src="http://use.typekit.com/wqi3fjp.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+  <style>
+    html, body{
+      height: 100%;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+    }
+
+  </style>
+
+</head>
+
+<body>
+<div class="wrap end">
+  <img src="/images/brad-cerasani.jpg" alt="Brad Cerasani" class="portrait" />
+  <div class="social">
+    <a href="http://github.com/bradcerasani" target="_blank"><i class="icon-github-circled gh"></i></a>
+    <a href="http://ca.linkedin.com/in/bradcerasani/" target="_blank"><i class="icon-linkedin-circled li"></i></a>
+    <a href="http://instagram.com/bradcerasani" target="_blank"><i class="icon-instagram ig"></i></a>
+    <a href="http://twitter.com/bradcerasani" target="_blank"><i class="icon-twitter-circled tw"></i></a>
+    <a href="http://www.facebook.com/brad.cerasani" target="_blank"><i class="icon-facebook-circled fb"></i></a>
+  </div>
+  <h3>BradCerasani.me</h3>
+  <p>I'm a twenty-something year old guy from central Canada who specializes in responsive front-end design and development. I run a tiny design shop in Winnipeg called <a href="http://shedbot.com" target="_blank">Shedbot</a> that serves clients across Canada and beyond.</p>
+
+  <p>To get in touch, send me an <a href="mailto:bradcerasani@gmail.com" target="_blank">email</a> or say hi on <a href="http://twitter.com/shedbot" target="_blank">Twitter</a>.</p>
+
+  <p id="greeting"></p>
+</div>
+
+  <script>
+    var weekday = new Array(7);
+        weekday[0] = "Sunday.";
+        weekday[1] = "Monday.";
+        weekday[2] = "Tuesday.";
+        weekday[3] = "Wednesday.";
+        weekday[4] = "Thursday.";
+        weekday[5] = "Friday.";
+        weekday[6] = "Saturday.";
+
+    var day = new Date().getDay();
+    var greeting = document.getElementById('greeting');
+    greeting.innerText = 'Happy ' + weekday[day];
+
+
+    var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-5977667-28']);
+      _gaq.push(['_setDomainName', 'bradcerasani.me']);
+      _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+</body>
+</html>
