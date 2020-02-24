@@ -3,7 +3,7 @@
 
 body {
 	background-color: #ffffff;
-	background: url(../images/assets/bg.jpg) repeat ;
+	background: url(/images/assets/bg.jpg) repeat ;
 	background-attachment: fixed;
 	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 	font-size: 14px;
@@ -16,7 +16,7 @@ body {
 }
 
 div#line {
-	background: url(../images/assets/stripe.png) top left repeat-x ;
+	background: url(/images/assets/stripe.png) top left repeat-x ;
 	height: 5px;
 	position: relative;
 	display: block;
@@ -85,7 +85,7 @@ ul#nav_menu li#selected a {
 
 div#feature {
 	margin: 16px auto;
-	background: url(../images/assets/feature.png) no-repeat;
+	background: url(/images/assets/feature.png) no-repeat;
 	width: 978px;
 	height: 425px;
 }
@@ -215,7 +215,7 @@ p.link {
 p.back_link {
 	width: 212px;
 	height: 30px;
-	background: url(../images/assets/button_large.png) no-repeat;
+	background: url(/images/assets/button_large.png) no-repeat;
 	margin: 0 0 0 15px;
 	padding: 4px 0 0 0;
 	text-align: center;
@@ -255,7 +255,7 @@ p.testimonial_clip {
 
 div#tag {
 	margin: 8px 0 8px 0;
-	background: url(../images/assets/tag.png) no-repeat;
+	background: url(/images/assets/tag.png) no-repeat;
 	width:292px;
 	height: 156px;
 	display: block;
@@ -322,7 +322,7 @@ div.testimonial_copy {
 	font-style: italic;
 	line-height: 24px;
 	color: #464646;
-	background: url(../images/assets/quote.png) no-repeat;
+	background: url(/images/assets/quote.png) no-repeat;
 }
 
 div.rave_head {
@@ -340,7 +340,7 @@ p.signature {
 }
 
 div.frame {
-	background: url(../images/assets/frame.png) no-repeat;
+	background: url(/images/assets/frame.png) no-repeat;
 	margin: 0 0 80px 0;
 	float: left;
 	display: block;
@@ -349,7 +349,7 @@ div.frame {
 }
 
 div.small_frame {
-	background: url(../images/assets/small_frame.png) no-repeat;
+	background: url(/images/assets/small_frame.png) no-repeat;
 	margin: 0 0 0 0;
 	float: left;
 	display: block;
@@ -357,7 +357,7 @@ div.small_frame {
 }
 
 div.gallery_frame {
-	background: url(../images/assets/gallery_frame.png) no-repeat;
+	background: url(/images/assets/gallery_frame.png) no-repeat;
 	margin: 0 0 20px 0;
 	float: left;
 	display: block;
@@ -447,7 +447,7 @@ div#form {
 }
 
 div.cd_frame {
-	background: url(../images/assets/cd_frame.png) no-repeat;
+	background: url(/images/assets/cd_frame.png) no-repeat;
 	margin: 0 0 0 0;
 	width: 703px;
 	height: 635px;
@@ -462,7 +462,7 @@ ul.image-grid {
 }
 
 ul.image-grid li {
-	background: url(../images/assets/frame.png) no-repeat;
+	background: url(/images/assets/frame.png) no-repeat;
 	width: 316px;
 	height: 214px;
 	float: left;
@@ -500,7 +500,7 @@ ul#work_filter li a:hover {
 }
 
 ul#work_filter li.selected-1, ul#work_filter li.selected-0, ul#work_filter li.selected-2 {
-	background: url(../images/assets/button.png) no-repeat;
+	background: url(/images/assets/button.png) no-repeat;
 }
 
 div.sub_menu {

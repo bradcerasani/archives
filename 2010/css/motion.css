@@ -9,13 +9,13 @@
 			position:relative;
 			cursor:pointer;
 }
-		
+
 .slides {
 			position:absolute;
 			top:0;
 			left:0;
 }
-		
+
 .slides > div {
 			position:absolute;
 			top:0;
@@ -30,30 +30,30 @@
 			position:relative;
 			clear:both;
 }
-		
+
 ul.pagination {
 			display: none;
 			list-style:none;
 			padding:0;
 			margin:0;
 }
-		
+
 ul.pagination li  {
 			float:left;
 }
-		
+
 ul.pagination li a {
 			padding:2px 4px;
 }
-		
+
 ul.pagination li.active a {
 			background:blue;
 			color:white;
 }
-		
+
 div.feature_description {
-			display: block; 
-			float: right; 
+			display: block;
+			float: right;
 			width: 257px;
 			height: 393px;
 }
@@ -64,77 +64,77 @@ div.feature_description {
 	display:block;
 	height: 76px;
 	width: 235px;
-	background:url(../images/assets/shedbot_sprite.jpg) 0 0 no-repeat;
+	background:url(/images/assets/shedbot_sprite.jpg) 0 0 no-repeat;
 	margin:0 0 0 0;
 }
 
 .fadelogo:hover, .fadelogo.hover {
-	background:url(../images/assets/shedbot_sprite.jpg) 0 -76px no-repeat;
+	background:url(/images/assets/shedbot_sprite.jpg) 0 -76px no-repeat;
 }
-	
+
 /*twitter sprite*/
-	
+
 .fadetwitter {
 	float: left;
 	display:block;
 	height: 51px;
 	width: 50px;
-	background:url(../images/assets/twitter_sprite.jpg) 0 0 no-repeat;
+	background:url(/images/assets/twitter_sprite.jpg) 0 0 no-repeat;
 	margin:38px 0 0 14px;
 }
-	
+
 .fadetwitter:hover, .fadetwitter.hover {
-	background:url(../images/assets/twitter_sprite.jpg) 0 -51px no-repeat;
+	background:url(/images/assets/twitter_sprite.jpg) 0 -51px no-repeat;
 }
-	
+
 /*facebook sprite*/
-		
+
 .fadeface {
 	float: left;
 	display:block;
 	height: 50px;
 	width: 50px;
-	background:url(../images/assets/facebook_sprite.jpg) 0 0 no-repeat;
+	background:url(/images/assets/facebook_sprite.jpg) 0 0 no-repeat;
 	margin:47px 0 0 5px;
 }
 
 .fadeface:hover, .fadeface.hover {
-	background:url(../images/assets/facebook_sprite.jpg) 0 -50px no-repeat;
+	background:url(/images/assets/facebook_sprite.jpg) 0 -50px no-repeat;
 }
-	
+
 /*tumblr sprite*/
-		
+
 .fadetumblr {
 	float:left;
 	display:block;
 	height: 50px;
 	width: 50px;
-	background:url(../images/assets/tumblr_sprite.jpg) 0 0 no-repeat;
+	background:url(/images/assets/tumblr_sprite.jpg) 0 0 no-repeat;
 	margin:55px 0 0 5px;
 }
 
 .fadetumblr:hover, .fadetumblr.hover {
-	background:url(../images/assets/tumblr_sprite.jpg) 0 -50px no-repeat;
+	background:url(/images/assets/tumblr_sprite.jpg) 0 -50px no-repeat;
 }
 
 .fadebelieve {
 		display:block;
 		height: 66px;
 		width: 966px;
-		background:url(../images/assets/believe_sprite.jpg) 0 0 no-repeat;
+		background:url(/images/assets/believe_sprite.jpg) 0 0 no-repeat;
 		margin:0 0 15px 0;
 }
 
 
 .fadebelieve:hover, .fadebelieve.hover {
-		background:url(../images/assets/believe_sprite.jpg) 0 -66px no-repeat;
+		background:url(/images/assets/believe_sprite.jpg) 0 -66px no-repeat;
 }
 
 #slideshow {
     position:relative;
     margin: 32px 0 0 32px;
 	height: 400px;
-	
+
 }
 
 #slideshow IMG {
@@ -153,7 +153,7 @@ div.feature_description {
 }
 
 div#tweet {
-	background: url(../images/social/twitter.jpg) no-repeat;
+	background: url(/images/social/twitter.jpg) no-repeat;
 	height: 32px;
 	width: 32px;
 	float: left;
@@ -166,7 +166,7 @@ div#tweet:hover, div#tweet.hover {
 
 div.tiny_tweet {
 	margin: 0 2px 0 0;
-	background: url(../images/social/tiny_twitter.jpg) no-repeat;
+	background: url(/images/social/tiny_twitter.jpg) no-repeat;
 	height: 20px;
 	width: 20px;
 	float: left;
@@ -178,7 +178,7 @@ div.tiny_tweet:hover, div.tiny_tweet.hover {
 }
 
 div#friend {
-	background: url(../images/social/facebook.jpg) no-repeat;
+	background: url(/images/social/facebook.jpg) no-repeat;
 	height: 32px;
 	width: 32px;
 	float: left;
@@ -191,7 +191,7 @@ div#friend:hover, div#friend.hover {
 
 div.tiny_friend {
 	margin: 0 2px 0 0;
-	background: url(../images/social/tiny_facebook.jpg) no-repeat;
+	background: url(/images/social/tiny_facebook.jpg) no-repeat;
 	height: 20px;
 	width: 20px;
 	float: left;
@@ -203,7 +203,7 @@ div.tiny_friend:hover, div.tiny_friend.hover {
 }
 
 div#tumblr {
-	background: url(../images/social/tumblr.jpg) no-repeat;
+	background: url(/images/social/tumblr.jpg) no-repeat;
 	height: 32px;
 	width: 32px;
 	float: left;
@@ -216,7 +216,7 @@ div#tumblr:hover, div#tumblr.hover {
 
 div.tiny_tumblr {
 	margin: 0 2px 0 0;
-	background: url(../images/social/tiny_tumblr.jpg) no-repeat;
+	background: url(/images/social/tiny_tumblr.jpg) no-repeat;
 	height: 20px;
 	width: 20px;
 	float: left;
@@ -229,7 +229,7 @@ div.tiny_tumblr:hover, div.tiny_tumblr.hover {
 
 div.tiny_skype {
 	margin: 0 2px 0 0;
-	background: url(../images/social/tiny_skype.jpg) no-repeat;
+	background: url(/images/social/tiny_skype.jpg) no-repeat;
 	height: 20px;
 	width: 20px;
 	float: left;
@@ -242,7 +242,7 @@ div.tiny_skype:hover, div.tiny_skype.hover {
 
 div.tiny_formspring {
 	margin: 0 2px 0 0;
-	background: url(../images/social/tiny_formspring.jpg) no-repeat;
+	background: url(/images/social/tiny_formspring.jpg) no-repeat;
 	height: 20px;
 	width: 20px;
 	float: left;
@@ -254,7 +254,7 @@ div.tiny_formspring:hover, div.tiny_formspring.hover {
 }
 
 div.cd_loading {
-	background: url(../images/assets/shedbot_on.jpg) no-repeat;
+	background: url(/images/assets/shedbot_on.jpg) no-repeat;
 	margin: 157px 0 0 301px;
 	position: absolute;
 	width: 100px;
@@ -268,7 +268,7 @@ img.loading {
 div#shed {
 	width: 292px;
 	height: 165px;
-	background: url(../images/assets/shed.jpg) no-repeat;
+	background: url(/images/assets/shed.jpg) no-repeat;
 
 }
 
