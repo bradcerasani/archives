@@ -1,323 +1,536 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-<title>SHEDBOT | Raves </title>
-<meta name="description" content="Shedbot is a full service creative studio based in Winnipeg, Canada.  We specialize in clean, accessible web design and commercial photography.	" />
-<meta name="keywords" content="web design, websites, custom, creative, winnipeg, advertising, graphic design, photography, commercial, design, brad cerasani" />
-<meta name="abstract" content="Shedbot is a full service creative studio based in Winnipeg, Canada.  We specialize in clean, accessible web design and commercial photography.	" />
-<meta name="author" content="Brad Cerasani, brad@shedbot.com" />
-<meta name="copyright" content="2011 Shedbot - Brad Cerasani" />
+    <title>SHEDBOT | Raves</title>
+    <meta
+      name="description"
+      content="Shedbot is a full service creative studio based in Winnipeg, Canada.  We specialize in clean, accessible web design and commercial photography.	"
+    />
+    <meta
+      name="keywords"
+      content="web design, websites, custom, creative, winnipeg, advertising, graphic design, photography, commercial, design, brad cerasani"
+    />
+    <meta
+      name="abstract"
+      content="Shedbot is a full service creative studio based in Winnipeg, Canada.  We specialize in clean, accessible web design and commercial photography.	"
+    />
+    <meta name="author" content="Brad Cerasani, brad@shedbot.com" />
+    <meta name="copyright" content="2011 Shedbot - Brad Cerasani" />
 
-<link href="css/reset.css" rel="stylesheet" type="text/css" />
-<link href="css/mainstyles.css" rel="stylesheet" type="text/css" />
-<link href="css/motion.css" rel="stylesheet" type="text/css" />
+    <link href="/css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="/css/mainstyles.css" rel="stylesheet" type="text/css" />
+    <link href="/css/motion.css" rel="stylesheet" type="text/css" />
 
-<script type="text/javascript" src="http://use.typekit.com/agv2sck.js"></script>
-<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery.blend-min.js"></script>
-<script type="text/javascript" src="js/nomoreie/jquery.ie6blocker.js"></script>
-<script type="text/javascript">
-	$(document).ready(function(){$(".fadelogo, .fadebelieve, #tweet, #friend").blend(300);});
-	$(function() {$('.rave').hide();window.onload = function() {$('.rave').fadeIn(200);	};});
+    <script
+      type="text/javascript"
+      src="http://use.typekit.com/agv2sck.js"
+    ></script>
+    <script type="text/javascript">
+      try {
+        Typekit.load();
+      } catch (e) {}
+    </script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.blend-min.js"></script>
+    <script
+      type="text/javascript"
+      src="js/nomoreie/jquery.ie6blocker.js"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(".fadelogo, .fadebelieve, #tweet, #friend").blend(300);
+      });
+      $(function() {
+        $(".rave").hide();
+        window.onload = function() {
+          $(".rave").fadeIn(200);
+        };
+      });
 
-(function($){
-	$.fn.shuffle = function() {
-		return this.each(function(){
-			var items = $(this).children().clone(true);
-			return (items.length) ? $(this).html($.shuffle(items)) : this;
-		});
-	}
-	$.shuffle = function(arr) {
-		for(var j, x, i = arr.length; i; j = parseInt(Math.random() * i), x = arr[--i], arr[i] = arr[j], arr[j] = x);
-		return arr;
-	}
-})(jQuery);
+      (function($) {
+        $.fn.shuffle = function() {
+          return this.each(function() {
+            var items = $(this)
+              .children()
+              .clone(true);
+            return items.length ? $(this).html($.shuffle(items)) : this;
+          });
+        };
+        $.shuffle = function(arr) {
+          for (
+            var j, x, i = arr.length;
+            i;
+            j = parseInt(Math.random() * i),
+              x = arr[--i],
+              arr[i] = arr[j],
+              arr[j] = x
+          );
+          return arr;
+        };
+      })(jQuery);
 
-jQuery(function($) {
+      jQuery(function($) {
+        $("ul.raves_list").shuffle();
+      });
+    </script>
 
-$('ul.raves_list').shuffle();
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-5977667-28"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-});
+      gtag("config", "UA-5977667-28");
+    </script>
+  </head>
 
- var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-5977667-11']);
-  _gaq.push(['_setDomainName', '.shedbot.com']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-
-</head>
-
-<body>
-<div id="line"></div>
-<div id="container">
-
-<!-- begin/header -->
-<div id="header">
-
-<!-- navigation -->
-	<div id = "menu">
-    	<ul id = "nav_menu">
-   			<li><a href = "web/index.html">web</a></li>
-        <li class="spacer">//</li>
-        <li><a href = "photo/index.html">photo</a></li>
-        <li class="spacer">//</li>
-        <li><a href = "print/index.html">print</a></li>
-        <li class="spacer">//</li>
-        <li><a href = "about.html">about</a></li>
-        <li class="spacer">//</li>
-        <li id="selected"><a href = "#">raves</a></li>
-        <li class="spacer">//</li>
-        <li><a href = "wallpaper/index.html">wallpaper</a></li>
-        <li class="spacer">//</li>
-        <li><a href = "contact.html">contact</a></li>
-  		</ul>
-    </div>
-<!-- end/navigation -->
-
-<!--begin/logo-->
-	<div id="logo">
-		<div class="fadelogo" onclick="location.href='index.html';" style="cursor:pointer;"></div>
-	</div>
-<!--end/logo-->
-
-</div>
-<!--end/header-->
-
-<ul class="raves_list">
-
-
-<!-- start/box wrap -->
-<!-- start/testimonial -->
-<li>
-<div class="white-wrap_top" id="t_r4d"></div>
-	<div class="white-wrap_tile">
-
-        <div class="web_study">
-        <img src="images/assets/quote-dark.png" class="quote" />
-       		<div class="testimonial_copy">
-            	<h1>Room 4 Design</h1>
-				<h4><a href="web/index.html" class="contact_link">Web Design &amp; Development</a></h4>
-				<span class="skills">
-
-                	<p>Our experience with Shedbot was nothing short of a joy. Brad's dedication and prompt attention to our requests was exceptional! Don't let distance scare you away. Even though our business is located in Vancouver this was never a problem. Brad has exceeded our expectations, thank you.
-
-    				<span class="signature"> - Gita Wood, Room 4 Design</span></p>
-				</span>
-    		</div>
-    		<div class="frame" onclick="location.href='work/r4d.html';" style="cursor:pointer;">
-    			<img class="portrait" src="images/work/thumbs/r4d.jpg" />
-    		</div>
-    </div>
-</div>
-<div class="white-wrap_bottom"></div>
-</li>
-<!-- end/testimonial -->
-<!--end/box wrap-->
-
-<!-- start/box wrap -->
-<!-- start/testimonial -->
-<li>
-<div class="white-wrap_top" id="t_tj"></div>
-	<div class="white-wrap_tile">
-
-        <div class="web_study">
-        <img src="images/assets/quote-dark.png" class="quote" />
-       		<div class="testimonial_copy">
-            	<h1>TJ's Gift Foundation</h1>
-				<h4><a href="photo/index.html" class="contact_link">Event Photography</a></h4>
-				<span class="skills">
-
-                	<p>What can I say about Brad Cerasani... other than what a remarkable person, number one, and secondly what an incredible photographer! I only recently got to know Brad, and in that short time I realized what an asset he has been to our organization, the TJ's Gift Foundation. Our Foundation is very personal to my family, as it was formed after the murder of our 20 year old son, T.J. Wiebe. This "personal" feeling affects everything we do, and Brad's photography brought that feeling even closer. At our "Rockin for Choices" concert at MTS Centre, Brad took incredible shots that captured the event like no one else could have. There is one particular shot he took of my wife and I addressing the crowd... It was perfect... He chose a certain position to capture that "personal" feeling, with the stage lights that spotlighted that "personal" touch. Brad is one of the only photographers I have met that actually has his heart in every shot he takes. Thank you so much Brad...
-
-    				<span class="signature"> - Floyd &amp; Karen Wiebe, TJ's Gift Foundation</span></p>
-				</span>
-    		</div>
-    		<div class="frame" onclick="location.href='work/tjsgift.html';" style="cursor:pointer;">
-    			<img class="portrait" src="images/work/thumbs/tjsgift.jpg" alt="TJ's Gift Foundation" />
-    		</div>
-    </div>
-</div>
-<div class="white-wrap_bottom"></div>
-</li>
-<!-- end/testimonial profile -->
-<!--end/box wrap-->
-
-<!-- start/box wrap -->
-<!-- start/testimonial -->
-<li>
-<div class="white-wrap_top" id="t_bf"></div>
-	<div class="white-wrap_tile">
-
-        <div class="web_study">
-        <img src="images/assets/quote-dark.png" class="quote" />
-       		<div class="testimonial_copy">
-            	<h1>All Access Music Series/Driven Entertainment</h1>
-				<h4><a href="photo/index.html" class="contact_link">Event Photography</a></h4>
-				<span class="skills">
-
-                	<p>The work is 2nd to none. The pictures you captured of the All Access Music series with Brent Fitz were the best we had all tour! It really captured what we are trying to do with this series and It shone an amazing light on what Dave has created with his Drum Talk sessions. Thanks again and I can't wait to see what you have in store for us in the future.
-
-    				<span class="signature"> - Brent Donnelly, All Access/Driven Entertainment</span></p>
-				</span>
-    		</div>
-    		<div class="frame" onclick="location.href='work/brentfitz.html';" style="cursor:pointer;">
-    			<img class="portrait" src="images/work/thumbs/fitz.jpg" alt="All Access - Brent Fitz" />
-    		</div>
-    </div>
-</div>
-<div class="white-wrap_bottom"></div>
-</li>
-<!-- end/testimonial profile -->
-<!--end/box wrap-->
-
-<!-- start/box wrap -->
-<!-- start/testimonial -->
-<li>
-<div class="white-wrap_top" id="t_hh"></div>
-	<div class="white-wrap_tile">
-
-        <div class="web_study">
-        <img src="images/assets/quote-dark.png" class="quote" />
-       		<div class="testimonial_copy">
-            	<h1>Hallmark Homes</h1>
-				<h4><a href="photo/index.html" class="contact_link">Event Photography</a><br /><a href="web/index.html" class="contact_link">Web Design &amp; Development</a></h4>
-				<span class="skills">
-
-                	<p>Brad,</p>
-                    <p>Just thought I’d drop you a note regarding all the unbelievable work you have done for us.  As you already know, our web experience was extremely limited, but you managed to speak a language we could understand. My father and I had previously started with a different web company that took over a year and countless dollars before we finally gave up. That’s when you stepped in. You listen to us, evaluated our needs and took over from there. You explained things we needed to know (even something’s we didn’t.…code) but that was our fault for asking. You guided us through the entire process, making positive suggestions along the way, exceeding all of our expectations. We quickly learned to trust your experience, expertise and integrity. As far as your photography, it is amazing. How you can get that perfect picture every time, I’ll never know (all that fancy equipment I’m sure helps).  Our website (also being maintained by you) has been up for a while now and is generating all kinds of leads and activity.</p>
-                    <p>“Thank you for all your help” does not seem to do justice for everything you have done, but that and a “Cheque” I’m sure helps.
-
-    				<span class="signature"> - Sean Checkley, Hallmark Homes</span></p>
-				</span>
-    		</div>
-    		<div class="frame" onclick="location.href='work/hallmarkhomes.html';" style="cursor:pointer;">
-    			<img class="portrait" src="images/work/thumbs/hallmark_homes.jpg" alt="Hallmark Homes" />
-    		</div>
-    </div>
-</div>
-<div class="white-wrap_bottom"></div>
-</li>
-<!-- end/testimonial profile -->
-<!--end/box wrap-->
-
-<!-- start/box wrap -->
-<!-- start/testimonial -->
-<li>
-<div class="white-wrap_top" id="t_fg"></div>
-	<div class="white-wrap_tile">
-
-        <div class="web_study">
-        <img src="images/assets/quote-dark.png" class="quote" />
-       		<div class="testimonial_copy">
-            	<h1>Forever Gold</h1>
-				<h4><a href="photo/index.html" class="contact_link">Promotional Photography</a></h4>
-				<span class="skills">
-
-                    <p>Whenever we're in need of new band photo's we know just who to call! Brad is an extremely talented and versatile photographer who can capture an image like no other. We've used his services multiple times now and have always been very impressed by the quality of both his photo's and his dedication to getting a great shot. Whether it means getting soaking all wet lying down in dewy grass, or fighting off swarms of mosquitoes, Brad will get the shot! I highly recommend his services - he is great at what he does and is a pleasure to work with.
-
-    				<span class="signature"> - Dane Arbuckle, Forever Gold</span></p>
-				</span>
-    		</div>
-    		<div class="frame" onclick="location.href='work/forevergold.html';" style="cursor:pointer;">
-    			<img class="portrait" src="images/work/thumbs/forever_gold.jpg" alt="Forever Gold" />
-    		</div>
-    </div>
-</div>
-<div class="white-wrap_bottom"></div>
-</li>
-<!-- end/testimonial profile -->
-<!--end/box wrap-->
-
-<!-- start/box wrap -->
-<!-- start/testimonial -->
-<li>
-<div class="white-wrap_top" id="t_m60"></div>
-	<div class="white-wrap_tile">
-
-        <div class="web_study">
-        <img src="images/assets/quote-dark.png" class="quote" />
-       		<div class="testimonial_copy">
-            	<h1>Maximum 60</h1>
-				<h4><a href="photo/index.html" class="contact_link">Promotional Photography</a></h4>
-				<span class="skills">
-
-                    <p>We've had the pleasure of working with Brad on several occasions during the last few years, and have nothing but great things to say about him. His work ethic is astounding, and you will notice this immediately when viewing his samples. Whether it is photography or anything design related you're looking for, we could not recommend anyone more talented and fun to work with!
-
-    				<span class="signature"> - Lyle MacKenzie, Maximum 60</span></p>
-				</span>
-    		</div>
-    		<div class="frame" onclick="location.href='work/maximumsixty.html';" style="cursor:pointer;">
-    			<img class="portrait" src="images/work/thumbs/maximum_60.jpg" alt="Forever Gold" />
-    		</div>
-    </div>
-</div>
-<div class="white-wrap_bottom"></div>
-</li>
-<!-- end/testimonial profile -->
-<!-- end/box wrap -->
-
-</ul>
-
-<!-- start/cta footer -->
-<!-- start/box wra p-->
-<div class="white-wrap_top"></div>
-	<div class="white-wrap_tile">
-
-        <div class="web_study">
-            <div class="third">
-            	<img src="images/assets/shed.png" height="50" width="50" alt="Shedbot" class="icon"/>
-            	<h5>Learn how we help business.</h5>
-        		<a href="web/index.html" class="contact_link">Web Design &amp; Development</a><br />
-                <a href="photo/index.html" class="contact_link">Commercial Photography</a><br />
-                <a href="print/index.html" class="contact_link">Print Design &amp; Delivery</a>
-            </div>
-            <div class="third">
-            	<img src="images/assets/wallpapers.png" style="margin:4px 0 0 0;" alt="Shedbot" class="icon"/>
-            	<h5>Hey look, free stuff.</h5>
-        		<span class="skills">Download free, high resolution desktop wallpapers.</span><br />
-                <div class="green-button"><a href="wallpaper/index.html" class="learn-more">continue</a></div>
-            </div>
-            <div class="third" style="padding-right: 0;">
-            	<img src="images/assets/mail.png" height="50" width="57" alt="Shedbot" class="icon"/>
-            	<h5>Contact us today.</h5>
-        		<span class="skills">Ready to get started?  Let's get the ball rolling today.</span><br />
-                <div class="green-button"><a href="contact.html" class="learn-more">continue</a></div>
-            </div>
+  <body>
+    <div id="line"></div>
+    <div id="container">
+      <!-- begin/header -->
+      <div id="header">
+        <!-- navigation -->
+        <div id="menu">
+          <ul id="nav_menu">
+            <li><a href="/web/">web</a></li>
+            <li class="spacer">//</li>
+            <li><a href="/photo/">photo</a></li>
+            <li class="spacer">//</li>
+            <li><a href="/print/">print</a></li>
+            <li class="spacer">//</li>
+            <li><a href="about.html">about</a></li>
+            <li class="spacer">//</li>
+            <li id="selected"><a href="#">raves</a></li>
+            <li class="spacer">//</li>
+            <li><a href="wallpaper/index.html">wallpaper</a></li>
+            <li class="spacer">//</li>
+            <li><a href="contact.html">contact</a></li>
+          </ul>
         </div>
+        <!-- end/navigation -->
 
-    </div>
-<div class="white-wrap_bottom"></div>
-<!-- end/box wrap -->
-<!-- end/cta footer -->
+        <!--begin/logo-->
+        <div id="logo">
+          <div
+            class="fadelogo"
+            onclick="location.href='/';"
+            style="cursor:pointer;"
+          ></div>
+        </div>
+        <!--end/logo-->
+      </div>
+      <!--end/header-->
 
+      <ul class="raves_list">
+        <!-- start/box wrap -->
+        <!-- start/testimonial -->
+        <li>
+          <div class="white-wrap_top" id="t_r4d"></div>
+          <div class="white-wrap_tile">
+            <div class="web_study">
+              <img src="/images/assets/quote-dark.png" class="quote" />
+              <div class="testimonial_copy">
+                <h1>Room 4 Design</h1>
+                <h4>
+                  <a href="/web/" class="contact_link"
+                    >Web Design &amp; Development</a
+                  >
+                </h4>
+                <span class="skills">
+                  <p>
+                    Our experience with Shedbot was nothing short of a joy.
+                    Brad's dedication and prompt attention to our requests was
+                    exceptional! Don't let distance scare you away. Even though
+                    our business is located in Vancouver this was never a
+                    problem. Brad has exceeded our expectations, thank you.
 
-<!--start/footer-->
-<div id="footer">
-	<div class="fadebelieve" onclick="location.href='contact.html';" style="cursor:pointer;"></div>
-		<div id="footer_text">Built with HTML, CSS, jQuery and care in Winnipeg, Manitoba, Canada. © Shedbot 2011</div>
-	<div id="social">
-    	<div id="fblike">
-        	<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fshedbot&amp;layout=button_count&amp;show_faces=false&amp;width=450&amp;action=like&amp;font=lucida+grande&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:85px; height:21px; float: left; margin: 5px 0 0 7px;" allowtransparency="true"  >
+                    <span class="signature"> - Gita Wood, Room 4 Design</span>
+                  </p>
+                </span>
+              </div>
+              <div
+                class="frame"
+                onclick="location.href='work/r4d.html';"
+                style="cursor:pointer;"
+              >
+                <img class="portrait" src="/images/work/thumbs/r4d.jpg" />
+              </div>
+            </div>
+          </div>
+          <div class="white-wrap_bottom"></div>
+        </li>
+        <!-- end/testimonial -->
+        <!--end/box wrap-->
+
+        <!-- start/box wrap -->
+        <!-- start/testimonial -->
+        <li>
+          <div class="white-wrap_top" id="t_tj"></div>
+          <div class="white-wrap_tile">
+            <div class="web_study">
+              <img src="/images/assets/quote-dark.png" class="quote" />
+              <div class="testimonial_copy">
+                <h1>TJ's Gift Foundation</h1>
+                <h4>
+                  <a href="/photo/" class="contact_link">Event Photography</a>
+                </h4>
+                <span class="skills">
+                  <p>
+                    What can I say about Brad Cerasani... other than what a
+                    remarkable person, number one, and secondly what an
+                    incredible photographer! I only recently got to know Brad,
+                    and in that short time I realized what an asset he has been
+                    to our organization, the TJ's Gift Foundation. Our
+                    Foundation is very personal to my family, as it was formed
+                    after the murder of our 20 year old son, T.J. Wiebe. This
+                    "personal" feeling affects everything we do, and Brad's
+                    photography brought that feeling even closer. At our "Rockin
+                    for Choices" concert at MTS Centre, Brad took incredible
+                    shots that captured the event like no one else could have.
+                    There is one particular shot he took of my wife and I
+                    addressing the crowd... It was perfect... He chose a certain
+                    position to capture that "personal" feeling, with the stage
+                    lights that spotlighted that "personal" touch. Brad is one
+                    of the only photographers I have met that actually has his
+                    heart in every shot he takes. Thank you so much Brad...
+
+                    <span class="signature">
+                      - Floyd &amp; Karen Wiebe, TJ's Gift Foundation</span
+                    >
+                  </p>
+                </span>
+              </div>
+              <div
+                class="frame"
+                onclick="location.href='work/tjsgift.html';"
+                style="cursor:pointer;"
+              >
+                <img
+                  class="portrait"
+                  src="/images/work/thumbs/tjsgift.jpg"
+                  alt="TJ's Gift Foundation"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="white-wrap_bottom"></div>
+        </li>
+        <!-- end/testimonial profile -->
+        <!--end/box wrap-->
+
+        <!-- start/box wrap -->
+        <!-- start/testimonial -->
+        <li>
+          <div class="white-wrap_top" id="t_bf"></div>
+          <div class="white-wrap_tile">
+            <div class="web_study">
+              <img src="/images/assets/quote-dark.png" class="quote" />
+              <div class="testimonial_copy">
+                <h1>All Access Music Series/Driven Entertainment</h1>
+                <h4>
+                  <a href="/photo/" class="contact_link">Event Photography</a>
+                </h4>
+                <span class="skills">
+                  <p>
+                    The work is 2nd to none. The pictures you captured of the
+                    All Access Music series with Brent Fitz were the best we had
+                    all tour! It really captured what we are trying to do with
+                    this series and It shone an amazing light on what Dave has
+                    created with his Drum Talk sessions. Thanks again and I
+                    can't wait to see what you have in store for us in the
+                    future.
+
+                    <span class="signature">
+                      - Brent Donnelly, All Access/Driven Entertainment</span
+                    >
+                  </p>
+                </span>
+              </div>
+              <div
+                class="frame"
+                onclick="location.href='work/brentfitz.html';"
+                style="cursor:pointer;"
+              >
+                <img
+                  class="portrait"
+                  src="/images/work/thumbs/fitz.jpg"
+                  alt="All Access - Brent Fitz"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="white-wrap_bottom"></div>
+        </li>
+        <!-- end/testimonial profile -->
+        <!--end/box wrap-->
+
+        <!-- start/box wrap -->
+        <!-- start/testimonial -->
+        <li>
+          <div class="white-wrap_top" id="t_hh"></div>
+          <div class="white-wrap_tile">
+            <div class="web_study">
+              <img src="/images/assets/quote-dark.png" class="quote" />
+              <div class="testimonial_copy">
+                <h1>Hallmark Homes</h1>
+                <h4>
+                  <a href="/photo/" class="contact_link">Event Photography</a
+                  ><br /><a href="/web/" class="contact_link"
+                    >Web Design &amp; Development</a
+                  >
+                </h4>
+                <span class="skills">
+                  <p>Brad,</p>
+                  <p>
+                    Just thought I’d drop you a note regarding all the
+                    unbelievable work you have done for us. As you already know,
+                    our web experience was extremely limited, but you managed to
+                    speak a language we could understand. My father and I had
+                    previously started with a different web company that took
+                    over a year and countless dollars before we finally gave up.
+                    That’s when you stepped in. You listen to us, evaluated our
+                    needs and took over from there. You explained things we
+                    needed to know (even something’s we didn’t.…code) but that
+                    was our fault for asking. You guided us through the entire
+                    process, making positive suggestions along the way,
+                    exceeding all of our expectations. We quickly learned to
+                    trust your experience, expertise and integrity. As far as
+                    your photography, it is amazing. How you can get that
+                    perfect picture every time, I’ll never know (all that fancy
+                    equipment I’m sure helps). Our website (also being
+                    maintained by you) has been up for a while now and is
+                    generating all kinds of leads and activity.
+                  </p>
+                  <p>
+                    “Thank you for all your help” does not seem to do justice
+                    for everything you have done, but that and a “Cheque” I’m
+                    sure helps.
+
+                    <span class="signature">
+                      - Sean Checkley, Hallmark Homes</span
+                    >
+                  </p>
+                </span>
+              </div>
+              <div
+                class="frame"
+                onclick="location.href='work/hallmarkhomes.html';"
+                style="cursor:pointer;"
+              >
+                <img
+                  class="portrait"
+                  src="/images/work/thumbs/hallmark_homes.jpg"
+                  alt="Hallmark Homes"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="white-wrap_bottom"></div>
+        </li>
+        <!-- end/testimonial profile -->
+        <!--end/box wrap-->
+
+        <!-- start/box wrap -->
+        <!-- start/testimonial -->
+        <li>
+          <div class="white-wrap_top" id="t_fg"></div>
+          <div class="white-wrap_tile">
+            <div class="web_study">
+              <img src="/images/assets/quote-dark.png" class="quote" />
+              <div class="testimonial_copy">
+                <h1>Forever Gold</h1>
+                <h4>
+                  <a href="/photo/" class="contact_link"
+                    >Promotional Photography</a
+                  >
+                </h4>
+                <span class="skills">
+                  <p>
+                    Whenever we're in need of new band photo's we know just who
+                    to call! Brad is an extremely talented and versatile
+                    photographer who can capture an image like no other. We've
+                    used his services multiple times now and have always been
+                    very impressed by the quality of both his photo's and his
+                    dedication to getting a great shot. Whether it means getting
+                    soaking all wet lying down in dewy grass, or fighting off
+                    swarms of mosquitoes, Brad will get the shot! I highly
+                    recommend his services - he is great at what he does and is
+                    a pleasure to work with.
+
+                    <span class="signature">
+                      - Dane Arbuckle, Forever Gold</span
+                    >
+                  </p>
+                </span>
+              </div>
+              <div
+                class="frame"
+                onclick="location.href='work/forevergold.html';"
+                style="cursor:pointer;"
+              >
+                <img
+                  class="portrait"
+                  src="/images/work/thumbs/forever_gold.jpg"
+                  alt="Forever Gold"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="white-wrap_bottom"></div>
+        </li>
+        <!-- end/testimonial profile -->
+        <!--end/box wrap-->
+
+        <!-- start/box wrap -->
+        <!-- start/testimonial -->
+        <li>
+          <div class="white-wrap_top" id="t_m60"></div>
+          <div class="white-wrap_tile">
+            <div class="web_study">
+              <img src="/images/assets/quote-dark.png" class="quote" />
+              <div class="testimonial_copy">
+                <h1>Maximum 60</h1>
+                <h4>
+                  <a href="/photo/" class="contact_link"
+                    >Promotional Photography</a
+                  >
+                </h4>
+                <span class="skills">
+                  <p>
+                    We've had the pleasure of working with Brad on several
+                    occasions during the last few years, and have nothing but
+                    great things to say about him. His work ethic is astounding,
+                    and you will notice this immediately when viewing his
+                    samples. Whether it is photography or anything design
+                    related you're looking for, we could not recommend anyone
+                    more talented and fun to work with!
+
+                    <span class="signature"> - Lyle MacKenzie, Maximum 60</span>
+                  </p>
+                </span>
+              </div>
+              <div
+                class="frame"
+                onclick="location.href='work/maximumsixty.html';"
+                style="cursor:pointer;"
+              >
+                <img
+                  class="portrait"
+                  src="/images/work/thumbs/maximum_60.jpg"
+                  alt="Forever Gold"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="white-wrap_bottom"></div>
+        </li>
+        <!-- end/testimonial profile -->
+        <!-- end/box wrap -->
+      </ul>
+
+      <!-- start/cta footer -->
+      <!-- start/box wra p-->
+      <div class="white-wrap_top"></div>
+      <div class="white-wrap_tile">
+        <div class="web_study">
+          <div class="third">
+            <img
+              src="/images/assets/shed.png"
+              height="50"
+              width="50"
+              alt="Shedbot"
+              class="icon"
+            />
+            <h5>Learn how we help business.</h5>
+            <a href="/web/" class="contact_link">Web Design &amp; Development</a
+            ><br />
+            <a href="/photo/" class="contact_link">Commercial Photography</a
+            ><br />
+            <a href="/print/" class="contact_link"
+              >Print Design &amp; Delivery</a
+            >
+          </div>
+          <div class="third">
+            <img
+              src="/images/assets/wallpapers.png"
+              style="margin:4px 0 0 0;"
+              alt="Shedbot"
+              class="icon"
+            />
+            <h5>Hey look, free stuff.</h5>
+            <span class="skills"
+              >Download free, high resolution desktop wallpapers.</span
+            ><br />
+            <div class="green-button">
+              <a href="wallpaper/index.html" class="learn-more">continue</a>
+            </div>
+          </div>
+          <div class="third" style="padding-right: 0;">
+            <img
+              src="/images/assets/mail.png"
+              height="50"
+              width="57"
+              alt="Shedbot"
+              class="icon"
+            />
+            <h5>Contact us today.</h5>
+            <span class="skills"
+              >Ready to get started? Let's get the ball rolling today.</span
+            ><br />
+            <div class="green-button">
+              <a href="contact.html" class="learn-more">continue</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="white-wrap_bottom"></div>
+      <!-- end/box wrap -->
+      <!-- end/cta footer -->
+
+      <!--start/footer-->
+      <div id="footer">
+        <div
+          class="fadebelieve"
+          onclick="location.href='contact.html';"
+          style="cursor:pointer;"
+        ></div>
+        <div id="footer_text">
+          Built with HTML, CSS, jQuery and care in Winnipeg, Manitoba, Canada. ©
+          Shedbot 2011
+        </div>
+        <div id="social">
+          <div id="fblike">
+            <iframe
+              src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fshedbot&amp;layout=button_count&amp;show_faces=false&amp;width=450&amp;action=like&amp;font=lucida+grande&amp;colorscheme=light&amp;height=21"
+              scrolling="no"
+              frameborder="0"
+              style="border:none; overflow:hidden; width:85px; height:21px; float: left; margin: 5px 0 0 7px;"
+              allowtransparency="true"
+            >
             </iframe>
+          </div>
+          <div
+            id="tweet"
+            onclick="window.open('http://twitter.com/bradcerasani')"
+            style="cursor:pointer;"
+          ></div>
+          <div
+            id="friend"
+            onclick="window.open('http://www.facebook.com/shedbot')"
+            style="cursor:pointer;"
+          ></div>
         </div>
-		<div id="tweet" onclick="window.open('http://twitter.com/bradcerasani')" style="cursor:pointer;"></div>
-		<div id="friend" onclick="window.open('http://www.facebook.com/shedbot')" style="cursor:pointer;"></div>
-	</div>
-</div>
-<!--end/footer-->
-
-</div>
-<!--end/container-->
-
-</body>
+      </div>
+      <!--end/footer-->
+    </div>
+    <!--end/container-->
+  </body>
 </html>

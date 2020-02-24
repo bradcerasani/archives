@@ -1,661 +1,132 @@
-@charset "UTF-8";
-/* CSS Document */
-
-#feature-slides .slides_container {
-			margin: 0 0 0 7px;
-			width:964px;
-			height:480px;
-			display:none;
-		}
-
-#feature-slides .slides_container div {
-			width:964px;
-			height:480px;
-			display:block;
-		}
-		
-#web-slides .slides_container {
-			padding: 2px 0 0 0;
-			margin: 0 0 0 4px;
-			width:274px;
-			display:none;
-		}
-		
-#web-slides .slides_container div {
-			width:274px;
-			height: 183px;
-			display:block;
-		}
-		
-#print-slides .slides_container {
-			padding: 2px 0 0 0;
-			margin: 0 0 0 4px;
-			width:274px;
-			display:none;
-		}
-		
-#print-slides .slides_container div {
-			width:274px;
-			height: 183px;
-			display:block;
-		}
-		
-#photo-slides .slides_container {
-			padding: 2px 0 0 0;
-			margin: 0 0 0 4px;
-			width:274px;
-			display:none;
-		}
-		
-#photo-slides .slides_container div {
-			width:274px;
-			height: 183px;
-			display:block;
-		}
-		
-#slides_a {
-	position:absolute;
-	margin: 3px 0 0 4px;
-	z-index:100;
-}
-		
-#slides_a .slides_container {
-			margin: 0 0 0 0;
-			width: 420px;
-			display:none;
-		}
-		
-#slides_a .slides_container div {
-			width: 420px;
-			height: 482px;
-			display:block;
-		}
-		
-#slides_b {
-	position:absolute;
-	margin: 3px 0 0 4px;
-	z-index:100;
-}
-		
-#slides_b .slides_container {
-			margin: 0 0 0 0;
-			width: 420px;
-			display:none;
-		}
-		
-#slides_b .slides_container div {
-			width: 420px;
-			height: 482px;
-			display:block;
-		}
-		
-#slides_c {
-	position:absolute;
-	margin: 3px 0 0 4px;
-	z-index:100;
-}
-		
-#slides_c .slides_container {
-			margin: 0 0 0 0;
-			width: 420px;
-			display:none;
-		}
-		
-#slides_c .slides_container div {
-			width: 420px;
-			height: 482px;
-			display:block;
-		}
-		
-#slides_d {
-	position:absolute;
-	margin: 2px 0 0 4px;
-	z-index:100;
-}
-		
-#slides_d .slides_container {
-			margin: 0 0 0 0;
-			width: 420px;
-			display:none;
-		}
-		
-#slides_d .slides_container div {
-			width: 420px;
-			height:  280px;
-			display:block;
-		}
-		
-#slides_e {
-	position:absolute;
-	margin: 2px 0 0 4px;
-	z-index:100;
-}
-		
-#slides_e .slides_container {
-			margin: 0 0 0 0;
-			width: 420px;
-			display:none;
-		}
-		
-#slides_e .slides_container div {
-			width: 420px;
-			height:  280px;
-			display:block;
-		}
-		
-#slides_f {
-	position:absolute;
-	margin: 2px 0 0 4px;
-	z-index:100;
-}
-		
-#slides_f .slides_container {
-			margin: 0 0 0 0;
-			width: 420px;
-			display:none;
-		}
-		
-#slides_f .slides_container div {
-			width: 420px;
-			height:  280px;
-			display:block;
-		}
-
-#slidepush {
-			margin:0;
-			padding: 3px 0 0 0;
-			width:966px;
-			position:relative;
-			clear:both;
-}
-
-/*
-	
-ul.pagination {
-			display: none;
-			list-style:none;
-			padding:0;
-			margin:0;
-}
-		
-ul.pagination li  {
-			float:left;
-}
-		
-ul.pagination li a {
-			padding:2px 4px;
-}
-		
-ul.pagination li.active a {
-			background:blue;
-			color:white;
-}
-	
-*/
-
-div.feature_description {
-			display: block; 
-			float: right; 
-			width: 257px;
-			height: 393px;
-}
-
-/*logo sprite*/
-
-.fadelogo {
-	display:block;
-	height: 60px;
-	width: 235px;
-	background:url(../images/assets/shedbot_sprite.jpg) 0 0 no-repeat;
-	margin:0 0 0 0;
-	z-index: 1;
-}
-
-.fadelogo:hover, .fadelogo.hover {
-	background:url(../images/assets/shedbot_sprite.jpg) 0 -60px no-repeat;
-}
-	
-/*twitter sprite*/
-	
-.fadetwitter {
-	float: left;
-	display:block;
-	height: 51px;
-	width: 50px;
-	background:url(../images/assets/twitter_sprite.jpg) 0 0 no-repeat;
-	margin:38px 0 0 14px;
-}
-	
-.fadetwitter:hover, .fadetwitter.hover {
-	background:url(../images/assets/twitter_sprite.jpg) 0 -51px no-repeat;
-}
-	
-/*facebook sprite*/
-		
-.fadeface {
-	float: left;
-	display:block;
-	height: 50px;
-	width: 50px;
-	background:url(../images/assets/facebook_sprite.jpg) 0 0 no-repeat;
-	margin:47px 0 0 5px;
-}
-
-.fadeface:hover, .fadeface.hover {
-	background:url(../images/assets/facebook_sprite.jpg) 0 -50px no-repeat;
-}
-	
-/*tumblr sprite*/
-		
-.fadetumblr {
-	float:left;
-	display:block;
-	height: 50px;
-	width: 50px;
-	background:url(../images/assets/tumblr_sprite.jpg) 0 0 no-repeat;
-	margin:55px 0 0 5px;
-}
-
-.fadetumblr:hover, .fadetumblr.hover {
-	background:url(../images/assets/tumblr_sprite.jpg) 0 -50px no-repeat;
-}
-
-.fadebelieve {
-		display:block;
-		height: 68px;
-		width: 978px;
-		background:url(../images/assets/believe_sprite_lg.jpg) 0 0 no-repeat;
-		margin:0 0 12px 0;
-}
-
-
-.fadebelieve:hover, .fadebelieve.hover {
-		background:url(../images/assets/believe_sprite_lg.jpg) 0 -68px no-repeat;
-}
-
-#slideshow {
-    position: absolute;
-    margin: 32px 0 0 32px;
-	height: 400px;
-	
-}
-
-#slideshow IMG {
-    position:absolute;
-    top:0;
-    left:0;
-    z-index:8;
-}
-
-#slideshow IMG.active {
-    z-index:10;
-}
-
-#slideshow IMG.last-active {
-    z-index:9;
-}
-
-
-/* &&&&&&&&&&&& */
-
-#slideshow_lg {
-    position:absolute;
-    margin: 46px 0 0 47px;
-	height: 553px;
-}
-
-#slideshow_lg IMG {
-    position:absolute;
-    top:0;
-    left:0;
-    z-index:8;
-}
-
-#slideshow_lg IMG.active {
-    z-index:10;
-}
-
-#slideshow_lg IMG.last-active {
-    z-index:9;
-}
-
-div#fblike {
-	background: url(../images/social/fb_like.jpg) no-repeat;
-	height: 32px;
-	width: 100px;
-	float: left;
-	display: block;
-}
-
-div#tweet {
-	background: url(../images/social/twitter.jpg) no-repeat;
-	height: 32px;
-	width: 32px;
-	float: left;
-	display: block;
-}
-
-div#tweet:hover, div#tweet.hover {
-	background-position: 0 -32px;
-}
-
-div.tiny_tweet {
-	margin: 0 2px 0 0;
-	background: url(../images/social/tiny_twitter.png) no-repeat;
-	height: 20px;
-	width: 20px;
-	float: left;
-	display: block;
-}
-
-div.tiny_tweet:active {
-	background-position: 0 -20px;
-}
-
-div.tiny_stumble {
-	margin: 0 2px 0 0;
-	background: url(../images/social/tiny_stumble.png) no-repeat;
-	height: 20px;
-	width: 20px;
-	float: left;
-	display: block;
-}
-
-div.tiny_stumble:active {
-	background-position: 0 -20px;
-}
-
-div#friend {
-	background: url(../images/social/facebook.jpg) no-repeat;
-	height: 32px;
-	width: 32px;
-	float: left;
-	display: block;
-}
-
-div#friend:hover, div#friend.hover {
-	background-position: 0 -32px;
-}
-
-div.tiny_friend {
-	margin: 0 2px 0 0;
-	background: url(../images/social/tiny_facebook.png) no-repeat;
-	height: 20px;
-	width: 20px;
-	float: left;
-	display: block;
-}
-
-div.tiny_friend:active {
-	background-position: 0 -20px;
-}
-
-div#tumblr {
-	background: url(../images/social/tumblr.jpg) no-repeat;
-	height: 32px;
-	width: 32px;
-	float: left;
-	display: block;
-}
-
-div#tumblr:hover, div#tumblr.hover {
-	background-position: 0 -32px;
-}
-
-div.tiny_tumblr {
-	margin: 0 2px 0 0;
-	background: url(../images/social/tiny_tumblr.png) no-repeat;
-	height: 20px;
-	width: 20px;
-	float: left;
-	display: block;
-}
-
-div.tiny_tumblr:active {
-	background-position: 0 -20px;
-}
-
-div.tiny_skype {
-	margin: 0 2px 0 0;
-	background: url(../images/social/tiny_skype.jpg) no-repeat;
-	height: 20px;
-	width: 20px;
-	float: left;
-	display: block;
-}
-
-div.tiny_skype:hover, div.tiny_skype.hover {
-	background-position: 0 -20px;
-}
-
-div.tiny_formspring {
-	margin: 0 2px 0 0;
-	background: url(../images/social/tiny_formspring.jpg) no-repeat;
-	height: 20px;
-	width: 20px;
-	float: left;
-	display: block;
-}
-
-div.tiny_formspring:hover, div.tiny_formspring.hover {
-	background-position: 0 -20px;
-}
-
-div.cd_loading {
-	background: url(../images/assets/shedbot_on.jpg) no-repeat;
-	margin: 157px 0 0 301px;
-	position: absolute;
-	width: 100px;
-	height: 150px;
-}
-
-div.cd_loading_lg {
-	background: url(../images/assets/shedbot_on_lg.jpg) no-repeat;
-	margin: 48px 0 0 49px;
-	position: absolute;
-	width: 880px;
-	height: 550px;
-}
-
-img.loading_lg {
-	margin: 320px 0 0 428px;
-}
-
-
-img.loading {
-	margin: 100px 0 0 38px;
-}
-
-div#shed {
-	width: 292px;
-	height: 165px;
-	background: url(../images/assets/shed.jpg) no-repeat;
-
-}
-
-div#shed:hover, div#shed.hover {
-	background-position: 0 -165px;
-
-}
-
-/* trigger button */
-#download_now {
-	background:transparent url(/img/home/download.png) no-repeat scroll 0 0;
-	display:block;
-	height:44px;
-	margin-bottom:30px;
-	overflow:hidden;
-	text-indent:-999em;
-	width:159px;
-	cursor:pointer;
-}
-
-/* mouseover state */
-#download_now:hover {
-	background-position:0 -44px ;		
-}
-
-/* clicked state */
-#download_now:focus {
-	background-position:0 -88px;
-}
-
-/* tooltip styling */
-.tooltip {
-	display:none;
-	background:url(http://static.flowplayer.org/tools/img/tooltip/black_arrow_big.png);
-	height:163px;
-	padding:40px 30px 10px 30px;
-	width:310px;
-	font-size:11px;
-	color:#fff;
-}
-
-/* a .label element inside tooltip */
-.tooltip .label {
-	color:yellow;
-	width:35px;
-}
-
-.tooltip a {
-	color:#ad4;
-	font-size:11px;
-	font-weight:bold;
-}
-
-/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
-
-/*
-	Slideshow
-*/
-
-#slides_lgcd {
-	position:absolute;
-	top:46px;
-	left:47px;
-	z-index:100;
-}
-
-#slides_lgcd .slides_container {
-	width:884px;
-	overflow:hidden;
-	position:relative;
-	display:none;
-}
-
-#slides_lgcd .slides_container a {
-	width:884px;
-	height:553px;
-	display:block;
-}
-
-#slides_lgcd .slides_container a img {
-	display:block;
-}
-
-#slides_lgcd .pagination {
-	padding: 15px 0 0 0;
-	margin: 5px 0 0 -2px;
-	height: 20px;
-	display: block;
-}
-
-#slides_lgcd .pagination li {
-	float: left;
-	margin:0 1px;
-	list-style:none;
-}
-
-#slides_lgcd .pagination li a {
-	display:block;
-	width:12px;
-	height:0;
-	padding-top:12px;
-	background-image:url(../images/assets/pagination.png);
-	background-position:0 0;
-	float: left;
-	overflow:hidden;
-}
-
-#slides_lgcd .pagination li.current a {
-	background-position:0 -12px;
-}
-
-#wallpaper-slides {
-	position:absolute;
-	margin: 32px 0 0 32px;
-	z-index:100;
-}
-
-#wallpaper-slides .slides_container {
-	width:638px;
-	overflow:hidden;
-	position:relative;
-	display:none;
-}
-
-#wallpaper-slides .slides_container a {
-	width:638px;
-	height:400px;
-	display:block;
-}
-
-#wallpaper-slides .slides_container a img {
-	display:block;
-}
-
-/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
-
-div.web_frame {
-	background: url(../images/assets/web-frame.png) no-repeat;
-	width: 430px;
-	height: 492px;
-	margin: -3px 0 0 -3px;
-	position: relative;
-}
-
-div.wallpaper-frame {
-	background: url(../images/assets/wallpaper-frame.png) no-repeat;
-	width: 430px;
-	height: 270px;
-	margin: -3px 0 0 -3px;
-	position: relative;
-}
-
-div.photo-frame {
-	background: url(../images/assets/3.2-frame.png) no-repeat;
-	width: 430px;
-	height: 290px;
-	margin: -3px 0 0 -3px;
-	position: relative;
-}
-
-div.wallpaper-frame IMG {
-	margin: 2px 0 0 4px;
-}
-
-#wallpaper-slides .pagination {
-	border-radius:5px;
-}
-
-#wallpaper-slides .pagination li {
-	float:left;
-	margin: 4px 0 0 4px;
-	list-style:none;
-	background: url(../images/assets/tiny-frame.png) no-repeat;
-	width: 80px;
-	height: 50px;
-}
-
-#wallpaper-slides .pagination li a {
-	display:block;
-	width: 80px;
-	height: 50px;
-	float: left;
-	padding: 2px 0 0 3px;
-}
-
-#wallpaper-slides .pagination li.current a {
-	background: url(../images/assets/tiny-frame-active.png) no-repeat;
-}
-
+@charset "UTF-8"; /* CSS Document */ #feature-slides .slides_container { margin:
+0 0 0 7px; width:964px; height:480px; display:none; } #feature-slides
+.slides_container div { width:964px; height:480px; display:block; } #web-slides
+.slides_container { padding: 2px 0 0 0; margin: 0 0 0 4px; width:274px;
+display:none; } #web-slides .slides_container div { width:274px; height: 183px;
+display:block; } #print-slides .slides_container { padding: 2px 0 0 0; margin: 0
+0 0 4px; width:274px; display:none; } #print-slides .slides_container div {
+width:274px; height: 183px; display:block; } #photo-slides .slides_container {
+padding: 2px 0 0 0; margin: 0 0 0 4px; width:274px; display:none; }
+#photo-slides .slides_container div { width:274px; height: 183px; display:block;
+} #slides_a { position:absolute; margin: 3px 0 0 4px; z-index:100; } #slides_a
+.slides_container { margin: 0 0 0 0; width: 420px; display:none; } #slides_a
+.slides_container div { width: 420px; height: 482px; display:block; } #slides_b
+{ position:absolute; margin: 3px 0 0 4px; z-index:100; } #slides_b
+.slides_container { margin: 0 0 0 0; width: 420px; display:none; } #slides_b
+.slides_container div { width: 420px; height: 482px; display:block; } #slides_c
+{ position:absolute; margin: 3px 0 0 4px; z-index:100; } #slides_c
+.slides_container { margin: 0 0 0 0; width: 420px; display:none; } #slides_c
+.slides_container div { width: 420px; height: 482px; display:block; } #slides_d
+{ position:absolute; margin: 2px 0 0 4px; z-index:100; } #slides_d
+.slides_container { margin: 0 0 0 0; width: 420px; display:none; } #slides_d
+.slides_container div { width: 420px; height: 280px; display:block; } #slides_e
+{ position:absolute; margin: 2px 0 0 4px; z-index:100; } #slides_e
+.slides_container { margin: 0 0 0 0; width: 420px; display:none; } #slides_e
+.slides_container div { width: 420px; height: 280px; display:block; } #slides_f
+{ position:absolute; margin: 2px 0 0 4px; z-index:100; } #slides_f
+.slides_container { margin: 0 0 0 0; width: 420px; display:none; } #slides_f
+.slides_container div { width: 420px; height: 280px; display:block; } #slidepush
+{ margin:0; padding: 3px 0 0 0; width:966px; position:relative; clear:both; } /*
+ul.pagination { display: none; list-style:none; padding:0; margin:0; }
+ul.pagination li { float:left; } ul.pagination li a { padding:2px 4px; }
+ul.pagination li.active a { background:blue; color:white; } */
+div.feature_description { display: block; float: right; width: 257px; height:
+393px; } /*logo sprite*/ .fadelogo { display:block; height: 60px; width: 235px;
+background:url(/images/assets/shedbot_sprite.jpg) 0 0 no-repeat; margin:0 0 0 0;
+z-index: 1; } .fadelogo:hover, .fadelogo.hover {
+background:url(/images/assets/shedbot_sprite.jpg) 0 -60px no-repeat; } /*twitter
+sprite*/ .fadetwitter { float: left; display:block; height: 51px; width: 50px;
+background:url(/images/assets/twitter_sprite.jpg) 0 0 no-repeat; margin:38px 0 0
+14px; } .fadetwitter:hover, .fadetwitter.hover {
+background:url(/images/assets/twitter_sprite.jpg) 0 -51px no-repeat; }
+/*facebook sprite*/ .fadeface { float: left; display:block; height: 50px; width:
+50px; background:url(/images/assets/facebook_sprite.jpg) 0 0 no-repeat;
+margin:47px 0 0 5px; } .fadeface:hover, .fadeface.hover {
+background:url(/images/assets/facebook_sprite.jpg) 0 -50px no-repeat; } /*tumblr
+sprite*/ .fadetumblr { float:left; display:block; height: 50px; width: 50px;
+background:url(/images/assets/tumblr_sprite.jpg) 0 0 no-repeat; margin:55px 0 0
+5px; } .fadetumblr:hover, .fadetumblr.hover {
+background:url(/images/assets/tumblr_sprite.jpg) 0 -50px no-repeat; }
+.fadebelieve { display:block; height: 68px; width: 978px;
+background:url(/images/assets/believe_sprite_lg.jpg) 0 0 no-repeat; margin:0 0
+12px 0; } .fadebelieve:hover, .fadebelieve.hover {
+background:url(/images/assets/believe_sprite_lg.jpg) 0 -68px no-repeat; }
+#slideshow { position: absolute; margin: 32px 0 0 32px; height: 400px; }
+#slideshow IMG { position:absolute; top:0; left:0; z-index:8; } #slideshow
+IMG.active { z-index:10; } #slideshow IMG.last-active { z-index:9; } /*
+&&&&&&&&&&&& */ #slideshow_lg { position:absolute; margin: 46px 0 0 47px;
+height: 553px; } #slideshow_lg IMG { position:absolute; top:0; left:0;
+z-index:8; } #slideshow_lg IMG.active { z-index:10; } #slideshow_lg
+IMG.last-active { z-index:9; } div#fblike { background:
+url(/images/social/fb_like.jpg) no-repeat; height: 32px; width: 100px; float:
+left; display: block; } div#tweet { background: url(/images/social/twitter.jpg)
+no-repeat; height: 32px; width: 32px; float: left; display: block; }
+div#tweet:hover, div#tweet.hover { background-position: 0 -32px; }
+div.tiny_tweet { margin: 0 2px 0 0; background:
+url(/images/social/tiny_twitter.png) no-repeat; height: 20px; width: 20px;
+float: left; display: block; } div.tiny_tweet:active { background-position: 0
+-20px; } div.tiny_stumble { margin: 0 2px 0 0; background:
+url(/images/social/tiny_stumble.png) no-repeat; height: 20px; width: 20px;
+float: left; display: block; } div.tiny_stumble:active { background-position: 0
+-20px; } div#friend { background: url(/images/social/facebook.jpg) no-repeat;
+height: 32px; width: 32px; float: left; display: block; } div#friend:hover,
+div#friend.hover { background-position: 0 -32px; } div.tiny_friend { margin: 0
+2px 0 0; background: url(/images/social/tiny_facebook.png) no-repeat; height:
+20px; width: 20px; float: left; display: block; } div.tiny_friend:active {
+background-position: 0 -20px; } div#tumblr { background:
+url(/images/social/tumblr.jpg) no-repeat; height: 32px; width: 32px; float:
+left; display: block; } div#tumblr:hover, div#tumblr.hover {
+background-position: 0 -32px; } div.tiny_tumblr { margin: 0 2px 0 0; background:
+url(/images/social/tiny_tumblr.png) no-repeat; height: 20px; width: 20px; float:
+left; display: block; } div.tiny_tumblr:active { background-position: 0 -20px; }
+div.tiny_skype { margin: 0 2px 0 0; background:
+url(/images/social/tiny_skype.jpg) no-repeat; height: 20px; width: 20px; float:
+left; display: block; } div.tiny_skype:hover, div.tiny_skype.hover {
+background-position: 0 -20px; } div.tiny_formspring { margin: 0 2px 0 0;
+background: url(/images/social/tiny_formspring.jpg) no-repeat; height: 20px;
+width: 20px; float: left; display: block; } div.tiny_formspring:hover,
+div.tiny_formspring.hover { background-position: 0 -20px; } div.cd_loading {
+background: url(/images/assets/shedbot_on.jpg) no-repeat; margin: 157px 0 0
+301px; position: absolute; width: 100px; height: 150px; } div.cd_loading_lg {
+background: url(/images/assets/shedbot_on_lg.jpg) no-repeat; margin: 48px 0 0
+49px; position: absolute; width: 880px; height: 550px; } img.loading_lg {
+margin: 320px 0 0 428px; } img.loading { margin: 100px 0 0 38px; } div#shed {
+width: 292px; height: 165px; background: url(/images/assets/shed.jpg) no-repeat;
+} div#shed:hover, div#shed.hover { background-position: 0 -165px; } /* trigger
+button */ /* mouseover state */ #download_now:hover { background-position:0
+-44px ; } /* clicked state */ #download_now:focus { background-position:0 -88px;
+} /* tooltip styling */ .tooltip { display:none;
+background:url(http://static.flowplayer.org/tools/img/tooltip/black_arrow_big.png);
+height:163px; padding:40px 30px 10px 30px; width:310px; font-size:11px;
+color:#fff; } /* a .label element inside tooltip */ .tooltip .label {
+color:yellow; width:35px; } .tooltip a { color:#ad4; font-size:11px;
+font-weight:bold; } /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */ /*
+Slideshow */ #slides_lgcd { position:absolute; top:46px; left:47px; z-index:100;
+} #slides_lgcd .slides_container { width:884px; overflow:hidden;
+position:relative; display:none; } #slides_lgcd .slides_container a {
+width:884px; height:553px; display:block; } #slides_lgcd .slides_container a img
+{ display:block; } #slides_lgcd .pagination { padding: 15px 0 0 0; margin: 5px 0
+0 -2px; height: 20px; display: block; } #slides_lgcd .pagination li { float:
+left; margin:0 1px; list-style:none; } #slides_lgcd .pagination li a {
+display:block; width:12px; height:0; padding-top:12px;
+background-image:url(/images/assets/pagination.png); background-position:0 0;
+float: left; overflow:hidden; } #slides_lgcd .pagination li.current a {
+background-position:0 -12px; } #wallpaper-slides { position:absolute; margin:
+32px 0 0 32px; z-index:100; } #wallpaper-slides .slides_container { width:638px;
+overflow:hidden; position:relative; display:none; } #wallpaper-slides
+.slides_container a { width:638px; height:400px; display:block; }
+#wallpaper-slides .slides_container a img { display:block; } /*
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */ div.web_frame { background:
+url(/images/assets/web-frame.png) no-repeat; width: 430px; height: 492px;
+margin: -3px 0 0 -3px; position: relative; } div.wallpaper-frame { background:
+url(/images/assets/wallpaper-frame.png) no-repeat; width: 430px; height: 270px;
+margin: -3px 0 0 -3px; position: relative; } div.photo-frame { background:
+url(/images/assets/3.2-frame.png) no-repeat; width: 430px; height: 290px;
+margin: -3px 0 0 -3px; position: relative; } div.wallpaper-frame IMG { margin:
+2px 0 0 4px; } #wallpaper-slides .pagination { border-radius:5px; }
+#wallpaper-slides .pagination li { float:left; margin: 4px 0 0 4px;
+list-style:none; background: url(/images/assets/tiny-frame.png) no-repeat;
+width: 80px; height: 50px; } #wallpaper-slides .pagination li a { display:block;
+width: 80px; height: 50px; float: left; padding: 2px 0 0 3px; }
+#wallpaper-slides .pagination li.current a { background:
+url(/images/assets/tiny-frame-active.png) no-repeat; }

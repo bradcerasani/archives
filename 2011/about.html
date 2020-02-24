@@ -1,181 +1,283 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-<title>SHEDBOT | About</title>
-<meta name="description" content="Shedbot is a full service creative studio based in Winnipeg, Canada.  We specialize in clean, accessible web design and commercial photography.	" />
-<meta name="keywords" content="web design, websites, custom, creative, winnipeg, advertising, graphic design, photography, commercial, design, brad cerasani" />
-<meta name="abstract" content="Shedbot is a full service creative studio based in Winnipeg, Canada.  We specialize in clean, accessible web design and commercial photography.	" />
-<meta name="author" content="Brad Cerasani, brad@shedbot.com" />
-<meta name="copyright" content="2011 Shedbot - Brad Cerasani" />
+    <title>SHEDBOT | About</title>
+    <meta
+      name="description"
+      content="Shedbot is a full service creative studio based in Winnipeg, Canada.  We specialize in clean, accessible web design and commercial photography.	"
+    />
+    <meta
+      name="keywords"
+      content="web design, websites, custom, creative, winnipeg, advertising, graphic design, photography, commercial, design, brad cerasani"
+    />
+    <meta
+      name="abstract"
+      content="Shedbot is a full service creative studio based in Winnipeg, Canada.  We specialize in clean, accessible web design and commercial photography.	"
+    />
+    <meta name="author" content="Brad Cerasani, brad@shedbot.com" />
+    <meta name="copyright" content="2011 Shedbot - Brad Cerasani" />
 
-<link href="css/reset.css" rel="stylesheet" type="text/css" />
-<link href="css/mainstyles.css" rel="stylesheet" type="text/css" />
-<link href="css/motion.css" rel="stylesheet" type="text/css" />
+    <link href="/css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="/css/mainstyles.css" rel="stylesheet" type="text/css" />
+    <link href="/css/motion.css" rel="stylesheet" type="text/css" />
 
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery.blend-min.js"></script>
-<script type="text/javascript" src="js/nomoreie/jquery.ie6blocker.js"></script>
-<script type="text/javascript">
-	$(document).ready(function(){$(".fadelogo, .fadebelieve, #tweet, #friend").blend(300);});
-	$(function() {$('.portrait').hide();window.onload = function() {$('.portrait').fadeIn(200);	};});
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.blend-min.js"></script>
+    <script
+      type="text/javascript"
+      src="js/nomoreie/jquery.ie6blocker.js"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(".fadelogo, .fadebelieve, #tweet, #friend").blend(300);
+      });
+      $(function() {
+        $(".portrait").hide();
+        window.onload = function() {
+          $(".portrait").fadeIn(200);
+        };
+      });
+    </script>
 
-	var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-5977667-11']);
-  _gaq.push(['_setDomainName', '.shedbot.com']);
-  _gaq.push(['_trackPageview']);
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-5977667-28"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+      gtag("config", "UA-5977667-28");
+    </script>
+  </head>
 
-</script>
-
-</head>
-
-<body>
-<div id="line"></div>
-<div id="container">
-
-<!-- begin/header -->
-<div id="header">
-
-<!-- navigation -->
-	<div id = "menu">
-    	<ul id = "nav_menu">
-        <li><a href="/web/index.html">web</a></li>
-        <li class="spacer">//</li>
-        <li><a href="/photo/index.html">photo</a></li>
-        <li class="spacer">//</li>
-        <li><a href="/print/index.html">print</a></li>
-        <li class="spacer">//</li>
-        <li id="selected"><a href="/about.html">about</a></li>
-        <li class="spacer">//</li>
-        <li><a href="/raves.html">raves</a></li>
-        <li class="spacer">//</li>
-        <li><a href="/wallpaper/index.html">wallpaper</a></li>
-        <li class="spacer">//</li>
-        <li><a href="/contact.html">contact</a></li>
-  		</ul>
-    </div>
-<!-- end/navigation -->
-
-<!--begin/logo-->
-	<div id="logo">
-		<div class="fadelogo" onclick="location.href='index.html';" style="cursor:pointer;"></div>
-	</div>
-<!--end/logo-->
-
-</div>
-<!--end/header-->
-
-<!-- start/box wrap -->
-<!-- start/about profile -->
-<div class="white-wrap_top"></div>
-	<div class="white-wrap_tile">
-
-        <div class="web_study">
-       		<div class="about_copy">
-            	<h1>Brad Cerasani</h1>
-				<h4>Principal</h4>
-                <div class="social">
-            		<div class="tiny_tweet" onclick="window.open('http://twitter.com/bradcerasani')" style="cursor:pointer;"></div>
-            		<div class="tiny_friend" onclick="window.open('http://www.facebook.com/brad.cerasani')" style="cursor:pointer;"></div>
-                    <div class="tiny_tumblr" onclick="window.open('http://blog.shedbot.com')" style="cursor:pointer;"></div>
-            	</div>
-				<span class="skills">
-                	<p>Brad Cerasani is a designer, photographer, and obsessive organizer from Winnipeg, Canada.  He sold musical instruments at Quest Musique in Winnipeg for a few years before moving into creative work full time in 2010.  When not culling and editing photos or burying himself in code, you’ll likely find him hanging out with his band Hoist or working on a vintage electric piano. He organizes clothes by colour and denim by wash, and will someday write a book on cable management.
-                	</p>
-
-					<p>Right now he's loving the sounds of Wilco, Drake, Lights and K-OS.</p>
-				</span>
-
-    		</div>
-    		<div class="frame">
-    			<img src="images/about/brad_cerasani.jpg" alt="Brad Cerasani" class="portrait"/>
-    		</div>
-    </div>
-</div>
-<div class="white-wrap_bottom"></div>
-<!-- end/about profile -->
-<!--end/box wrap-->
-
-<!-- start/box wrap -->
-<!-- start/about profile -->
-<div class="white-wrap_top"></div>
-	<div class="white-wrap_tile">
-
-        <div class="web_study">
-       		<div class="about_copy">
-            	<h1>Panda</h1>
-				<h4>The Boss</h4>
-                <span class="skills">
-                	<p>Panda arrived on exchange from Japan in 2008 and now happily calls Winnipeg home.  Due a brief quarrel with Brad’s dog T-Pain in late 2009, Panda permanently wears a Spiderman Band-Aid adjacent to his right ear to keep himself round and awesome.  If asked politely, Panda can teach you how to dougie.
-                    </p>
-				</span>
-
-    		</div>
-    		<div class="frame">
-    			<img src="images/about/panda.jpg" alt="Shedbot Panda" class="portrait"/>
-    		</div>
-    </div>
-</div>
-<div class="white-wrap_bottom"></div>
-<!-- end/about profile -->
-<!--end/box wrap-->
-
-<!-- start/cta footer -->
-<!-- start/box wra p-->
-<div class="white-wrap_top"></div>
-	<div class="white-wrap_tile">
-
-        <div class="web_study">
-            <div class="third">
-            	<img src="images/assets/shed.png" height="50" width="50" alt="Shedbot" class="icon"/>
-            	<h5>See how we push business.</h5>
-        		<a href="web/index.html" class="contact_link">Web Design &amp; Development</a><br />
-                <a href="photo/index.html" class="contact_link">Commercial Photography</a><br />
-                <a href="print/index.html" class="contact_link">Print Design &amp; Delivery</a>
-            </div>
-            <div class="third">
-            	<img src="images/assets/quote.png" height="50" width="50" alt="Shedbot" class="icon"/>
-            	<h5>Our clients are awesome.</h5>
-        		<span class="skills">See what they have to say about their experience with Shedbot.</span><br />
-                <div class="green-button"><a href="raves.html" class="learn-more">continue</a></div>
-            </div>
-            <div class="third" style="padding-right: 0;">
-            	<img src="images/assets/mail.png" height="50" width="57" alt="Shedbot" class="icon"/>
-            	<h5>Contact us today.</h5>
-        		<span class="skills">Ready to get started?  Let's get the ball rolling today.</span><br />
-                <div class="green-button"><a href="contact.html" class="learn-more">continue</a></div>
-            </div>
+  <body>
+    <div id="line"></div>
+    <div id="container">
+      <!-- begin/header -->
+      <div id="header">
+        <!-- navigation -->
+        <div id="menu">
+          <ul id="nav_menu">
+            <li><a href="/web/">web</a></li>
+            <li class="spacer">//</li>
+            <li><a href="/photo/">photo</a></li>
+            <li class="spacer">//</li>
+            <li><a href="/print/">print</a></li>
+            <li class="spacer">//</li>
+            <li id="selected"><a href="/about.html">about</a></li>
+            <li class="spacer">//</li>
+            <li><a href="/raves.html">raves</a></li>
+            <li class="spacer">//</li>
+            <li><a href="/wallpaper/">wallpaper</a></li>
+            <li class="spacer">//</li>
+            <li><a href="/contact.html">contact</a></li>
+          </ul>
         </div>
+        <!-- end/navigation -->
 
-    </div>
-<div class="white-wrap_bottom"></div>
-<!-- end/box wrap -->
-<!-- end/cta footer -->
+        <!--begin/logo-->
+        <div id="logo">
+          <div
+            class="fadelogo"
+            onclick="location.href='/';"
+            style="cursor:pointer;"
+          ></div>
+        </div>
+        <!--end/logo-->
+      </div>
+      <!--end/header-->
 
-<!--start/footer-->
-<div id="footer">
-	<div class="fadebelieve" onclick="location.href='contact.html';" style="cursor:pointer;"></div>
-		<div id="footer_text">Built with HTML, CSS, jQuery and care in Winnipeg, Manitoba, Canada. © Shedbot 2011</div>
-	<div id="social">
-    	<div id="fblike">
-        	<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fshedbot&amp;layout=button_count&amp;show_faces=false&amp;width=450&amp;action=like&amp;font=lucida+grande&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:85px; height:21px; float: left; margin: 5px 0 0 7px;" allowtransparency="true"  >
+      <!-- start/box wrap -->
+      <!-- start/about profile -->
+      <div class="white-wrap_top"></div>
+      <div class="white-wrap_tile">
+        <div class="web_study">
+          <div class="about_copy">
+            <h1>Brad Cerasani</h1>
+            <h4>Principal</h4>
+            <div class="social">
+              <div
+                class="tiny_tweet"
+                onclick="window.open('http://twitter.com/bradcerasani')"
+                style="cursor:pointer;"
+              ></div>
+              <div
+                class="tiny_friend"
+                onclick="window.open('http://www.facebook.com/brad.cerasani')"
+                style="cursor:pointer;"
+              ></div>
+              <div
+                class="tiny_tumblr"
+                onclick="window.open('http://blog.shedbot.com')"
+                style="cursor:pointer;"
+              ></div>
+            </div>
+            <span class="skills">
+              <p>
+                Brad Cerasani is a designer, photographer, and obsessive
+                organizer from Winnipeg, Canada. He sold musical instruments at
+                Quest Musique in Winnipeg for a few years before moving into
+                creative work full time in 2010. When not culling and editing
+                photos or burying himself in code, you’ll likely find him
+                hanging out with his band Hoist or working on a vintage electric
+                piano. He organizes clothes by colour and denim by wash, and
+                will someday write a book on cable management.
+              </p>
+
+              <p>
+                Right now he's loving the sounds of Wilco, Drake, Lights and
+                K-OS.
+              </p>
+            </span>
+          </div>
+          <div class="frame">
+            <img
+              src="images/about/brad_cerasani.jpg"
+              alt="Brad Cerasani"
+              class="portrait"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="white-wrap_bottom"></div>
+      <!-- end/about profile -->
+      <!--end/box wrap-->
+
+      <!-- start/box wrap -->
+      <!-- start/about profile -->
+      <div class="white-wrap_top"></div>
+      <div class="white-wrap_tile">
+        <div class="web_study">
+          <div class="about_copy">
+            <h1>Panda</h1>
+            <h4>The Boss</h4>
+            <span class="skills">
+              <p>
+                Panda arrived on exchange from Japan in 2008 and now happily
+                calls Winnipeg home. Due a brief quarrel with Brad’s dog T-Pain
+                in late 2009, Panda permanently wears a Spiderman Band-Aid
+                adjacent to his right ear to keep himself round and awesome. If
+                asked politely, Panda can teach you how to dougie.
+              </p>
+            </span>
+          </div>
+          <div class="frame">
+            <img
+              src="images/about/panda.jpg"
+              alt="Shedbot Panda"
+              class="portrait"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="white-wrap_bottom"></div>
+      <!-- end/about profile -->
+      <!--end/box wrap-->
+
+      <!-- start/cta footer -->
+      <!-- start/box wra p-->
+      <div class="white-wrap_top"></div>
+      <div class="white-wrap_tile">
+        <div class="web_study">
+          <div class="third">
+            <img
+              src="images/assets/shed.png"
+              height="50"
+              width="50"
+              alt="Shedbot"
+              class="icon"
+            />
+            <h5>See how we push business.</h5>
+            <a href="/web/" class="contact_link">Web Design &amp; Development</a
+            ><br />
+            <a href="/photo/" class="contact_link">Commercial Photography</a
+            ><br />
+            <a href="print/" class="contact_link"
+              >Print Design &amp; Delivery</a
+            >
+          </div>
+          <div class="third">
+            <img
+              src="images/assets/quote.png"
+              height="50"
+              width="50"
+              alt="Shedbot"
+              class="icon"
+            />
+            <h5>Our clients are awesome.</h5>
+            <span class="skills"
+              >See what they have to say about their experience with
+              Shedbot.</span
+            ><br />
+            <div class="green-button">
+              <a href="raves.html" class="learn-more">continue</a>
+            </div>
+          </div>
+          <div class="third" style="padding-right: 0;">
+            <img
+              src="images/assets/mail.png"
+              height="50"
+              width="57"
+              alt="Shedbot"
+              class="icon"
+            />
+            <h5>Contact us today.</h5>
+            <span class="skills"
+              >Ready to get started? Let's get the ball rolling today.</span
+            ><br />
+            <div class="green-button">
+              <a href="contact.html" class="learn-more">continue</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="white-wrap_bottom"></div>
+      <!-- end/box wrap -->
+      <!-- end/cta footer -->
+
+      <!--start/footer-->
+      <div id="footer">
+        <div
+          class="fadebelieve"
+          onclick="location.href='contact.html';"
+          style="cursor:pointer;"
+        ></div>
+        <div id="footer_text">
+          Built with HTML, CSS, jQuery and care in Winnipeg, Manitoba, Canada. ©
+          Shedbot 2011
+        </div>
+        <div id="social">
+          <div id="fblike">
+            <iframe
+              src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fshedbot&amp;layout=button_count&amp;show_faces=false&amp;width=450&amp;action=like&amp;font=lucida+grande&amp;colorscheme=light&amp;height=21"
+              scrolling="no"
+              frameborder="0"
+              style="border:none; overflow:hidden; width:85px; height:21px; float: left; margin: 5px 0 0 7px;"
+              allowtransparency="true"
+            >
             </iframe>
+          </div>
+          <div
+            id="tweet"
+            onclick="window.open('http://twitter.com/bradcerasani')"
+            style="cursor:pointer;"
+          ></div>
+          <div
+            id="friend"
+            onclick="window.open('http://www.facebook.com/shedbot')"
+            style="cursor:pointer;"
+          ></div>
         </div>
-		<div id="tweet" onclick="window.open('http://twitter.com/bradcerasani')" style="cursor:pointer;"></div>
-		<div id="friend" onclick="window.open('http://www.facebook.com/shedbot')" style="cursor:pointer;"></div>
-	</div>
-</div>
-<!--end/footer-->
-
-</div>
-<!--end/container-->
-
-</body>
+      </div>
+      <!--end/footer-->
+    </div>
+    <!--end/container-->
+  </body>
 </html>

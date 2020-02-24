@@ -1,300 +1,540 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-<title>Shedbot | Web Design &amp; Development</title>
+    <title>Shedbot | Web Design &amp; Development</title>
 
-<meta name="description" content="Shedbot is a full service creative studio based in Winnipeg, Canada.  We specialize in clean, accessible web design and commercial photography.	" />
-<meta name="keywords" content="web design, websites, custom, creative, winnipeg, advertising, graphic design, photography, commercial, design, brad cerasani" />
-<meta name="abstract" content="Shedbot is a full service creative studio based in Winnipeg, Canada.  We specialize in clean, accessible web design and commercial photography.	" />
-<meta name="author" content="Brad Cerasani, brad@shedbot.com" />
-<meta name="copyright" content="2011 Shedbot - Brad Cerasani" />
+    <meta
+      name="description"
+      content="Shedbot is a full service creative studio based in Winnipeg, Canada.  We specialize in clean, accessible web design and commercial photography.	"
+    />
+    <meta
+      name="keywords"
+      content="web design, websites, custom, creative, winnipeg, advertising, graphic design, photography, commercial, design, brad cerasani"
+    />
+    <meta
+      name="abstract"
+      content="Shedbot is a full service creative studio based in Winnipeg, Canada.  We specialize in clean, accessible web design and commercial photography.	"
+    />
+    <meta name="author" content="Brad Cerasani, brad@shedbot.com" />
+    <meta name="copyright" content="2011 Shedbot - Brad Cerasani" />
 
-<link href="../css/reset.css" rel="stylesheet" type="text/css" />
-<link href="../css/mainstyles.css" rel="stylesheet" type="text/css" />
-<link href="../css/motion.css" rel="stylesheet" type="text/css" />
+    <link href="/css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="/css/mainstyles.css" rel="stylesheet" type="text/css" />
+    <link href="/css/motion.css" rel="stylesheet" type="text/css" />
 
-<script type="text/javascript" src="../js/jquery.min.js"></script>
-<script type="text/javascript" src="../js/jquery.easing.js"></script>
-<script type="text/javascript" src="../js/slides.min.jquery.js"></script>
-<script type="text/javascript" src="../js/jquery.blend-min.js"></script>
-<script type="text/javascript" src="../js/jquery.scrollto-min.js"></script>
-<script type="text/javascript" src="../js/jquery.localscroll-min.js"></script>
-<script type="text/javascript" src="../js/nomoreie/jquery.ie6blocker.js"></script>
-<script type="text/javascript">
-	$(document).ready(function(){
-		$(".fadelogo, .fadebelieve, #tweet, #friend, #tumblr").blend(300);
-		$.localScroll();
-	});
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.easing.js"></script>
+    <script type="text/javascript" src="/js/slides.min.jquery.js"></script>
+    <script type="text/javascript" src="/js/jquery.blend-min.js"></script>
+    <script
+      type="text/javascript"
+      src="/js/nomoreie/jquery.ie6blocker.js"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(".fadelogo, .fadebelieve, #tweet, #friend, #tumblr").blend(300);
+      });
 
-	$(function() {$('#slide_lgcd').hide();
-	 	window.onload = function() {
-			$('#slides_lgcd').delay(200).fadeIn(400); $('.cd_loading_lg').hide();};
-	});
+      $(function() {
+        $("#slide_lgcd").hide();
+        window.onload = function() {
+          $("#slides_lgcd")
+            .delay(200)
+            .fadeIn(400);
+          $(".cd_loading_lg").hide();
+        };
+      });
 
-	$(function(){
-		$('#slides_lgcd').slides({              		   fadeSpeed: 1000, play: 6000, crossfade:true, effect: 'fade' });
-		$('#slides_a').slides({	generatePagination: false, fadeSpeed: 1000,	play: 6000, crossfade:true, effect: 'slide' });
-		$('#slides_b').slides({	generatePagination: false, fadeSpeed: 1000, play: 6000, crossfade:true, effect: 'slide' });
-		$('#slides_c').slides({	generatePagination: false, fadeSpeed: 1000, play: 6000, crossfade:true, effect: 'slide' });
-	});
+      $(function() {
+        $("#slides_lgcd").slides({
+          fadeSpeed: 1000,
+          play: 6000,
+          crossfade: true,
+          effect: "fade"
+        });
+        $("#slides_a").slides({
+          generatePagination: false,
+          fadeSpeed: 1000,
+          play: 6000,
+          crossfade: true,
+          effect: "slide"
+        });
+        $("#slides_b").slides({
+          generatePagination: false,
+          fadeSpeed: 1000,
+          play: 6000,
+          crossfade: true,
+          effect: "slide"
+        });
+        $("#slides_c").slides({
+          generatePagination: false,
+          fadeSpeed: 1000,
+          play: 6000,
+          crossfade: true,
+          effect: "slide"
+        });
+      });
+    </script>
 
- var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-5977667-11']);
-  _gaq.push(['_setDomainName', '.shedbot.com']);
-  _gaq.push(['_trackPageview']);
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-5977667-28"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+      gtag("config", "UA-5977667-28");
+    </script>
+  </head>
 
-</script>
-</head>
-
-<body>
-<div id="line"></div>
-<div id="container">
-
-<!-- start/header -->
-<div id="header">
-
-	<div id = "menu">
-    	<ul id = "nav_menu">
-        <li id="selected"><a href="/web/">web</a></li>
-        <li class="spacer">//</li>
-        <li><a href="/photo/">photo</a></li>
-        <li class="spacer">//</li>
-        <li><a href="/print/">print</a></li>
-        <li class="spacer">//</li>
-        <li><a href="/about.html">about</a></li>
-        <li class="spacer">//</li>
-        <li><a href="/raves.html">raves</a></li>
-        <li class="spacer">//</li>
-        <li><a href="/wallpaper/">wallpaper</a></li>
-        <li class="spacer">//</li>
-        <li><a href="/contact.html">contact</a></li>
-  		</ul>
-    </div>
-
-	<div id="logo">
-		<div class="fadelogo" onclick="location.href='/';" style="cursor:pointer;"></div>
-	</div>
-
-</div>
-<!-- end/header -->
-
-<!-- start/cinema display -->
-<div id="feature_frame_lg">
-	<div id="cd_frame_lg">
-    	<div class="cd_loading_lg"><img src="../images/assets/loading.gif" alt="loading..." class="loading_lg" /></div>
-    </div>
-    <div id="slides_lgcd">
-		<div class="slides_container">
-    		<a href="#study_a"><img src="../images/cd_content_lg/web/r4d.jpg" width="884" height="553" alt="Room 4 Design"/></a>
-            <a href="#study_b"><img src="../images/cd_content_lg/web/phx-framing.jpg" width="884" height="553" alt="Phoenix Framing"/></a>
-           	<a href="#study_c"><img src="../images/cd_content_lg//web/hallmark.jpg" width="884" height="553" alt="Hallmark Homes"/></a>
+  <body>
+    <div id="line"></div>
+    <div id="container">
+      <!-- start/header -->
+      <div id="header">
+        <div id="menu">
+          <ul id="nav_menu">
+            <li id="selected"><a href="/web/">web</a></li>
+            <li class="spacer">//</li>
+            <li><a href="/photo/">photo</a></li>
+            <li class="spacer">//</li>
+            <li><a href="/print/">print</a></li>
+            <li class="spacer">//</li>
+            <li><a href="/about.html">about</a></li>
+            <li class="spacer">//</li>
+            <li><a href="/raves.html">raves</a></li>
+            <li class="spacer">//</li>
+            <li><a href="/wallpaper/">wallpaper</a></li>
+            <li class="spacer">//</li>
+            <li><a href="/contact.html">contact</a></li>
+          </ul>
         </div>
-		<!--<a href="#" class="prev"><img src="img/arrow-prev.png" width="24" height="43" alt="Arrow Prev"></a>
+
+        <div id="logo">
+          <div
+            class="fadelogo"
+            onclick="location.href='/';"
+            style="cursor:pointer;"
+          ></div>
+        </div>
+      </div>
+      <!-- end/header -->
+
+      <!-- start/cinema display -->
+      <div id="feature_frame_lg">
+        <div id="cd_frame_lg">
+          <div class="cd_loading_lg">
+            <img
+              src="/images/assets/loading.gif"
+              alt="loading..."
+              class="loading_lg"
+            />
+          </div>
+        </div>
+        <div id="slides_lgcd">
+          <div class="slides_container">
+            <a href="#study_a"
+              ><img
+                src="/images/cd_content_lg/web/r4d.jpg"
+                width="884"
+                height="553"
+                alt="Room 4 Design"
+            /></a>
+            <a href="#study_b"
+              ><img
+                src="/images/cd_content_lg/web/phx-framing.jpg"
+                width="884"
+                height="553"
+                alt="Phoenix Framing"
+            /></a>
+            <a href="#study_c"
+              ><img
+                src="/images/cd_content_lg//web/hallmark.jpg"
+                width="884"
+                height="553"
+                alt="Hallmark Homes"
+            /></a>
+          </div>
+          <!--<a href="#" class="prev"><img src="img/arrow-prev.png" width="24" height="43" alt="Arrow Prev"></a>
 		<a href="#" class="next"><img src="img/arrow-next.png" width="24" height="43" alt="Arrow Next"></a>-->
-  	</div>
-</div>
-<!-- end/cinema display -->
-
-<!-- start/box wrap -->
-<div class="white-wrap_top"></div>
-	<div class="white-wrap_tile">
-
-        <div class="web_study">
-       		<span class="highlight" style="line-height:44px">We craft user focused web solutions that generate results. You didn’t start your business from a template, so don’t try to fit into one now.</span>
         </div>
+      </div>
+      <!-- end/cinema display -->
 
-    </div>
-<div class="white-wrap_bottom"></div>
-<!--end/box wrap-->
-
-<!-- start/study detail -->
-<div id="study_a" style="height:10px;"></div>
-<!-- start/box wrap -->
-<div class="white-wrap_top"></div>
-	<div class="white-wrap_tile">
-        <a href="#line"><img src="../images/assets/up.png" alt="Going Up?" class="back-to-top"/></a>
-         <div class="web_study">
-       		<div class="study_copy">
-            	<h1>Project Summary</h1>
-				<h5>Client</h5>
-				<span class="skills">Room 4 Design</span>
-                <h5>Client Profile</h5>
-				<span class="skills">Room 4 Design is a professional staging company in Vancouver, BC.</span>
-        		<h5>Objective</h5>
-				<span class="skills">Design &amp; develop elegant, timeless website to detail R4D's home staging and redesign services.  Avoid colour trends and other design fads; aesthetic especially important for design based business.
-                </span>
-                <h5>Solution</h5>
-				<span class="skills">We employed a neutral colour palette with a strict attention to detail, supporting R4D's refined professional taste without an imposing aesthetic.
-                </span>
-                <h5>Testimonial</h5>
-				<a href="../raves.html#t_r4d" class="contact_link">"Brad's dedication and prompt attention to our requests.."</a>
-                <h5>Project URL</h5>
-				<a href="http://r4d.ca" class="contact_link" target="_blank">www.r4d.ca</a>
-    		</div>
-
-    		<div class="web_frame">
-				<div id="slides_b">
-					<div class="slides_container">
-					<img src="../images/case-studies/web/r4d_01.jpg" alt="Room 4 Design" height="482" width="420" />
-                    <img src="../images/case-studies/web/r4d_02.jpg" alt="Room 4 Design" height="482" width="420" />
-                    <img src="../images/case-studies/web/r4d_03.jpg" alt="Room 4 Design" height="482" width="420" />
-                    <img src="../images/case-studies/web/r4d_04.jpg" alt="Room 4 Design" height="482" width="420" />
-				</div>
-           	</div>
-        </div>
-
-    </div>
-</div>
-<div class="white-wrap_bottom"></div>
-<!-- end/box wrap -->
-<!-- end/study detail -->
-
-
-<!-- start/study detail -->
-<div id="study_b" style="height:10px;"></div>
-<!-- start/box wrap -->
-<div class="white-wrap_top"></div>
-	<div class="white-wrap_tile">
-        <a href="#line"><img src="../images/assets/up.png" alt="Going Up?" class="back-to-top"/></a>
-
+      <!-- start/box wrap -->
+      <div class="white-wrap_top"></div>
+      <div class="white-wrap_tile">
         <div class="web_study">
-       		<div class="study_copy">
-            	<h1>Project Summary</h1>
-				<h5>Client</h5>
-				<span class="skills">Phoenix Framing</span>
-                <h5>Client Profile</h5>
-				<span class="skills">Phoenix Framing is a residential framing company in Phoenix, Arizona.</span>
-        		<h5>Objective</h5>
-				<span class="skills">Design &amp; develop easy to navigate website targeted for luxury home builders and general contractors in Arizona.</span>
-                <h5>Solution</h5>
-				<span class="skills">We designed a single-page scrolling website with legible, high contrast copy and low data density.  Asymmetrical image elements and the incorporation of real-world objects were conscious design decisions tailored to a demographic more comfortable with a pen and paper than a computer or smartphone.
-                </span>
-                <h5>Project URL</h5>
-				<a href="http://phxframing.com" class="contact_link" target="_blank">www.phxframing.com</a>
-    		</div>
-
-    		<div class="web_frame">
-				<div id="slides_a">
-					<div class="slides_container">
-					<img src="../images/case-studies/web/phoenix-framing_01.jpg" alt="Phoenix Framing" height="482" width="420" />
-                	<img src="../images/case-studies/web/phoenix-framing_02.jpg" alt="Phoenix Framing" height="482" width="420" />
-                	<img src="../images/case-studies/web/phoenix-framing_03.jpg" alt="Phoenix Framing" height="482" width="420" />
-                	<img src="../images/case-studies/web/phoenix-framing_04.jpg" alt="Phoenix Framing" height="482" width="420" />
-				</div>
-           	</div>
+          <span class="highlight" style="line-height:44px"
+            >We craft user focused web solutions that generate results. You
+            didn’t start your business from a template, so don’t try to fit into
+            one now.</span
+          >
         </div>
+      </div>
+      <div class="white-wrap_bottom"></div>
+      <!--end/box wrap-->
 
-
-
-
-
-
-    </div>
-</div>
-<div class="white-wrap_bottom"></div>
-<!-- end/box wrap -->
-<!-- end/study detail -->
-
-<!-- start/study detail -->
-<div id="study_c" style="height:10px;"></div>
-<!-- start/box wrap -->
-<div class="white-wrap_top"></div>
-	<div class="white-wrap_tile">
-       	<a href="#line"><img src="../images/assets/up.png" alt="Going Up?" class="back-to-top"/></a>
+      <!-- start/study detail -->
+      <div id="study_a" style="height:10px;"></div>
+      <!-- start/box wrap -->
+      <div class="white-wrap_top"></div>
+      <div class="white-wrap_tile">
+        <a href="#line"
+          ><img src="/images/assets/up.png" alt="Going Up?" class="back-to-top"
+        /></a>
         <div class="web_study">
-       		<div class="study_copy">
-    			<h1>Project Summary</h1>
-    			<h5>Client</h5>
-				<span class="skills">Hallmark Homes</span>
-                <h5>Client Profile</h5>
-				<span class="skills">Hallmark Homes is a luxury home design builder in Winnipeg, MB.</span>
-				<h5>Objective</h5>
-				<span class="skills">Showcase extensive custom build portfolio and provide resource centre for both new and existing clients.</span>
-                <h5>Solution</h5>
-				<span class="skills">Data heavy design requirements mandated detailed research of traffic flow.  Website details every build-to-suit lot available from Hallmark Homes, including lot dimensions, micro and macro lot maps, and integrated Google Maps and Google Streetview.  Public and password protected client resources.  New website has over <b>1500</b> more page views per month than old design, with an average visitor stay <b>1:52</b> longer than industry benchmarks. </span>
-         		<h5>Client Testimonial</h5>
-				<a href="../raves.html#t_hh" class="contact_link">"We quickly learned to trust your experience, expertise and integrity.."</a>
-        		<h5>Project URL</h5>
-				<a href="http://www.imaginehallmark.ca" class="contact_link" target="_blank">www.imaginehallmark.ca</a>
-    		</div>
+          <div class="study_copy">
+            <h1>Project Summary</h1>
+            <h5>Client</h5>
+            <span class="skills">Room 4 Design</span>
+            <h5>Client Profile</h5>
+            <span class="skills"
+              >Room 4 Design is a professional staging company in Vancouver,
+              BC.</span
+            >
+            <h5>Objective</h5>
+            <span class="skills"
+              >Design &amp; develop elegant, timeless website to detail R4D's
+              home staging and redesign services. Avoid colour trends and other
+              design fads; aesthetic especially important for design based
+              business.
+            </span>
+            <h5>Solution</h5>
+            <span class="skills"
+              >We employed a neutral colour palette with a strict attention to
+              detail, supporting R4D's refined professional taste without an
+              imposing aesthetic.
+            </span>
+            <h5>Testimonial</h5>
+            <a href="/raves.html#t_r4d" class="contact_link"
+              >"Brad's dedication and prompt attention to our requests.."</a
+            >
+            <h5>Project URL</h5>
+            <a href="http://r4d.ca" class="contact_link" target="_blank"
+              >www.r4d.ca</a
+            >
+          </div>
 
-    		<div class="web_frame">
-				<div id="slides_c">
-					<div class="slides_container">
-					<img src="../images/case-studies/web/hallmark-homes_01a.jpg" alt="Hallmark Homes" height="482" width="420" />
-                    <img src="../images/case-studies/web/hallmark-homes_01.jpg" alt="Hallmark Homes" height="482" width="420" />
-                    <img src="../images/case-studies/web/hallmark-homes_02a.jpg" alt="Hallmark Homes" height="482" width="420" />
-                    <img src="../images/case-studies/web/hallmark-homes_02.jpg" alt="Hallmark Homes" height="482" width="420" />
-                    <img src="../images/case-studies/web/hallmark-homes_03a.jpg" alt="Hallmark Homes" height="482" width="420" />
-                    <img src="../images/case-studies/web/hallmark-homes_03.jpg" alt="Hallmark Homes" height="482" width="420" />
-                    <img src="../images/case-studies/web/hallmark-homes_04a.jpg" alt="Hallmark Homes" height="482" width="420" />
-                    <img src="../images/case-studies/web/hallmark-homes_04.jpg" alt="Hallmark Homes" height="482" width="420" />
-				</div>
-           	</div>
-        </div>
-
-    </div>
-</div>
-<div class="white-wrap_bottom"></div>
-<!-- end/box wrap -->
-<!-- end/study detail -->
-
-<!-- start/next -->
-<!-- start/box wrap -->
-<div class="white-wrap_top"></div>
-	<div class="white-wrap_tile">
-
-        <div class="web_study">
-            <div class="third">
-            	<img src="../images/assets/shed.png" height="50" width="50" class="icon" alt="Shedbot" />
-            	<h5>Want to see more?</h5>
-        		<span class="skills">Check out the rest of our portfolio in our full work spread.</span><br />
-                <div class="green-button"><a href="../work.html" class="learn-more">continue</a></div>
+          <div class="web_frame">
+            <div id="slides_b">
+              <div class="slides_container">
+                <img
+                  src="/images/case-studies/web/r4d_01.jpg"
+                  alt="Room 4 Design"
+                  height="482"
+                  width="420"
+                />
+                <img
+                  src="/images/case-studies/web/r4d_02.jpg"
+                  alt="Room 4 Design"
+                  height="482"
+                  width="420"
+                />
+                <img
+                  src="/images/case-studies/web/r4d_03.jpg"
+                  alt="Room 4 Design"
+                  height="482"
+                  width="420"
+                />
+                <img
+                  src="/images/case-studies/web/r4d_04.jpg"
+                  alt="Room 4 Design"
+                  height="482"
+                  width="420"
+                />
+              </div>
             </div>
-            <div class="third">
-            	<img src="../images/assets/photo.png" style="margin:4px 0 0 0;" class="icon" alt="Shedbot" />
-            	<h5>Commercial Photography</h5>
-        		<span class="skills">View work from our commercial photography portfolio.</span><br />
-                <div class="green-button"><a href="../photo/" class="learn-more">continue</a></div>
-            </div>
-            <div class="third" style="padding-right: 0;">
-            	<img src="../images/assets/mail.png" height="50" width="57" class="icon" alt="Shedbot"/>
-            	<h5>Contact us today.</h5>
-        		<span class="skills">Ready to get started?  Let's get the ball rolling today.</span><br />
-                <div class="green-button"><a href="../contact.html" class="learn-more">continue</a></div>
-            </div>
+          </div>
         </div>
+      </div>
+      <div class="white-wrap_bottom"></div>
+      <!-- end/box wrap -->
+      <!-- end/study detail -->
 
-    </div>
-<div class="white-wrap_bottom"></div>
-<!-- end/box wrap -->
-<!-- end/next -->
+      <!-- start/study detail -->
+      <div id="study_b" style="height:10px;"></div>
+      <!-- start/box wrap -->
+      <div class="white-wrap_top"></div>
+      <div class="white-wrap_tile">
+        <a href="#line"
+          ><img src="/images/assets/up.png" alt="Going Up?" class="back-to-top"
+        /></a>
 
-<!--start/footer-->
-<div id="footer">
-	<div class="fadebelieve" onclick="location.href='../contact.html';" style="cursor:pointer;"></div>
-	<div id="footer_text">Built with HTML, CSS, jQuery and care in Winnipeg, Manitoba, Canada. © Shedbot 2011</div>
-		<div id="social">
-    	<div id="fblike">
-        	<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fshedbot&amp;layout=button_count&amp;show_faces=false&amp;width=450&amp;action=like&amp;font=lucida+grande&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:85px; height:21px; float: left; margin: 5px 0 0 7px;" allowtransparency="true"  >
+        <div class="web_study">
+          <div class="study_copy">
+            <h1>Project Summary</h1>
+            <h5>Client</h5>
+            <span class="skills">Phoenix Framing</span>
+            <h5>Client Profile</h5>
+            <span class="skills"
+              >Phoenix Framing is a residential framing company in Phoenix,
+              Arizona.</span
+            >
+            <h5>Objective</h5>
+            <span class="skills"
+              >Design &amp; develop easy to navigate website targeted for luxury
+              home builders and general contractors in Arizona.</span
+            >
+            <h5>Solution</h5>
+            <span class="skills"
+              >We designed a single-page scrolling website with legible, high
+              contrast copy and low data density. Asymmetrical image elements
+              and the incorporation of real-world objects were conscious design
+              decisions tailored to a demographic more comfortable with a pen
+              and paper than a computer or smartphone.
+            </span>
+            <h5>Project URL</h5>
+            <a href="http://phxframing.com" class="contact_link" target="_blank"
+              >www.phxframing.com</a
+            >
+          </div>
+
+          <div class="web_frame">
+            <div id="slides_a">
+              <div class="slides_container">
+                <img
+                  src="/images/case-studies/web/phoenix-framing_01.jpg"
+                  alt="Phoenix Framing"
+                  height="482"
+                  width="420"
+                />
+                <img
+                  src="/images/case-studies/web/phoenix-framing_02.jpg"
+                  alt="Phoenix Framing"
+                  height="482"
+                  width="420"
+                />
+                <img
+                  src="/images/case-studies/web/phoenix-framing_03.jpg"
+                  alt="Phoenix Framing"
+                  height="482"
+                  width="420"
+                />
+                <img
+                  src="/images/case-studies/web/phoenix-framing_04.jpg"
+                  alt="Phoenix Framing"
+                  height="482"
+                  width="420"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="white-wrap_bottom"></div>
+      <!-- end/box wrap -->
+      <!-- end/study detail -->
+
+      <!-- start/study detail -->
+      <div id="study_c" style="height:10px;"></div>
+      <!-- start/box wrap -->
+      <div class="white-wrap_top"></div>
+      <div class="white-wrap_tile">
+        <a href="#line"
+          ><img src="/images/assets/up.png" alt="Going Up?" class="back-to-top"
+        /></a>
+        <div class="web_study">
+          <div class="study_copy">
+            <h1>Project Summary</h1>
+            <h5>Client</h5>
+            <span class="skills">Hallmark Homes</span>
+            <h5>Client Profile</h5>
+            <span class="skills"
+              >Hallmark Homes is a luxury home design builder in Winnipeg,
+              MB.</span
+            >
+            <h5>Objective</h5>
+            <span class="skills"
+              >Showcase extensive custom build portfolio and provide resource
+              centre for both new and existing clients.</span
+            >
+            <h5>Solution</h5>
+            <span class="skills"
+              >Data heavy design requirements mandated detailed research of
+              traffic flow. Website details every build-to-suit lot available
+              from Hallmark Homes, including lot dimensions, micro and macro lot
+              maps, and integrated Google Maps and Google Streetview. Public and
+              password protected client resources. New website has over
+              <b>1500</b> more page views per month than old design, with an
+              average visitor stay <b>1:52</b> longer than industry benchmarks.
+            </span>
+            <h5>Client Testimonial</h5>
+            <a href="/raves.html#t_hh" class="contact_link"
+              >"We quickly learned to trust your experience, expertise and
+              integrity.."</a
+            >
+            <h5>Project URL</h5>
+            <a
+              href="http://www.imaginehallmark.ca"
+              class="contact_link"
+              target="_blank"
+              >www.imaginehallmark.ca</a
+            >
+          </div>
+
+          <div class="web_frame">
+            <div id="slides_c">
+              <div class="slides_container">
+                <img
+                  src="/images/case-studies/web/hallmark-homes_01a.jpg"
+                  alt="Hallmark Homes"
+                  height="482"
+                  width="420"
+                />
+                <img
+                  src="/images/case-studies/web/hallmark-homes_01.jpg"
+                  alt="Hallmark Homes"
+                  height="482"
+                  width="420"
+                />
+                <img
+                  src="/images/case-studies/web/hallmark-homes_02a.jpg"
+                  alt="Hallmark Homes"
+                  height="482"
+                  width="420"
+                />
+                <img
+                  src="/images/case-studies/web/hallmark-homes_02.jpg"
+                  alt="Hallmark Homes"
+                  height="482"
+                  width="420"
+                />
+                <img
+                  src="/images/case-studies/web/hallmark-homes_03a.jpg"
+                  alt="Hallmark Homes"
+                  height="482"
+                  width="420"
+                />
+                <img
+                  src="/images/case-studies/web/hallmark-homes_03.jpg"
+                  alt="Hallmark Homes"
+                  height="482"
+                  width="420"
+                />
+                <img
+                  src="/images/case-studies/web/hallmark-homes_04a.jpg"
+                  alt="Hallmark Homes"
+                  height="482"
+                  width="420"
+                />
+                <img
+                  src="/images/case-studies/web/hallmark-homes_04.jpg"
+                  alt="Hallmark Homes"
+                  height="482"
+                  width="420"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="white-wrap_bottom"></div>
+      <!-- end/box wrap -->
+      <!-- end/study detail -->
+
+      <!-- start/next -->
+      <!-- start/box wrap -->
+      <div class="white-wrap_top"></div>
+      <div class="white-wrap_tile">
+        <div class="web_study">
+          <div class="third">
+            <img
+              src="/images/assets/shed.png"
+              height="50"
+              width="50"
+              class="icon"
+              alt="Shedbot"
+            />
+            <h5>Want to see more?</h5>
+            <span class="skills"
+              >Check out the rest of our portfolio in our full work
+              spread.</span
+            ><br />
+            <div class="green-button">
+              <a href="/work.html" class="learn-more">continue</a>
+            </div>
+          </div>
+          <div class="third">
+            <img
+              src="/images/assets/photo.png"
+              style="margin:4px 0 0 0;"
+              class="icon"
+              alt="Shedbot"
+            />
+            <h5>Commercial Photography</h5>
+            <span class="skills"
+              >View work from our commercial photography portfolio.</span
+            ><br />
+            <div class="green-button">
+              <a href="/photo/" class="learn-more">continue</a>
+            </div>
+          </div>
+          <div class="third" style="padding-right: 0;">
+            <img
+              src="/images/assets/mail.png"
+              height="50"
+              width="57"
+              class="icon"
+              alt="Shedbot"
+            />
+            <h5>Contact us today.</h5>
+            <span class="skills"
+              >Ready to get started? Let's get the ball rolling today.</span
+            ><br />
+            <div class="green-button">
+              <a href="/contact.html" class="learn-more">continue</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="white-wrap_bottom"></div>
+      <!-- end/box wrap -->
+      <!-- end/next -->
+
+      <!--start/footer-->
+      <div id="footer">
+        <div
+          class="fadebelieve"
+          onclick="location.href='/contact.html';"
+          style="cursor:pointer;"
+        ></div>
+        <div id="footer_text">
+          Built with HTML, CSS, jQuery and care in Winnipeg, Manitoba, Canada. ©
+          Shedbot 2011
+        </div>
+        <div id="social">
+          <div id="fblike">
+            <iframe
+              src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fshedbot&amp;layout=button_count&amp;show_faces=false&amp;width=450&amp;action=like&amp;font=lucida+grande&amp;colorscheme=light&amp;height=21"
+              scrolling="no"
+              frameborder="0"
+              style="border:none; overflow:hidden; width:85px; height:21px; float: left; margin: 5px 0 0 7px;"
+              allowtransparency="true"
+            >
             </iframe>
+          </div>
+          <div
+            id="friend"
+            onclick="window.open('http://www.facebook.com/shedbot')"
+            style="cursor:pointer;"
+          ></div>
+          <div
+            id="tweet"
+            onclick="window.open('http://twitter.com/bradcerasani')"
+            style="cursor:pointer;"
+          ></div>
         </div>
-			<div id="friend" onclick="window.open('http://www.facebook.com/shedbot')" style="cursor:pointer;"></div>
-        	<div id="tweet" onclick="window.open('http://twitter.com/bradcerasani')" style="cursor:pointer;"></div>
-	</div>
-</div>
-<!--end/footer-->
-
-</div>
-<!--end/container-->
-
-</body>
+      </div>
+      <!--end/footer-->
+    </div>
+    <!--end/container-->
+  </body>
 </html>

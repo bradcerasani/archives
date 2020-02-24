@@ -1,195 +1,368 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-<title>Shedbot | Print Design &amp; Delivery</title>
+    <title>Shedbot | Print Design &amp; Delivery</title>
 
-<meta name="description" content="Shedbot is a full service creative studio based in Winnipeg, Canada.  We specialize in clean, accessible web design and commercial photography.	" />
-<meta name="keywords" content="web design, websites, custom, creative, winnipeg, advertising, graphic design, photography, commercial, design, brad cerasani" />
-<meta name="abstract" content="Shedbot is a full service creative studio based in Winnipeg, Canada.  We specialize in clean, accessible web design and commercial photography.	" />
-<meta name="author" content="Brad Cerasani, brad@shedbot.com" />
-<meta name="copyright" content="2011 Shedbot - Brad Cerasani" />
+    <meta
+      name="description"
+      content="Shedbot is a full service creative studio based in Winnipeg, Canada.  We specialize in clean, accessible web design and commercial photography.	"
+    />
+    <meta
+      name="keywords"
+      content="web design, websites, custom, creative, winnipeg, advertising, graphic design, photography, commercial, design, brad cerasani"
+    />
+    <meta
+      name="abstract"
+      content="Shedbot is a full service creative studio based in Winnipeg, Canada.  We specialize in clean, accessible web design and commercial photography.	"
+    />
+    <meta name="author" content="Brad Cerasani, brad@shedbot.com" />
+    <meta name="copyright" content="2011 Shedbot - Brad Cerasani" />
 
-<link href="../css/reset.css" rel="stylesheet" type="text/css" />
-<link href="../css/mainstyles.css" rel="stylesheet" type="text/css" />
-<link href="../css/motion.css" rel="stylesheet" type="text/css" />
+    <link href="/css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="/css/mainstyles.css" rel="stylesheet" type="text/css" />
+    <link href="/css/motion.css" rel="stylesheet" type="text/css" />
 
-<script type="text/javascript" src="../js/jquery.min.js"></script>
-<script type="text/javascript" src="../js/jquery.easing.js"></script>
-<script type="text/javascript" src="../js/slides.min.jquery.js"></script>
-<script type="text/javascript" src="../js/jquery.blend-min.js"></script>
-<script type="text/javascript" src="../js/jquery.scrollto-min.js"></script>
-<script type="text/javascript" src="../js/jquery.localscroll-min.js"></script>
-<script type="text/javascript" src="../js/nomoreie/jquery.ie6blocker.js"></script>
-<script type="text/javascript">
-	$(document).ready(function(){
-		$(".fadelogo, .fadebelieve, #tweet, #friend, #tumblr").blend(300);
-		$.localScroll();
-	});
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.easing.js"></script>
+    <script type="text/javascript" src="/js/slides.min.jquery.js"></script>
+    <script type="text/javascript" src="/js/jquery.blend-min.js"></script>
+    <script
+      type="text/javascript"
+      src="/js/nomoreie/jquery.ie6blocker.js"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(".fadelogo, .fadebelieve, #tweet, #friend, #tumblr").blend(300);
+      });
 
-	$(function() {$('#slide_lgcd').hide();
-	 	window.onload = function() {
-			$('#slides_lgcd').delay(200).fadeIn(400); $('.cd_loading_lg').hide();};
-	});
+      $(function() {
+        $("#slide_lgcd").hide();
+        window.onload = function() {
+          $("#slides_lgcd")
+            .delay(200)
+            .fadeIn(400);
+          $(".cd_loading_lg").hide();
+        };
+      });
 
-	$(function(){
-		$('#slides_lgcd').slides({              		   fadeSpeed: 1000, play: 6000, crossfade:true, effect: 'fade' });
-		$('#slides_d').slides({	generatePagination: false, fadeSpeed: 1000,	play: 6000, crossfade:true, effect: 'slide' });
-		$('#slides_e').slides({	generatePagination: false, fadeSpeed: 1000, play: 6000, crossfade:true, effect: 'slide' });
-		$('#slides_f').slides({	generatePagination: false, fadeSpeed: 1000, play: 6000, crossfade:true, effect: 'slide' });
-	});
+      $(function() {
+        $("#slides_lgcd").slides({
+          fadeSpeed: 1000,
+          play: 6000,
+          crossfade: true,
+          effect: "fade"
+        });
+        $("#slides_d").slides({
+          generatePagination: false,
+          fadeSpeed: 1000,
+          play: 6000,
+          crossfade: true,
+          effect: "slide"
+        });
+        $("#slides_e").slides({
+          generatePagination: false,
+          fadeSpeed: 1000,
+          play: 6000,
+          crossfade: true,
+          effect: "slide"
+        });
+        $("#slides_f").slides({
+          generatePagination: false,
+          fadeSpeed: 1000,
+          play: 6000,
+          crossfade: true,
+          effect: "slide"
+        });
+      });
+    </script>
 
- var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-5977667-11']);
-  _gaq.push(['_setDomainName', '.shedbot.com']);
-  _gaq.push(['_trackPageview']);
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-5977667-28"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+      gtag("config", "UA-5977667-28");
+    </script>
+  </head>
 
-</script>
-</head>
-
-<body>
-<div id="line"></div>
-<div id="container">
-
-<!-- start/header -->
-<div id="header">
-
-	<div id = "menu">
-    	<ul id = "nav_menu">
-        <li><a href="/web/">web</a></li>
-        <li class="spacer">//</li>
-        <li><a href="/photo/">photo</a></li>
-        <li class="spacer">//</li>
-        <li id="selected"><a href="/print/">print</a></li>
-        <li class="spacer">//</li>
-        <li><a href="/about.html">about</a></li>
-        <li class="spacer">//</li>
-        <li><a href="/raves.html">raves</a></li>
-        <li class="spacer">//</li>
-        <li><a href="/wallpaper/">wallpaper</a></li>
-        <li class="spacer">//</li>
-        <li><a href="/contact.html">contact</a></li>
-  		</ul>
-    </div>
-
-	<div id="logo">
-		<div class="fadelogo" onclick="location.href='/';" style="cursor:pointer;"></div>
-	</div>
-
-</div>
-<!-- end/header -->
-
-<!-- start/cinema display -->
-<div id="feature_frame_lg">
-	<div id="cd_frame_lg">
-    	<div class="cd_loading_lg"><img src="../images/assets/loading.gif" alt="loading..." class="loading_lg" /></div>
-    </div>
-    <div id="slides_lgcd" class="photo">
-		<div class="slides_container">
-    		<a href="#print_study"><img src="../images/cd_content_lg/print/amplitude-audio.jpg" width="884" height="553" alt="#"/></a>
-            <a href="#print_study"><img src="../images/cd_content_lg/print/rental-brochure.jpg" width="884" height="553" alt="#"/></a>
-            <a href="#print_study"><img src="../images/cd_content_lg/print/haze-multimedia.jpg" width="884" height="553" alt="#"/></a>
-            <a href="#print_study"><img src="../images/cd_content_lg/print/to-go.jpg" width="884" height="553" alt="#"/></a>
-            <a href="#print_study"><img src="../images/cd_content_lg/print/plc.jpg" width="884" height="553" alt="#"/></a>
-            <a href="#print_study"><img src="../images/cd_content_lg/print/shedbot.jpg" width="884" height="553" alt="#"/></a>
+  <body>
+    <div id="line"></div>
+    <div id="container">
+      <!-- start/header -->
+      <div id="header">
+        <div id="menu">
+          <ul id="nav_menu">
+            <li><a href="/web/">web</a></li>
+            <li class="spacer">//</li>
+            <li><a href="/photo/">photo</a></li>
+            <li class="spacer">//</li>
+            <li id="selected"><a href="/print/">print</a></li>
+            <li class="spacer">//</li>
+            <li><a href="/about.html">about</a></li>
+            <li class="spacer">//</li>
+            <li><a href="/raves.html">raves</a></li>
+            <li class="spacer">//</li>
+            <li><a href="/wallpaper/">wallpaper</a></li>
+            <li class="spacer">//</li>
+            <li><a href="/contact.html">contact</a></li>
+          </ul>
         </div>
-		<!--<a href="#" class="prev"><img src="img/arrow-prev.png" width="24" height="43" alt="Arrow Prev"></a>
+
+        <div id="logo">
+          <div
+            class="fadelogo"
+            onclick="location.href='/';"
+            style="cursor:pointer;"
+          ></div>
+        </div>
+      </div>
+      <!-- end/header -->
+
+      <!-- start/cinema display -->
+      <div id="feature_frame_lg">
+        <div id="cd_frame_lg">
+          <div class="cd_loading_lg">
+            <img
+              src="/images/assets/loading.gif"
+              alt="loading..."
+              class="loading_lg"
+            />
+          </div>
+        </div>
+        <div id="slides_lgcd" class="photo">
+          <div class="slides_container">
+            <a href="#print_study"
+              ><img
+                src="/images/cd_content_lg/print/amplitude-audio.jpg"
+                width="884"
+                height="553"
+                alt="#"
+            /></a>
+            <a href="#print_study"
+              ><img
+                src="/images/cd_content_lg/print/rental-brochure.jpg"
+                width="884"
+                height="553"
+                alt="#"
+            /></a>
+            <a href="#print_study"
+              ><img
+                src="/images/cd_content_lg/print/haze-multimedia.jpg"
+                width="884"
+                height="553"
+                alt="#"
+            /></a>
+            <a href="#print_study"
+              ><img
+                src="/images/cd_content_lg/print/to-go.jpg"
+                width="884"
+                height="553"
+                alt="#"
+            /></a>
+            <a href="#print_study"
+              ><img
+                src="/images/cd_content_lg/print/plc.jpg"
+                width="884"
+                height="553"
+                alt="#"
+            /></a>
+            <a href="#print_study"
+              ><img
+                src="/images/cd_content_lg/print/shedbot.jpg"
+                width="884"
+                height="553"
+                alt="#"
+            /></a>
+          </div>
+          <!--<a href="#" class="prev"><img src="img/arrow-prev.png" width="24" height="43" alt="Arrow Prev"></a>
 		<a href="#" class="next"><img src="img/arrow-next.png" width="24" height="43" alt="Arrow Next"></a>-->
-  	</div>
-</div>
-<!-- end/cinema display -->
-
-<!-- start/study detail -->
-<!-- start/box wrap -->
-<div class="white-wrap_top" id="print_study"></div>
-	<div class="white-wrap_tile">
-        <a href="#line"><img src="../images/assets/up.png" alt="Going Up?" class="back-to-top"/></a>
-        <div class="web_study">
-       		<div class="study_copy">
-            	<h1>Print Design &amp; Delivery</h1>
-				<span class="skills">
-<p>Frustrated in seeing our work realized by incompetent printers, we’ve taken over print management and delivery for our clients and both parties couldn’t be happier.    </p>
-
-<p>You don’t have the time to relay hieroglyphic print specifics to and from your neighborhood print shop.  Conversely, we like to ensure your media is manufactured with the same uncompromising attention to detail we had throughout the design process.  Our international client base requires tens of thousands of printed materials every year, which allows us to offer competitive pricing and a full service process. </p>
-                </span>
-                <!--<h5>Client Testimonial</h5>
-				<a href="../raves.html#t_m60" class="contact_link">"We've had the pleasure of working with Brad on several occasions during the last few years, and have nothing but great things to say about him.."</a>  -->
-    		</div>
-
-    		<div class="photo-frame">
-				<div id="slides_d">
-					<div class="slides_container">
-						<img src="../images/case-studies/print/amplitude.jpg" alt="Shedbot Print Design &amp; Delivery" height="280" width="420" />
-                        <img src="../images/case-studies/print/rental-brochure.jpg" alt="Shedbot Print Design &amp; Delivery" height="280" width="420" />
-                        <img src="../images/case-studies/print/haze.jpg" alt="Shedbot Print Design &amp; Delivery" height="280" width="420" />
-                        <img src="../images/case-studies/print/togo.jpg" alt="Shedbot Print Design &amp; Delivery" height="280" width="420" />
-                        <img src="../images/case-studies/print/plc.jpg" alt="Shedbot Print Design &amp; Delivery" height="280" width="420" />
-                        <img src="../images/case-studies/print/shedbot.jpg" alt="Shedbot Print Design &amp; Delivery" height="280" width="420" />
-					</div>
-           		</div>
-        	</div>
-
-    </div>
-</div>
-<div class="white-wrap_bottom"></div>
-<!-- end/box wrap -->
-<!-- end/study detail -->
-
-<!-- start/next -->
-<!-- start/box wrap -->
-<div class="white-wrap_top"></div>
-	<div class="white-wrap_tile">
-
-        <div class="web_study">
-            <div class="third">
-            	<img src="../images/assets/shed.png" height="50" width="50" class="icon" alt="Shedbot" />
-            	<h5>Want to see more?</h5>
-        		<span class="skills">Check out the rest of our portfolio in our full work spread.</span><br />
-                <div class="green-button"><a href="../work.html" class="learn-more">continue</a></div>
-            </div>
-            <div class="third">
-            	<img src="../images/assets/about.png" style="margin:4px 0 0 0;" class="icon" alt="Shedbot" />
-            	<h5>About Us</h5>
-        		<span class="skills">Learn about the creative professionals behind the screens.</span><br />
-                <div class="green-button"><a href="../about.html" class="learn-more">continue</a></div>
-            </div>
-            <div class="third" style="padding-right: 0;">
-            	<img src="../images/assets/mail.png" height="50" width="57" class="icon" alt="Shedbot"/>
-            	<h5>Contact us today.</h5>
-        		<span class="skills">Ready to get started?  Let's get the ball rolling today.</span><br />
-                <div class="green-button"><a href="../contact.html" class="learn-more">continue</a></div>
-            </div>
         </div>
+      </div>
+      <!-- end/cinema display -->
 
-    </div>
-<div class="white-wrap_bottom"></div>
-<!-- end/box wrap -->
-<!-- end/next -->
+      <!-- start/study detail -->
+      <!-- start/box wrap -->
+      <div class="white-wrap_top" id="print_study"></div>
+      <div class="white-wrap_tile">
+        <a href="#line"
+          ><img src="/images/assets/up.png" alt="Going Up?" class="back-to-top"
+        /></a>
+        <div class="web_study">
+          <div class="study_copy">
+            <h1>Print Design &amp; Delivery</h1>
+            <span class="skills">
+              <p>
+                Frustrated in seeing our work realized by incompetent printers,
+                we’ve taken over print management and delivery for our clients
+                and both parties couldn’t be happier.
+              </p>
 
-<!--start/footer-->
-<div id="footer">
-	<div class="fadebelieve" onclick="location.href='../contact.html';" style="cursor:pointer;"></div>
-	<div id="footer_text">Built with HTML, CSS, jQuery and care in Winnipeg, Manitoba, Canada. © Shedbot 2011</div>
-		<div id="social">
-    	<div id="fblike">
-        	<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fshedbot&amp;layout=button_count&amp;show_faces=false&amp;width=450&amp;action=like&amp;font=lucida+grande&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:85px; height:21px; float: left; margin: 5px 0 0 7px;" allowtransparency="true"  >
+              <p>
+                You don’t have the time to relay hieroglyphic print specifics to
+                and from your neighborhood print shop. Conversely, we like to
+                ensure your media is manufactured with the same uncompromising
+                attention to detail we had throughout the design process. Our
+                international client base requires tens of thousands of printed
+                materials every year, which allows us to offer competitive
+                pricing and a full service process.
+              </p>
+            </span>
+            <!--<h5>Client Testimonial</h5>
+				<a href="/raves.html#t_m60" class="contact_link">"We've had the pleasure of working with Brad on several occasions during the last few years, and have nothing but great things to say about him.."</a>  -->
+          </div>
+
+          <div class="photo-frame">
+            <div id="slides_d">
+              <div class="slides_container">
+                <img
+                  src="/images/case-studies/print/amplitude.jpg"
+                  alt="Shedbot Print Design &amp; Delivery"
+                  height="280"
+                  width="420"
+                />
+                <img
+                  src="/images/case-studies/print/rental-brochure.jpg"
+                  alt="Shedbot Print Design &amp; Delivery"
+                  height="280"
+                  width="420"
+                />
+                <img
+                  src="/images/case-studies/print/haze.jpg"
+                  alt="Shedbot Print Design &amp; Delivery"
+                  height="280"
+                  width="420"
+                />
+                <img
+                  src="/images/case-studies/print/togo.jpg"
+                  alt="Shedbot Print Design &amp; Delivery"
+                  height="280"
+                  width="420"
+                />
+                <img
+                  src="/images/case-studies/print/plc.jpg"
+                  alt="Shedbot Print Design &amp; Delivery"
+                  height="280"
+                  width="420"
+                />
+                <img
+                  src="/images/case-studies/print/shedbot.jpg"
+                  alt="Shedbot Print Design &amp; Delivery"
+                  height="280"
+                  width="420"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="white-wrap_bottom"></div>
+      <!-- end/box wrap -->
+      <!-- end/study detail -->
+
+      <!-- start/next -->
+      <!-- start/box wrap -->
+      <div class="white-wrap_top"></div>
+      <div class="white-wrap_tile">
+        <div class="web_study">
+          <div class="third">
+            <img
+              src="/images/assets/shed.png"
+              height="50"
+              width="50"
+              class="icon"
+              alt="Shedbot"
+            />
+            <h5>Want to see more?</h5>
+            <span class="skills"
+              >Check out the rest of our portfolio in our full work
+              spread.</span
+            ><br />
+            <div class="green-button">
+              <a href="/work.html" class="learn-more">continue</a>
+            </div>
+          </div>
+          <div class="third">
+            <img
+              src="/images/assets/about.png"
+              style="margin:4px 0 0 0;"
+              class="icon"
+              alt="Shedbot"
+            />
+            <h5>About Us</h5>
+            <span class="skills"
+              >Learn about the creative professionals behind the screens.</span
+            ><br />
+            <div class="green-button">
+              <a href="/about.html" class="learn-more">continue</a>
+            </div>
+          </div>
+          <div class="third" style="padding-right: 0;">
+            <img
+              src="/images/assets/mail.png"
+              height="50"
+              width="57"
+              class="icon"
+              alt="Shedbot"
+            />
+            <h5>Contact us today.</h5>
+            <span class="skills"
+              >Ready to get started? Let's get the ball rolling today.</span
+            ><br />
+            <div class="green-button">
+              <a href="/contact.html" class="learn-more">continue</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="white-wrap_bottom"></div>
+      <!-- end/box wrap -->
+      <!-- end/next -->
+
+      <!--start/footer-->
+      <div id="footer">
+        <div
+          class="fadebelieve"
+          onclick="location.href='/contact.html';"
+          style="cursor:pointer;"
+        ></div>
+        <div id="footer_text">
+          Built with HTML, CSS, jQuery and care in Winnipeg, Manitoba, Canada. ©
+          Shedbot 2011
+        </div>
+        <div id="social">
+          <div id="fblike">
+            <iframe
+              src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fshedbot&amp;layout=button_count&amp;show_faces=false&amp;width=450&amp;action=like&amp;font=lucida+grande&amp;colorscheme=light&amp;height=21"
+              scrolling="no"
+              frameborder="0"
+              style="border:none; overflow:hidden; width:85px; height:21px; float: left; margin: 5px 0 0 7px;"
+              allowtransparency="true"
+            >
             </iframe>
+          </div>
+          <div
+            id="friend"
+            onclick="window.open('http://www.facebook.com/shedbot')"
+            style="cursor:pointer;"
+          ></div>
+          <div
+            id="tweet"
+            onclick="window.open('http://twitter.com/bradcerasani')"
+            style="cursor:pointer;"
+          ></div>
         </div>
-			<div id="friend" onclick="window.open('http://www.facebook.com/shedbot')" style="cursor:pointer;"></div>
-        	<div id="tweet" onclick="window.open('http://twitter.com/bradcerasani')" style="cursor:pointer;"></div>
-	</div>
-</div>
-<!--end/footer-->
-
-</div>
-<!--end/container-->
-
-</body>
+      </div>
+      <!--end/footer-->
+    </div>
+    <!--end/container-->
+  </body>
 </html>
