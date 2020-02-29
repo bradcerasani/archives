@@ -1,45 +1,82 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset='UTF-8'>
-    <meta content='Brad Cerasani is a front-end designer/developer based in Winnipeg, Canada.' type='description'>
-    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0' name='viewport'>
+    <meta charset="UTF-8" />
+    <meta
+      content="Brad Cerasani is a front-end designer/developer based in Winnipeg, Canada."
+      type="description"
+    />
+    <meta
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+      name="viewport"
+    />
     <title>Journal: Creative Styling of :Visited Links</title>
-    <link href='https://plus.google.com/111628796954215170971‎' rel='author'>
-    <link href='/favicon.ico' rel='icon' type='image/favicon'>
-    <link href='/css/fonts.css' rel='stylesheet' type='text/css'>
-    <link href='/css/styles.css' rel='stylesheet' type='text/css'>
+    <link href="/favicon.ico" rel="icon" type="image/favicon" />
+    <link href="/css/fonts.css" rel="stylesheet" type="text/css" />
+    <link href="/css/styles.css" rel="stylesheet" type="text/css" />
 
-    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header class='dark thin'>
-      <div class='container'>
-        <div class='title'>
-          <a class='home inherit' href='/'>
+    <header class="dark thin">
+      <div class="container">
+        <div class="title">
+          <a class="home inherit" href="/">
             Brad Cerasani
-            <i class='icon-house'></i>
+            <i class="icon-house"></i>
           </a>
         </div>
       </div>
     </header>
     <article>
-      <div class='container'>
+      <div class="container">
         <h1>Creative Styling of :Visited Links</h1>
-        <p>In HTML, <code>&lt;a&gt;</code> tags have 4 CSS pseudo classes that are used to style hyperlinks in different states: <code>:link</code> <code>:visited</code> <code>:hover</code> and <code>:active</code></p>
+        <p>
+          In HTML, <code>&lt;a&gt;</code> tags have 4 CSS pseudo classes that
+          are used to style hyperlinks in different states: <code>:link</code>
+          <code>:visited</code> <code>:hover</code> and <code>:active</code>
+        </p>
 
-        <p>We used to be able to style these pseudo classes with whatever CSS we wanted, but in early 2010 a <a href="http://blog.mozilla.org/security/2010/03/31/plugging-the-css-history-leak/">privacy vulnerability</a> forced browsers to restrict what CSS properties were allowed for the <code>:visited</code> class.</p>
+        <p>
+          We used to be able to style these pseudo classes with whatever CSS we
+          wanted, but in early 2010 a
+          <a
+            href="https://blog.mozilla.org/security/2010/03/31/plugging-the-css-history-leak/"
+            >privacy vulnerability</a
+          >
+          forced browsers to restrict what CSS properties were allowed for the
+          <code>:visited</code> class.
+        </p>
 
-        <p>Here&rsquo;s what properties we&rsquo;re currently allowed to use for <code>:visited</code> elements:</p>
-        <div class="highlight"><pre><span id="line-1"><span class="nt">a</span><span class="nd">:visited</span> <span class="p">{</span>&#x000A;</span><span id="line-2">    <span class="k">outline</span><span class="o">-</span><span class="k">color</span><span class="o">:</span> <span class="c">/* value */</span><span class="p">;</span>&#x000A;</span><span id="line-3">    <span class="k">border-color</span><span class="o">:</span> <span class="c">/* value */</span><span class="p">;</span>&#x000A;</span><span id="line-4">    <span class="k">background-color</span><span class="o">:</span> <span class="c">/* value */</span><span class="p">;</span>&#x000A;</span><span id="line-5">    <span class="k">color</span><span class="o">:</span> <span class="c">/* value */</span><span class="p">;</span>&#x000A;</span><span id="line-6"><span class="p">}</span>&#x000A;</span></pre></div>
+        <p>
+          Here&rsquo;s what properties we&rsquo;re currently allowed to use for
+          <code>:visited</code> elements:
+        </p>
+        <div class="highlight">
+          <pre><span id="line-1"><span class="nt">a</span><span class="nd">:visited</span> <span class="p">{</span>&#x000A;</span><span id="line-2">    <span class="k">outline</span><span class="o">-</span><span class="k">color</span><span class="o">:</span> <span class="c">/* value */</span><span class="p">;</span>&#x000A;</span><span id="line-3">    <span class="k">border-color</span><span class="o">:</span> <span class="c">/* value */</span><span class="p">;</span>&#x000A;</span><span id="line-4">    <span class="k">background-color</span><span class="o">:</span> <span class="c">/* value */</span><span class="p">;</span>&#x000A;</span><span id="line-5">    <span class="k">color</span><span class="o">:</span> <span class="c">/* value */</span><span class="p">;</span>&#x000A;</span><span id="line-6"><span class="p">}</span>&#x000A;</span></pre>
+        </div>
         <p>Boring, eh? Not to worry, we can work with this.</p>
 
         <h2>Basic Link Styling</h2>
 
         <p>First, we&rsquo;ll create a link and give it some styling.</p>
 
-        <p><em>I&rsquo;m using SCSS/Sass instead of vanilla CSS. If you are unfamiliar with Sass, <a href="http://sass-lang.com/guide">start here</a>.</em></p>
-        <div class="highlight"><pre><span id="line-1"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;demo&quot;</span><span class="nt">&gt;</span>AWESOME<span class="nt">&lt;/a&gt;</span>&#x000A;</span></pre></div><div class="highlight"><pre><span id="line-1"><span class="nv">$accent</span><span class="o">:</span> <span class="mh">#3BA7BB</span><span class="p">;</span>&#x000A;</span><span id="line-2">&#x000A;</span><span id="line-3"><span class="nt">a</span><span class="nc">.demo</span> <span class="p">{</span>&#x000A;</span><span id="line-4">    <span class="na">position</span><span class="o">:</span> <span class="no">relative</span><span class="p">;</span>&#x000A;</span><span id="line-5">    <span class="na">display</span><span class="o">:</span> <span class="no">inline</span><span class="o">-</span><span class="no">block</span><span class="p">;</span>&#x000A;</span><span id="line-6">    <span class="na">padding</span><span class="o">:</span> <span class="mi">0</span><span class="mf">.75</span><span class="kt">rem</span> <span class="mi">3</span><span class="kt">rem</span><span class="p">;</span>&#x000A;</span><span id="line-7">    <span class="na">border</span><span class="o">:</span> <span class="mi">2</span><span class="kt">px</span> <span class="no">solid</span> <span class="nv">$accent</span><span class="p">;</span>&#x000A;</span><span id="line-8">    <span class="na">border-radius</span><span class="o">:</span> <span class="mi">3</span><span class="kt">px</span><span class="p">;</span>&#x000A;</span><span id="line-9">    <span class="na">background</span><span class="o">:</span> <span class="nv">$accent</span><span class="p">;</span>&#x000A;</span><span id="line-10">    <span class="na">color</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span>&#x000A;</span><span id="line-11">    <span class="na">text-decoration</span><span class="o">:</span> <span class="no">none</span><span class="p">;</span>&#x000A;</span><span id="line-12">    <span class="na">font-weight</span><span class="o">:</span> <span class="mi">500</span><span class="p">;</span>&#x000A;</span><span id="line-13">    <span class="na">line-height</span><span class="o">:</span> <span class="mi">1</span><span class="p">;</span>&#x000A;</span><span id="line-14"><span class="p">}</span>&#x000A;</span></pre></div>
+        <p>
+          <em
+            >I&rsquo;m using SCSS/Sass instead of vanilla CSS. If you are
+            unfamiliar with Sass,
+            <a href="https://sass-lang.com/guide">start here</a>.</em
+          >
+        </p>
+        <div class="highlight">
+          <pre><span id="line-1"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#!&quot;</span> <span class="na">class=</span><span class="s">&quot;demo&quot;</span><span class="nt">&gt;</span>AWESOME<span class="nt">&lt;/a&gt;</span>&#x000A;</span></pre>
+        </div>
+        <div class="highlight">
+          <pre><span id="line-1"><span class="nv">$accent</span><span class="o">:</span> <span class="mh">#3BA7BB</span><span class="p">;</span>&#x000A;</span><span id="line-2">&#x000A;</span><span id="line-3"><span class="nt">a</span><span class="nc">.demo</span> <span class="p">{</span>&#x000A;</span><span id="line-4">    <span class="na">position</span><span class="o">:</span> <span class="no">relative</span><span class="p">;</span>&#x000A;</span><span id="line-5">    <span class="na">display</span><span class="o">:</span> <span class="no">inline</span><span class="o">-</span><span class="no">block</span><span class="p">;</span>&#x000A;</span><span id="line-6">    <span class="na">padding</span><span class="o">:</span> <span class="mi">0</span><span class="mf">.75</span><span class="kt">rem</span> <span class="mi">3</span><span class="kt">rem</span><span class="p">;</span>&#x000A;</span><span id="line-7">    <span class="na">border</span><span class="o">:</span> <span class="mi">2</span><span class="kt">px</span> <span class="no">solid</span> <span class="nv">$accent</span><span class="p">;</span>&#x000A;</span><span id="line-8">    <span class="na">border-radius</span><span class="o">:</span> <span class="mi">3</span><span class="kt">px</span><span class="p">;</span>&#x000A;</span><span id="line-9">    <span class="na">background</span><span class="o">:</span> <span class="nv">$accent</span><span class="p">;</span>&#x000A;</span><span id="line-10">    <span class="na">color</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span>&#x000A;</span><span id="line-11">    <span class="na">text-decoration</span><span class="o">:</span> <span class="no">none</span><span class="p">;</span>&#x000A;</span><span id="line-12">    <span class="na">font-weight</span><span class="o">:</span> <span class="mi">500</span><span class="p">;</span>&#x000A;</span><span id="line-13">    <span class="na">line-height</span><span class="o">:</span> <span class="mi">1</span><span class="p">;</span>&#x000A;</span><span id="line-14"><span class="p">}</span>&#x000A;</span></pre>
+        </div>
         <p>Result:</p>
 
         <p><a href="#!" class="demo">AWESOME</a></p>
@@ -48,63 +85,110 @@
 
         <h2>CSS Pseudo Elements</h2>
 
-        <p>Pseudo elements in CSS are <strong>awesome</strong>. <a href="http://css-tricks.com/pseudo-element-roundup/">Chris Coyier</a> sums it up best:</p>
+        <p>
+          Pseudo elements in CSS are <strong>awesome</strong>.
+          <a href="https://css-tricks.com/pseudo-element-roundup/"
+            >Chris Coyier</a
+          >
+          sums it up best:
+        </p>
 
         <blockquote>
-        <p>For every element on the page, you get two more free ones that you can do just about anything another HTML element could do.</p>
+          <p>
+            For every element on the page, you get two more free ones that you
+            can do just about anything another HTML element could do.
+          </p>
         </blockquote>
 
-        <p>We&rsquo;ll use a CSS pseudo element to help style the <code>:visited</code> state of our link. While pseudo elements have the same CSS property restrictions as the <code>&lt;a&gt;</code> tag, with absolute positioning and some basic colour tricks we can essentially hide a <code>:visited</code> style in our link right from the start.</p>
+        <p>
+          We&rsquo;ll use a CSS pseudo element to help style the
+          <code>:visited</code> state of our link. While pseudo elements have
+          the same CSS property restrictions as the <code>&lt;a&gt;</code> tag,
+          with absolute positioning and some basic colour tricks we can
+          essentially hide a <code>:visited</code> style in our link right from
+          the start.
+        </p>
 
-        <p>Let&rsquo;s add a check mark using pseudo element <code>:after</code>. I&rsquo;m using a check mark from <a href="http://icomoon.io/">icomoon</a>, but if you aren&rsquo;t familiar with icon fonts, grab a character from <a href="http://copypastecharacter.com/">here</a> and insert it on line 19 between the double quotes.</p>
-        <div class="highlight"><pre><span id="line-1"><span class="nv">$accent</span><span class="o">:</span> <span class="mh">#3BA7BB</span><span class="p">;</span>&#x000A;</span><span id="line-2">&#x000A;</span><span id="line-3"><span class="nt">a</span><span class="nc">.demo</span> <span class="p">{</span>&#x000A;</span><span id="line-4">    <span class="na">position</span><span class="o">:</span> <span class="no">relative</span><span class="p">;</span>&#x000A;</span><span id="line-5">    <span class="na">display</span><span class="o">:</span> <span class="no">inline</span><span class="o">-</span><span class="no">block</span><span class="p">;</span>&#x000A;</span><span id="line-6">    <span class="na">padding</span><span class="o">:</span> <span class="mi">0</span><span class="mf">.75</span><span class="kt">rem</span> <span class="mi">3</span><span class="kt">rem</span><span class="p">;</span>&#x000A;</span><span id="line-7">    <span class="na">border</span><span class="o">:</span> <span class="mi">2</span><span class="kt">px</span> <span class="no">solid</span> <span class="nv">$accent</span><span class="p">;</span>&#x000A;</span><span id="line-8">    <span class="na">border-radius</span><span class="o">:</span> <span class="mi">3</span><span class="kt">px</span><span class="p">;</span>&#x000A;</span><span id="line-9">    <span class="na">background</span><span class="o">:</span> <span class="nv">$accent</span><span class="p">;</span>&#x000A;</span><span id="line-10">    <span class="na">color</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span>&#x000A;</span><span id="line-11">    <span class="na">text-decoration</span><span class="o">:</span> <span class="no">none</span><span class="p">;</span>&#x000A;</span><span id="line-12">    <span class="na">font-weight</span><span class="o">:</span> <span class="mi">500</span><span class="p">;</span>&#x000A;</span><span id="line-13">    <span class="na">line-height</span><span class="o">:</span> <span class="mi">1</span><span class="p">;</span>&#x000A;</span><span id="line-14">    <span class="k">&amp;</span><span class="nd">:after</span> <span class="p">{</span>&#x000A;</span><span id="line-15">        <span class="na">position</span><span class="o">:</span> <span class="no">absolute</span><span class="p">;</span>&#x000A;</span><span id="line-16">        <span class="na">right</span><span class="o">:</span> <span class="mi">1</span><span class="mf">.5</span><span class="kt">rem</span><span class="p">;</span>&#x000A;</span><span id="line-17">        <span class="na">width</span><span class="o">:</span> <span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>&#x000A;</span><span id="line-18">        <span class="na">height</span><span class="o">:</span> <span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>&#x000A;</span><span id="line-19">        <span class="na">content</span><span class="o">:</span> <span class="s2">&quot;\e602&quot;</span><span class="p">;</span>&#x000A;</span><span id="line-20">        <span class="na">font-family</span><span class="o">:</span> <span class="n">icomoon</span><span class="p">;</span>&#x000A;</span><span id="line-21">    <span class="p">}</span>&#x000A;</span><span id="line-22"><span class="p">}</span>&#x000A;</span></pre></div>
+        <p>
+          Let&rsquo;s add a check mark using pseudo element <code>:after</code>.
+          I&rsquo;m using a check mark from
+          <a href="https://icomoon.io/">icomoon</a>, but if you aren&rsquo;t
+          familiar with icon fonts, grab a character from
+          <a href="https://copypastecharacter.com/">here</a> and insert it on
+          line 19 between the double quotes.
+        </p>
+        <div class="highlight">
+          <pre><span id="line-1"><span class="nv">$accent</span><span class="o">:</span> <span class="mh">#3BA7BB</span><span class="p">;</span>&#x000A;</span><span id="line-2">&#x000A;</span><span id="line-3"><span class="nt">a</span><span class="nc">.demo</span> <span class="p">{</span>&#x000A;</span><span id="line-4">    <span class="na">position</span><span class="o">:</span> <span class="no">relative</span><span class="p">;</span>&#x000A;</span><span id="line-5">    <span class="na">display</span><span class="o">:</span> <span class="no">inline</span><span class="o">-</span><span class="no">block</span><span class="p">;</span>&#x000A;</span><span id="line-6">    <span class="na">padding</span><span class="o">:</span> <span class="mi">0</span><span class="mf">.75</span><span class="kt">rem</span> <span class="mi">3</span><span class="kt">rem</span><span class="p">;</span>&#x000A;</span><span id="line-7">    <span class="na">border</span><span class="o">:</span> <span class="mi">2</span><span class="kt">px</span> <span class="no">solid</span> <span class="nv">$accent</span><span class="p">;</span>&#x000A;</span><span id="line-8">    <span class="na">border-radius</span><span class="o">:</span> <span class="mi">3</span><span class="kt">px</span><span class="p">;</span>&#x000A;</span><span id="line-9">    <span class="na">background</span><span class="o">:</span> <span class="nv">$accent</span><span class="p">;</span>&#x000A;</span><span id="line-10">    <span class="na">color</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span>&#x000A;</span><span id="line-11">    <span class="na">text-decoration</span><span class="o">:</span> <span class="no">none</span><span class="p">;</span>&#x000A;</span><span id="line-12">    <span class="na">font-weight</span><span class="o">:</span> <span class="mi">500</span><span class="p">;</span>&#x000A;</span><span id="line-13">    <span class="na">line-height</span><span class="o">:</span> <span class="mi">1</span><span class="p">;</span>&#x000A;</span><span id="line-14">    <span class="k">&amp;</span><span class="nd">:after</span> <span class="p">{</span>&#x000A;</span><span id="line-15">        <span class="na">position</span><span class="o">:</span> <span class="no">absolute</span><span class="p">;</span>&#x000A;</span><span id="line-16">        <span class="na">right</span><span class="o">:</span> <span class="mi">1</span><span class="mf">.5</span><span class="kt">rem</span><span class="p">;</span>&#x000A;</span><span id="line-17">        <span class="na">width</span><span class="o">:</span> <span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>&#x000A;</span><span id="line-18">        <span class="na">height</span><span class="o">:</span> <span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>&#x000A;</span><span id="line-19">        <span class="na">content</span><span class="o">:</span> <span class="s2">&quot;\e602&quot;</span><span class="p">;</span>&#x000A;</span><span id="line-20">        <span class="na">font-family</span><span class="o">:</span> <span class="n">icomoon</span><span class="p">;</span>&#x000A;</span><span id="line-21">    <span class="p">}</span>&#x000A;</span><span id="line-22"><span class="p">}</span>&#x000A;</span></pre>
+        </div>
         <p>Result:</p>
 
         <p><a href="#!" class="demo step-two">AWESOME</a></p>
 
         <h2>Building Functionality</h2>
 
-        <p>While we can&rsquo;t technically &lsquo;add&rsquo; the check mark strictly to <code>:visited</code> links, we can hide it in a link&rsquo;s natural state by changing its colour to match the background.</p>
+        <p>
+          While we can&rsquo;t technically &lsquo;add&rsquo; the check mark
+          strictly to <code>:visited</code> links, we can hide it in a
+          link&rsquo;s natural state by changing its colour to match the
+          background.
+        </p>
 
-        <p>Now we can style the <code>:visited</code> state to provide some visual contrast and show off the check mark and border, both of which were disguised originally.</p>
-        <div class="highlight"><pre><span id="line-1"><span class="nv">$accent</span><span class="o">:</span> <span class="mh">#3BA7BB</span><span class="p">;</span>&#x000A;</span><span id="line-2">&#x000A;</span><span id="line-3"><span class="nt">a</span><span class="nc">.demo</span> <span class="p">{</span>&#x000A;</span><span id="line-4">    <span class="na">position</span><span class="o">:</span> <span class="no">relative</span><span class="p">;</span>&#x000A;</span><span id="line-5">    <span class="na">display</span><span class="o">:</span> <span class="no">inline</span><span class="o">-</span><span class="no">block</span><span class="p">;</span>&#x000A;</span><span id="line-6">    <span class="na">padding</span><span class="o">:</span> <span class="mi">0</span><span class="mf">.75</span><span class="kt">rem</span> <span class="mi">3</span><span class="kt">rem</span><span class="p">;</span>&#x000A;</span><span id="line-7">    <span class="na">border</span><span class="o">:</span> <span class="mi">2</span><span class="kt">px</span> <span class="no">solid</span> <span class="nv">$accent</span><span class="p">;</span>&#x000A;</span><span id="line-8">    <span class="na">border-radius</span><span class="o">:</span> <span class="mi">3</span><span class="kt">px</span><span class="p">;</span>&#x000A;</span><span id="line-9">    <span class="na">background</span><span class="o">:</span> <span class="nv">$accent</span><span class="p">;</span>&#x000A;</span><span id="line-10">    <span class="na">color</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span>&#x000A;</span><span id="line-11">    <span class="na">text-decoration</span><span class="o">:</span> <span class="no">none</span><span class="p">;</span>&#x000A;</span><span id="line-12">    <span class="na">font-weight</span><span class="o">:</span> <span class="mi">500</span><span class="p">;</span>&#x000A;</span><span id="line-13">    <span class="na">line-height</span><span class="o">:</span> <span class="mi">1</span><span class="p">;</span>&#x000A;</span><span id="line-14">    <span class="k">&amp;</span><span class="nd">:after</span> <span class="p">{</span>&#x000A;</span><span id="line-15">        <span class="na">position</span><span class="o">:</span> <span class="no">absolute</span><span class="p">;</span>&#x000A;</span><span id="line-16">        <span class="na">right</span><span class="o">:</span> <span class="mi">1</span><span class="mf">.5</span><span class="kt">rem</span><span class="p">;</span>&#x000A;</span><span id="line-17">        <span class="na">width</span><span class="o">:</span> <span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>&#x000A;</span><span id="line-18">        <span class="na">height</span><span class="o">:</span> <span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>&#x000A;</span><span id="line-19">        <span class="na">color</span><span class="o">:</span> <span class="nv">$accent</span><span class="p">;</span>&#x000A;</span><span id="line-20">        <span class="na">content</span><span class="o">:</span> <span class="s2">&quot;\e602&quot;</span><span class="p">;</span>&#x000A;</span><span id="line-21">        <span class="na">font-family</span><span class="o">:</span> <span class="n">icomoon</span><span class="p">;</span>&#x000A;</span><span id="line-22">    <span class="p">}</span>&#x000A;</span><span id="line-23">    <span class="k">&amp;</span><span class="nd">:visited</span> <span class="p">{</span>&#x000A;</span><span id="line-24">        <span class="na">border-color</span><span class="o">:</span> <span class="mh">#333333</span><span class="p">;</span>&#x000A;</span><span id="line-25">        <span class="na">background-color</span><span class="o">:</span> <span class="mh">#fafafa</span><span class="p">;</span>&#x000A;</span><span id="line-26">        <span class="na">color</span><span class="o">:</span> <span class="mh">#333333</span><span class="p">;</span>&#x000A;</span><span id="line-27">        <span class="k">&amp;</span><span class="nd">:after</span> <span class="p">{</span>&#x000A;</span><span id="line-28">            <span class="na">color</span><span class="o">:</span> <span class="mh">#49b749</span><span class="p">;</span>&#x000A;</span><span id="line-29">        <span class="p">}</span>&#x000A;</span><span id="line-30">    <span class="p">}</span>&#x000A;</span><span id="line-31"><span class="p">}</span>&#x000A;</span></pre></div>
+        <p>
+          Now we can style the <code>:visited</code> state to provide some
+          visual contrast and show off the check mark and border, both of which
+          were disguised originally.
+        </p>
+        <div class="highlight">
+          <pre><span id="line-1"><span class="nv">$accent</span><span class="o">:</span> <span class="mh">#3BA7BB</span><span class="p">;</span>&#x000A;</span><span id="line-2">&#x000A;</span><span id="line-3"><span class="nt">a</span><span class="nc">.demo</span> <span class="p">{</span>&#x000A;</span><span id="line-4">    <span class="na">position</span><span class="o">:</span> <span class="no">relative</span><span class="p">;</span>&#x000A;</span><span id="line-5">    <span class="na">display</span><span class="o">:</span> <span class="no">inline</span><span class="o">-</span><span class="no">block</span><span class="p">;</span>&#x000A;</span><span id="line-6">    <span class="na">padding</span><span class="o">:</span> <span class="mi">0</span><span class="mf">.75</span><span class="kt">rem</span> <span class="mi">3</span><span class="kt">rem</span><span class="p">;</span>&#x000A;</span><span id="line-7">    <span class="na">border</span><span class="o">:</span> <span class="mi">2</span><span class="kt">px</span> <span class="no">solid</span> <span class="nv">$accent</span><span class="p">;</span>&#x000A;</span><span id="line-8">    <span class="na">border-radius</span><span class="o">:</span> <span class="mi">3</span><span class="kt">px</span><span class="p">;</span>&#x000A;</span><span id="line-9">    <span class="na">background</span><span class="o">:</span> <span class="nv">$accent</span><span class="p">;</span>&#x000A;</span><span id="line-10">    <span class="na">color</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span>&#x000A;</span><span id="line-11">    <span class="na">text-decoration</span><span class="o">:</span> <span class="no">none</span><span class="p">;</span>&#x000A;</span><span id="line-12">    <span class="na">font-weight</span><span class="o">:</span> <span class="mi">500</span><span class="p">;</span>&#x000A;</span><span id="line-13">    <span class="na">line-height</span><span class="o">:</span> <span class="mi">1</span><span class="p">;</span>&#x000A;</span><span id="line-14">    <span class="k">&amp;</span><span class="nd">:after</span> <span class="p">{</span>&#x000A;</span><span id="line-15">        <span class="na">position</span><span class="o">:</span> <span class="no">absolute</span><span class="p">;</span>&#x000A;</span><span id="line-16">        <span class="na">right</span><span class="o">:</span> <span class="mi">1</span><span class="mf">.5</span><span class="kt">rem</span><span class="p">;</span>&#x000A;</span><span id="line-17">        <span class="na">width</span><span class="o">:</span> <span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>&#x000A;</span><span id="line-18">        <span class="na">height</span><span class="o">:</span> <span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>&#x000A;</span><span id="line-19">        <span class="na">color</span><span class="o">:</span> <span class="nv">$accent</span><span class="p">;</span>&#x000A;</span><span id="line-20">        <span class="na">content</span><span class="o">:</span> <span class="s2">&quot;\e602&quot;</span><span class="p">;</span>&#x000A;</span><span id="line-21">        <span class="na">font-family</span><span class="o">:</span> <span class="n">icomoon</span><span class="p">;</span>&#x000A;</span><span id="line-22">    <span class="p">}</span>&#x000A;</span><span id="line-23">    <span class="k">&amp;</span><span class="nd">:visited</span> <span class="p">{</span>&#x000A;</span><span id="line-24">        <span class="na">border-color</span><span class="o">:</span> <span class="mh">#333333</span><span class="p">;</span>&#x000A;</span><span id="line-25">        <span class="na">background-color</span><span class="o">:</span> <span class="mh">#fafafa</span><span class="p">;</span>&#x000A;</span><span id="line-26">        <span class="na">color</span><span class="o">:</span> <span class="mh">#333333</span><span class="p">;</span>&#x000A;</span><span id="line-27">        <span class="k">&amp;</span><span class="nd">:after</span> <span class="p">{</span>&#x000A;</span><span id="line-28">            <span class="na">color</span><span class="o">:</span> <span class="mh">#49b749</span><span class="p">;</span>&#x000A;</span><span id="line-29">        <span class="p">}</span>&#x000A;</span><span id="line-30">    <span class="p">}</span>&#x000A;</span><span id="line-31"><span class="p">}</span>&#x000A;</span></pre>
+        </div>
         <p>Give it a try:</p>
 
-        <p><a href="http://bit.ly/16m376q" class="demo step-two step-three">AWESOME</a></p>
+        <p>
+          <a href="https://bit.ly/16m376q" class="demo step-two step-three"
+            >AWESOME</a
+          >
+        </p>
 
         <p>Pretty cool, eh?</p>
 
         <h2>Wrap-Up</h2>
 
-        <p>With pure CSS we&rsquo;ve created an interesting visual style for visited links without sacrificing user privacy or relying on Javascript. Kickass!</p>
-        <hr>
+        <p>
+          With pure CSS we&rsquo;ve created an interesting visual style for
+          visited links without sacrificing user privacy or relying on
+          Javascript. Kickass!
+        </p>
+        <hr />
       </div>
     </article>
     <footer>
-      <div class='container'>
-        <div class='left'>
-          <a class='twitter-footer' href='http://twitter.com/bradcerasani'>
+      <div class="container">
+        <div class="left">
+          <a class="twitter-footer" href="https://twitter.com/bradcerasani">
             shedbot
           </a>
         </div>
-        <div class='right'>
-          <span class='flag' href='http://bit.ly/19XJQ1c'></span>
+        <div class="right">
+          <span class="flag" href="https://bit.ly/19XJQ1c"></span>
         </div>
       </div>
     </footer>
-    <script src='/js/vendor/jquery.min.js' type='text/javascript'></script>
-    <script src='/js/plugins.js' type='text/javascript'></script>
-    <script src='/js/scripts.js' type='text/javascript'></script>
+    <script src="/js/vendor/jquery.min.js" type="text/javascript"></script>
+    <script src="/js/plugins.js" type="text/javascript"></script>
+    <script src="/js/scripts.js" type="text/javascript"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-5977667-28"
+    ></script>
     <script>
-      var _gaq = _gaq || [];
-      	_gaq.push(['_setAccount', 'UA-5977667-28']);
-      	_gaq.push(['_trackPageview']);
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      (function() {
-      	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
+      gtag("config", "UA-5977667-28");
     </script>
   </body>
 </html>

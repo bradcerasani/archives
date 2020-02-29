@@ -1,0 +1,16 @@
+{
+  "name": "2013-bradcerasani-me",
+  "alias": [
+    "2013.bradcerasani.me"
+  ],
+  "routes": [
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/(.*)",
+      "status": 404,
+      "dest": "/404.html"
+    }
+  ]
+}
