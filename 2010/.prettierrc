@@ -1,3 +1,10 @@
 {
-  "parser": "html"
+  "overrides": [
+    {
+      "files": "*.html",
+      "options": {
+        "parser": "html"
+      }
+    }
+  ]
 }
