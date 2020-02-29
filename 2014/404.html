@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,maximum-scale=1.0" />
 
-    <title>bradcerasani.me</title>
+    <title>404: Page not found | bradcerasani.me</title>
     <meta
       name="description"
       content="Brad Cerasani is a designer &amp; developer in Winnipeg, Manitoba, Canada."
@@ -70,6 +70,14 @@
         display: flex;
         align-items: center;
       }
+
+      h3 a {
+        color: inherit;
+      }
+
+      img.portrait {
+        border-radius: 0;
+      }
     </style>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -90,11 +98,7 @@
 
   <body>
     <div class="wrap end">
-      <img
-        src="/images/brad-cerasani.jpg"
-        alt="Brad Cerasani"
-        class="portrait"
-      />
+      <img src="/images/404.gif" alt="404" class="portrait" />
       <div class="social">
         <a href="https://github.com/bradcerasani" target="_blank"
           ><i class="icon-github-circled gh"></i
@@ -112,13 +116,9 @@
           ><i class="icon-facebook-circled fb"></i
         ></a>
       </div>
-      <h3>BradCerasani.me</h3>
+      <h3><a href="/">BradCerasani.me</a></h3>
       <p>
-        I'm a twenty-something year old guy from central Canada who specializes
-        in responsive front-end design and development. I run a tiny design shop
-        in Winnipeg called
-        <a href="https://2011.bradcerasani.me" target="_blank">Shedbot</a> that
-        serves clients across Canada and beyond.
+        404: Page not found.
       </p>
 
       <p>
@@ -130,20 +130,5 @@
 
       <p id="greeting"></p>
     </div>
-
-    <script>
-      var weekday = new Array(7);
-      weekday[0] = "Sunday.";
-      weekday[1] = "Monday.";
-      weekday[2] = "Tuesday.";
-      weekday[3] = "Wednesday.";
-      weekday[4] = "Thursday.";
-      weekday[5] = "Friday.";
-      weekday[6] = "Saturday.";
-
-      var day = new Date().getDay();
-      var greeting = document.getElementById("greeting");
-      greeting.innerText = "Happy " + weekday[day];
-    </script>
   </body>
 </html>
